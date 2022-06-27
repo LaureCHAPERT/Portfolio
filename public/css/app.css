@@ -10255,6 +10255,7 @@ textarea.form-control-lg {
 body {
   font-family: "Inconsolata", monospace;
   background-color: black;
+  color: white !important;
 }
 
 .navbar-brand {
@@ -10269,7 +10270,22 @@ body {
   margin-top: 0.5em;
 }
 
+p {
+  font-size: 2em;
+}
+
+.presentation-img {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width: 400px;
+  border-radius: 50%;
+}
+
 .zoomIn {
+  width: 50%;
+  margin: auto;
+  margin-top: 3em;
+  border: 5px solid rgb(99, 17, 17);
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
   -webkit-animation-duration: 1s;
