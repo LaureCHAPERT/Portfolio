@@ -8,5 +8,45 @@
 @import '~bootstrap/scss/bootstrap';
 body {
     font-family: 'Inconsolata', monospace;
-    background-color: rgba(19, 18, 18, 0.384);
+    background-color: black;
 }
+.navbar-brand {
+    font-size: 3em;
+    color: white !important;
+}
+.nav-link {
+    color: white !important;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top:0.5em;
+}
+.zoomIn {
+
+    -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  }
+  @keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+    }
+
