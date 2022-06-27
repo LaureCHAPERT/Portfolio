@@ -1,0 +1,12 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+body {
+    font-family: 'Inconsolata', monospace;
+    background-color: rgba(19, 18, 18, 0.384);
+}
