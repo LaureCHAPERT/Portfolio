@@ -10254,7 +10254,7 @@ textarea.form-control-lg {
 }
 body {
   font-family: "Inconsolata", monospace;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white !important;
 }
 
@@ -10281,11 +10281,19 @@ p {
   border-radius: 50%;
 }
 
+.logo-img {
+  width: 250px;
+  margin-left: 1em;
+}
+
+.navbar-brand {
+  margin-left: 2em;
+}
+
 .zoomIn {
   width: 50%;
   margin: auto;
-  margin-top: 3em;
-  border: 5px solid rgb(99, 17, 17);
+  margin-top: 5%;
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
   -webkit-animation-duration: 1s;

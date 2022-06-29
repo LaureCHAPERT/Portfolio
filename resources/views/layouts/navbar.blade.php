@@ -2,6 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
+        <meta name="description" content="Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Mon Portfolio</title>
@@ -18,13 +19,16 @@
 
     </head>
     <body class="antialiased">
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="/">Mon Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav flex-grow-1 justify-content-evenly">
+
+    <nav id="mainNav" class="navbar navbar-expand-lg py-lg-4 navbar-dark" style="padding: 23px 0px;">
+                <div class="container">
+                    <img class="logo-img " src="{{ asset('images/logo.png') }}" alt="logo ">
+                    <button class="navbar-toggler navbar-toggler-right" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
+                <div id="navbarResponsive" class="collapse navbar-collapse">
+                <ul class="navbar-nav flex-grow-1 justify-content-evenly">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Accueil</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/projects">Projets</a>
                 </li>
@@ -34,7 +38,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
+                        </ul>
+                    </div>
 
-            </ul>
-        </div>
-    </nav>
+                </div>
+            </nav>
