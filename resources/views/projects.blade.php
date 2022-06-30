@@ -5,7 +5,8 @@
             </div>
                 <div>
                     <h1> Bonjour !</h1> <br>
-                    <p>Je suis Laure Chapert, récemment diplômée du diplôme de développeur web et web mobile et en pleine recherche d'emploi en full remote idéalement ! </p>
+                    <p>Je suis Laure Chapert, récemment diplômée du diplôme de développeur web et web mobile et en pleine recherche d'emploi en full remote  ! </p>
                 </div>
+
         </div>
 @include('layouts/footer')

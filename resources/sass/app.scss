@@ -23,24 +23,23 @@ body {
     margin-top:0.5em;
 }
 p {
-    font-size: 2em;
+    font-size: 1em;
 }
 .presentation-img{
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    width: 400px;
+    width: 170px;
     border-radius: 50%;
+
 }
 .logo-img {
     width:250px;
     margin-left:1em;
+    margin-right: 2em;
 }
 .navbar-brand {
     margin-left: 2em;
 }
 .zoomIn {
 
-    width: 50%;
     margin: auto;
     margin-top: 5%;
     -webkit-animation-name: zoomIn;
