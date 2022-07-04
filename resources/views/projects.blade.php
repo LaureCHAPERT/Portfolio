@@ -1,5 +1,5 @@
 @include('layouts/navbar')
-<h1 class="text-center text-decoration-underline">Projet de fin de formation : Concert'O</h1>
+<h1 class="text-center text-decoration-underline"> --- Projet de fin de formation : Concert'O ---</h1>
 <div class="container zoomIn text-center justify-content-space-between">
   <div class="row">
     <div class="col-lg-6">
@@ -39,7 +39,7 @@
                         Scss/SASS /
                     </li>
                 </ul>
-                <a href="https://github.com/LaureCHAPERT/Concert-O-Front"> Repo GitHub </a>
+                <a href="https://github.com/LaureCHAPERT/Concert-O-Front"> Repo GitHub </a> <br>
 
     </div>
     <div class="col-lg-6 ">
@@ -65,6 +65,20 @@
                 </ul>
              <a href="https://github.com/LaureCHAPERT/Concerto-Back"> Repo GitHub </a>
         </div>
+  </div>
+  </div> <br><br><br>
+
+
+  <h1 class="text-center text-decoration-underline"> --- Ce même projet de portfolio --- </h1>
+<div class="container zoomIn bolder text-center" >
+  <div class="row">
+    <div>
+    <h2 class= "text-decoration-underline">Technologies utilisées : </h2> </br>
+        <p>  L'idée était de me familiariser avec <strong>Laravel</strong> que je connaissais peu. Lors de ma formation, nous avons expérimenté Lumen et Symfony sur quelques jours mais je souhaitais approfondir cela en partant, cette fois sur Laravel. Ce portfolio est un exemple très simple, mais je continue mon apprentissage à travers un autre projet guidé, notamment en manipulant une base de données.
+        Pour ce qui est du style, je continue à travailler avec <strong>Sass</strong> et <strong> Bootstrap</strong>.
+        </p>
+             <a href="https://github.com/LaureCHAPERT/Portfolio"> Repo GitHub </a>
+    </div>
   </div>
   </div>
 @include('layouts/footer')

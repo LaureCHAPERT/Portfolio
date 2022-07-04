@@ -5,7 +5,7 @@
                 <div class="col-lg-1"></div>
             <div class="col-lg-4">
                 <h1> Bonjour !</h1> <br>
-                <p>Je suis Laure Chapert, récemment diplômée du diplôme de développeur web et web mobile et en pleine recherche d'emploi en full remote idéalement ! </p>
+                <p>Je m'appelle Laure Chapert. Je suis récemment diplômée du diplôme de développeur web et web mobile et en pleine recherche d'emploi en full remote idéalement ! </p>
             </div>
             <div class="col-lg-4">
                     <h1> Hello !</h1> <br>
