@@ -31,13 +31,13 @@
                     <a class="nav-link" href="/">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/projects">Projets</a>
+                    <a class="nav-link" href="/projets">Projets</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Compétences</a>
+                    <a class="nav-link" href="/competences">Compétences</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="/contact">Contact</a>
                 </li>
                         </ul>
                     </div>
