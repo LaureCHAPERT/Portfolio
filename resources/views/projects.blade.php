@@ -1,6 +1,7 @@
 @include('layouts/navbar')
     <h1 class="text-center text-decoration-underline"> <span class="the-span"> --- Projet de fin de formation : Concert'O ---</span></h1>
         <div class="container zoomIn text-center justify-content-space-between">
+            {{--First row with 12 columns (grid bootstrap)--}}
             <div class="row">
                 <div class="col-lg-6">
                     <div class="embed-responsive embed-responsive-16by9">
@@ -16,6 +17,7 @@
             </div>
         </div>
     <div class="container zoomIn bolder" >
+    {{--Second row with 12 columns (grid bootstrap)--}}
         <div class="row">
             <div class="col-lg-6">
                 <h2 class= "text-decoration-underline">Technologies utilisées côté front : </br> </h2>
@@ -65,6 +67,7 @@
                 </div>
         </div>
     </div>
+    {{--To avoid the repetition of <br> we create an empty div with a defined height.--}}
   <div style="height:100px;display:block;"> </div>
 
   <h1 class="text-center text-decoration-underline"> <span class="the-span"> Ce même projet de portfolio 🐾 </span> </h1>

@@ -1,4 +1,5 @@
 @include('layouts/navbar')
+        {{-- We use Grid rules from Bootstrap to get a responsive design}}
         <div class="container-fluid zoomIn row">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-2"><img class="presentation-img " src="{{ asset('images/presentation.jpg') }}" alt="myself"></div>
