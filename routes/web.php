@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SkillsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +22,4 @@ Route::get('/projets', function () {
     return view ('projects');
 });
 
-Route::get('/competences', function () {
-    return view ('competences');
-});
+Route::get('/competences',[SkillsController::class, 'index']);
