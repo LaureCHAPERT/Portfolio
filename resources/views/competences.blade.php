@@ -1,21 +1,16 @@
 @include('layouts/navbar')
 
-<div id="competences">
-    <div className="skills">
-      <h1 className="skills-title"><span>*</span>Skills</h1>
-      <h2 className="subtitle"><span>•</span> Languages and frameworks</h2>
+<div id="container-fluid zoomIn competences ">
+<div className="skills m-auto container zoomIn text-center justify-content-space-between">">
+      <h1 className="skills-title">Compétences</h1>
+      <h2 className="subtitle"><span>•</span> Les langages, outils et frameworks que j’utilise</h2>
       <ul className="skills-list">
-      @foreach ($competences as $competence){
-        <p>echo $competence['array']->name</p>
-      }
-
-      @endforeach
-
-          <li className="skills-list-skill" key={skill.icon}>
-            <img src={skill.icon} alt="" className="skills-list-skill-icon" />
-            <p className="skills-list-skill-title">{skill.title}</p>
+        @foreach ($competences as $competence)
+          <li className="skills-list-skill" key="{{$competence['icon']}}">
+            <img src="{{$competence['icon']}}" alt="" className="skills-list-skill-icon" />
+            <p className="skills-list-skill-title">{{$competence['name']}}</p>
           </li>
-
+         @endforeach
       </ul>
     </div>
     <div className="secondary-skills">
