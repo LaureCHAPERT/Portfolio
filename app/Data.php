@@ -7,19 +7,19 @@ class Data{
     {
 	    return [
 		    // array data
-            array("name" => "HTML5", "icon" => 'public/images/skills/html5.svg'),
-            array("name" => "CSS3", "icon" => 'public/images/skills/css.svg' ),
-            array("name" => "Sass", "icon" => 'public/images/skills/html5.svg'),
-            array("name" => "Bootstrap", "icon" => 'public/images/skills/html5.svg'),
-            array("name" => "JavaScript", "icon" => 'public/images/skills/html5.svg'),
-            array("name" => "MySQL", "icon" => 'public/images/skills/html5.svg'),
-            array("name" => "PHP", "icon" => 'public/images/skills/html5.svg'),
-            array("name" => "React JS", "icon" => 'public/images/skills/html5.svg'),
-            array("name" => "Redux", "icon" => 'public/images/skills/html5.svg'),
-            array("name" => "GitHub", "icon" => 'public/images/skills/html5.svg'),
-            array("name" => "Trello", "icon" => 'public/images/skills/html5.svg'),
-            array("name" => "VSCode", "icon" => 'public/images/skills/html5.svg'),
-            array("name" => "Linux Ubuntu", "icon" => 'public/images/skills/html5.svg'),
+            array("name" => "HTML5", "icon" => 'html5.svg'),
+            array("name" => "CSS3", "icon" => 'css.svg' ),
+            array("name" => "Sass", "icon" => 'sass.svg'),
+            array("name" => "Bootstrap", "icon" => 'bootstrap.svg'),
+            array("name" => "JavaScript", "icon" => 'javascript.svg'),
+            array("name" => "MySQL", "icon" => 'mysql.svg'),
+            array("name" => "PHP", "icon" => 'php.svg'),
+            array("name" => "React JS", "icon" => 'react.svg'),
+            array("name" => "Redux", "icon" => 'redux.svg'),
+            array("name" => "GitHub", "icon" => 'github.svg'),
+            array("name" => "Trello", "icon" => 'trello.svg'),
+            array("name" => "VSCode", "icon" => 'vs-code.svg'),
+            array("name" => "Linux Ubuntu", "icon" => 'linux.svg'),
 	    ];
     }
 }

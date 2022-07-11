@@ -1,5 +1,50 @@
-#competences {
-  color: aqua;
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+.skills {
   margin-bottom: 10em;
   margin: 3em 0 2em 1em;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1440px) {
+  .skills-list {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .skills-list {
+    width: 70%;
+  }
+}
+.skills-list-skill {
+  background-color: white;
+  margin: 3em 3em 1em 0;
+  min-height: 7em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em;
+  border-radius: 0.5em;
+  font-size: 0.8em;
+  text-align: center;
+}
+@media screen and (max-width: 320px) {
+  .skills-list-skill {
+    width: 5em;
+  }
+}
+.skills-list-skill:nth-child(odd) img {
+  color: #fff;
+}
+.skills-list-skill:nth-child(even) img {
+  color: rgb(199, 62, 62);
+}
+.skills-list-skill:hover {
+  transition: 0.8s;
+  box-shadow: 0px 0px 20px 2px rgba(255, 255, 255, 0.4);
+}
+.skills-list-skill-icon {
+  width: 70px;
+  height: 70px;
 }

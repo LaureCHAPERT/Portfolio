@@ -1,5 +1,5 @@
 @include('layouts/navbar')
-    <h1 class="text-center text-decoration-underline"> <span class="the-span "> Projet de fin de formation : Concert'O </span></h1>
+    <h1 class="text-center "> <span class="the-span "> Projet de fin de formation : Concert'O </span></h1>
         <div class="container zoomIn text-center justify-content-space-between">
         {{--First row with 12 columns (grid bootstrap)--}}
             <div class="row">

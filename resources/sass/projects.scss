@@ -1,3 +1,5 @@
+// Variables
+@import 'variables';
 h1 {
     font-weight: bold;
 
@@ -19,15 +21,13 @@ a {
     text-align: center;
 }
 a:hover {
-    color: rgb(199, 62, 62);
+    color: $second-font-color;
 }
-a:visited{
-   color: rgb(214, 168, 168); ;
-}
+
 .portfolio-img {
     margin: auto;
 }
 strong {
-    color : rgb(199, 62, 62);
+    color : $second-font-color;
     font-weight: bold;
 }
