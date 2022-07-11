@@ -3,6 +3,10 @@ h1 {
   font-weight: bold;
 }
 
+.technology ul li {
+  color: #fff;
+}
+
 .the-span {
   display: inline-block;
   padding-bottom: 5px;
@@ -16,18 +20,20 @@ h1 {
 
 a {
   text-decoration: none;
-  color: rgb(209, 104, 104);
+  color: rgb(148, 54, 129);
   font-size: 1.7em;
   font-weight: bolder;
   text-align: center;
 }
 
-a:hover {
-  color: rgb(199, 62, 62);
+.arrow-icon {
+  filter: invert(100%);
+  transform: rotate(180deg);
+  width: 20px;
 }
 
-a:visited {
-  color: rgb(214, 168, 168);
+a:hover {
+  color: rgb(148, 54, 129);
 }
 
 .portfolio-img {
@@ -35,6 +41,6 @@ a:visited {
 }
 
 strong {
-  color: rgb(199, 62, 62);
+  color: rgb(148, 54, 129);
   font-weight: bold;
 }

@@ -10255,12 +10255,15 @@ textarea.form-control-lg {
 body {
   font-family: "Inconsolata", monospace;
   background-color: rgb(0, 0, 0);
-  color: #fff !important;
 }
 
 .navbar-brand {
   font-size: 3em;
   color: #fff !important;
+}
+
+h1, .h1, h2, .h2 {
+  color: #fff;
 }
 
 .nav-link {
@@ -10272,6 +10275,10 @@ body {
 
 p {
   font-size: 1.7em;
+}
+
+.paragraph {
+  color: #fff;
 }
 
 .presentation-img {

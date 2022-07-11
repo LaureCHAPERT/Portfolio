@@ -20,6 +20,7 @@ class Data{
             array("name" => "Trello", "icon" => 'trello.svg'),
             array("name" => "VSCode", "icon" => 'vs-code.svg'),
             array("name" => "Linux Ubuntu", "icon" => 'linux.svg'),
+            array("name" => "Laravel", "icon" => 'laravel.svg'),
 	    ];
     }
 }
