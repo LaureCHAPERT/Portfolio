@@ -1,0 +1,32 @@
+.contact {
+    margin-bottom: 10em;
+    margin: 3em 0 2em 1em;
+    &-title {
+
+    }
+    ul {
+        display: flex;
+        li{
+            width: 12em;
+
+            img{
+                padding: 1em;
+            }
+        }
+    }
+    &-image {
+        width: 150px;
+        filter: invert(18%) sepia(98%) saturate(2557%) hue-rotate(315deg) brightness(80%) contrast(100%);
+    }
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        @media screen and (min-width: 1440px) {
+          width: 60%;
+        }
+        @media screen and (min-width: 1024px) {
+          width: 70%;
+        }
+
+}
+}

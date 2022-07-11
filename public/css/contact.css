@@ -1,0 +1,31 @@
+.contact {
+  margin-bottom: 10em;
+  margin: 3em 0 2em 1em;
+}
+.contact ul {
+  display: flex;
+}
+.contact ul li {
+  width: 12em;
+}
+.contact ul li img {
+  padding: 1em;
+}
+.contact-image {
+  width: 150px;
+  filter: invert(18%) sepia(98%) saturate(2557%) hue-rotate(315deg) brightness(80%) contrast(100%);
+}
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1440px) {
+  .contact-list {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact-list {
+    width: 70%;
+  }
+}
