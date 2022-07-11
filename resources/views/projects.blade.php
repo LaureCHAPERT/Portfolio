@@ -1,4 +1,6 @@
 @include('layouts/navbar')
+    <h1 class="text-center "> <span class="the-span "> Projets </span></h1>
+    <div style="height:100px;display:block;"> </div>
     <h1 class="text-center "> <span class="the-span "> Projet de fin de formation : Concert'O </span></h1>
         <div class="container zoomIn text-center justify-content-space-between">
         {{--First row with 12 columns (grid bootstrap)--}}
