@@ -68,3 +68,8 @@
   color: #fff;
   font-size: 1.7em;
 }
+@media screen and (max-width: 320px) {
+  .secondary-skills-lists {
+    display: block;
+  }
+}

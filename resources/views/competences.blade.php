@@ -16,7 +16,7 @@
       <div style="height:50px;display:block;"> </div>
       <h2 class="subtitle text-center"> <span class="the-span "> Mes soft skills et autres compétences  </span></h2>
       <div style="height:50px;display:block;"> </div>
-      <div class="secondary-skills-lists d-flex justify-content-around">
+      <div class="secondary-skills-lists justify-content-around">
         <ul class="list">
           <li>Autonomie</li>
           <li>Sérieux</li>

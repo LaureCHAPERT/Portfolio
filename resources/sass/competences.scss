@@ -65,7 +65,11 @@
 }
 .secondary-skills {
     margin-top: 20em;
+
     &-lists {
+    @media screen and (max-width: 320px) {
+            display: block;
+          }
       display: flex;
       color: $font-color;
       font-size: 1.7em;
