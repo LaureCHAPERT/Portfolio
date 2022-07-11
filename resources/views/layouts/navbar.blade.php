@@ -37,6 +37,9 @@
                     <a class="nav-link" href="/competences">Compétences</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="/apropos">A propos</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="/contact">Contact</a>
                 </li>
                         </ul>

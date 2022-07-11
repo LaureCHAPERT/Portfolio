@@ -23,3 +23,8 @@ Route::get('/projets', function () {
 });
 
 Route::get('/competences',[SkillsController::class, 'index']);
+
+
+Route::get('/contact', function () {
+    return view('contact');
+});
