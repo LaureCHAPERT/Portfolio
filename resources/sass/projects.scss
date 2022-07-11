@@ -1,6 +1,11 @@
+// Variables
+@import 'variables';
 h1 {
     font-weight: bold;
 
+}
+.technology ul li  {
+    color: $font-color;
 }
 .the-span{
     display: inline-block;
@@ -13,21 +18,24 @@ h1 {
     }
 a {
     text-decoration: none;
-    color: rgb(209, 104, 104);
+    color: $second-font-color;
     font-size: 1.7em;
     font-weight: bolder;
     text-align: center;
 }
+.arrow-icon {
+    filter: invert(100%);
+    transform: rotate(180deg);
+    width: 20px;
+}
 a:hover {
-    color: rgb(199, 62, 62);
+    color: $second-font-color;
 }
-a:visited{
-   color: rgb(214, 168, 168); ;
-}
+
 .portfolio-img {
     margin: auto;
 }
 strong {
-    color : rgb(199, 62, 62);
+    color : $second-font-color;
     font-weight: bold;
 }

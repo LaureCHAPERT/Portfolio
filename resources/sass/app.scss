@@ -1,23 +1,22 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 body {
-    font-family: 'Inconsolata', monospace;
-    background-color: rgb(0, 0, 0);
-    color : white !important;
+    font-family: $font;
+    background-color: $body-bg;
 }
 .navbar-brand {
     font-size: 3em;
-    color : white !important;
+    color : $font-color !important;
 
 }
+h1, h2 {
+    color: $font-color;
+}
 .nav-link {
-    color: white !important;
+    color: $font-color !important;
     text-align: center;
     font-size: 2.5em;
     margin-top:0.5em;
@@ -25,7 +24,9 @@ body {
 p {
     font-size: 1.7em;
 }
-
+.paragraph {
+    color: $font-color;
+}
 .presentation-img{
     width: 200px;
     border-radius: 30%;
