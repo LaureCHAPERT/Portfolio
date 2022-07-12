@@ -14,14 +14,12 @@ h1 {
 }
 
 .inline li {
-  font-size: 1.7em;
   display: inline;
 }
 
-a {
+.github-link {
   text-decoration: none;
   color: rgb(148, 54, 129);
-  font-size: 1.7em;
   font-weight: bolder;
   text-align: center;
 }

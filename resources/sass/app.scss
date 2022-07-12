@@ -7,8 +7,11 @@ body {
     font-family: $font;
     background-color: $body-bg;
 }
+p, li, a{
+    font-size: 1em;
+}
 .navbar-brand {
-    font-size: 3em;
+
     color : $font-color !important;
 
 }
@@ -18,12 +21,10 @@ h1, h2 {
 .nav-link {
     color: $font-color !important;
     text-align: center;
-    font-size: 2.5em;
     margin-top:0.5em;
+    font-size: 1.8em;
 }
-p {
-    font-size: 1.7em;
-}
+
 .paragraph {
     color: $font-color;
 }

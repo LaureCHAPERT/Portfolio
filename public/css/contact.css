@@ -1,31 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
 .contact {
-  margin-bottom: 10em;
-  margin: 3em 0 2em 1em;
-}
-.contact ul {
   display: flex;
+  align-items: center;
 }
-.contact ul li {
-  width: 12em;
+.contact-title {
+  margin-bottom: 3em;
 }
-.contact ul li img {
-  padding: 1em;
-}
-.contact-image {
-  width: 150px;
-  filter: invert(18%) sepia(98%) saturate(2557%) hue-rotate(315deg) brightness(80%) contrast(100%);
+.contact-part-one {
+  background-color: #1e1c1f;
+  border-radius: 2em;
 }
 .contact-list {
+  list-style-type: none;
+}
+.contact-list-item {
   display: flex;
-  flex-wrap: wrap;
+  margin-top: 2.5em;
 }
-@media screen and (min-width: 1440px) {
-  .contact-list {
-    width: 60%;
+.contact-list-item-image {
+  filter: brightness(0) saturate(100%) invert(91%) sepia(12%) saturate(774%) hue-rotate(255deg) brightness(96%) contrast(94%);
+  width: 70px;
+}
+.contact-list-item-title {
+  margin-left: 1em;
+  color: #fff;
+  margin-top: 7%;
+  overflow: auto;
+}
+.contact-part-two {
+  padding: 1em;
+  background-color: #1e1c1f;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 2em;
+  display: flex;
+}
+@media screen and (max-width: 320px) {
+  .contact-part-two {
+    display: block;
   }
 }
-@media screen and (min-width: 1024px) {
-  .contact-list {
-    width: 70%;
+@media screen and (min-width: 768px) {
+  .contact-part-two {
+    text-align: center;
   }
+}
+.contact-part-two-link {
+  color: white;
+  margin: 2em;
+  padding: 2em;
 }

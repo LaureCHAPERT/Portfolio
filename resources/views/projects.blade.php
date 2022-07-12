@@ -4,7 +4,7 @@
     <h1 class="text-center "> <span class="the-span "> Projet de fin de formation : Concert'O </span></h1>
         <div class="container zoomIn text-center justify-content-space-between">
         {{--First row with 12 columns (grid bootstrap)--}}
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="embed-responsive embed-responsive-16by9">
                         <video src="{{ asset('videos/concerto.mp4') }}" autoplay controls></video>
@@ -41,7 +41,7 @@
                             Scss/SASS /
                         </li>
                     </ul>
-                        <a href="https://github.com/LaureCHAPERT/Concert-O-Front"> Repo GitHub <img class="arrow-icon " src="{{ asset('images/icons/arrow.svg') }}" alt="arrow-icon"></a> <br>
+                        <a class="github-link "href="https://github.com/LaureCHAPERT/Concert-O-Front"> Repo GitHub <img class="arrow-icon " src="{{ asset('images/icons/arrow.svg') }}" alt="arrow-icon"></a> <br>
 
             </div>
                 <div class="technology col-lg-6 ">
@@ -65,7 +65,7 @@
                             </li>
 
                         </ul>
-                            <a href="https://github.com/LaureCHAPERT/Concerto-Back"> Repo GitHub <img class="arrow-icon " src="{{ asset('images/icons/arrow.svg') }}" alt="arrow-icon"></a>
+                            <a class="github-link" href="https://github.com/LaureCHAPERT/Concerto-Back"> Repo GitHub <img class="arrow-icon " src="{{ asset('images/icons/arrow.svg') }}" alt="arrow-icon"></a>
                 </div>
         </div>
     </div>
@@ -81,7 +81,7 @@
                     <p class="paragraph">  L'idée était de me familiariser avec <strong>Laravel</strong> que je connaissais peu. J'ai déjà pu travailler avec Symfony lors de notre projet de fin de formation avec mes collègues qui travaillaient sur la partie back-end. Lors de ma formation, nous avons également expérimenté Lumen sur quelques jours mais je souhaitais approfondir cela en partant, cette fois sur Laravel. Ce portfolio est un exemple très simple, mais je continue mon apprentissage à travers un autre projet guidé sur Laracasts, notamment en manipulant une base de données.
                     Pour ce qui est du style, je continue à travailler avec <strong>Sass</strong> et <strong> Bootstrap</strong>.
                     </p>
-                        <a href="https://github.com/LaureCHAPERT/Portfolio"> Repo GitHub <img class="arrow-icon " src="{{ asset('images/icons/arrow.svg') }}" alt="arrow-icon"></a>
+                        <a class="github-link" href="https://github.com/LaureCHAPERT/Portfolio"> Repo GitHub <img class="arrow-icon " src="{{ asset('images/icons/arrow.svg') }}" alt="arrow-icon"></a>
             </div>
         </div>
   </div>
