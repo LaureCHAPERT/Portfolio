@@ -7,9 +7,7 @@ body {
     font-family: $font;
     background-color: $body-bg;
 }
-p, li, a{
-    font-size: 1em;
-}
+
 .navbar-brand {
 
     color : $font-color !important;
@@ -27,6 +25,7 @@ h1, h2 {
 
 .paragraph {
     color: $font-color;
+    font-size: 1.1em;
 }
 .presentation-img{
     width: 200px;

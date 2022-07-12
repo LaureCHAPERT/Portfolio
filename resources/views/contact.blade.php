@@ -1,5 +1,5 @@
 @include('layouts/navbar')
-<h1 class="contact-title text-center "> <span class="the-span "> Travaillons ensemble &#129321</span></h1>
+<h1 class="contact-title text-center"> <span >Travaillons ensemble<img class="contact-title-cat mb-4" src="{{ asset('images/cat.svg') }}" alt="logocat "></span></h1>
 
     <div class="contact container  zoomIn m-auto justify-content-evenly row">
                     <div class="contact-part-one text-center col-lg-6 col-md-6 col-sm-12 mb-4">
@@ -28,8 +28,8 @@
                         </ul>
                     </div>
                     <div class="contact-part-two col-lg-5 col-md-10 col-sm12">
-                    <a class="contact-part-two-link" href="https://github.com/LaureCHAPERT/Concert-O-Front"> M'envoyer un mail <img class="arrow-icon " src="{{ asset('images/icons/arrow.svg') }}" alt="arrow-icon"></a> <br>
-                    <a class="contact-part-two-link" href="https://github.com/LaureCHAPERT/Concert-O-Front"> Télécharger mon CV <img class="arrow-icon " src="{{ asset('images/icons/arrow.svg') }}" alt="arrow-icon"></a> <br>
+                    <a class="contact-part-two-link" href="mailto:laure.chapert@gmail.com"> M'envoyer un mail <img class="arrow-icon " src="{{ asset('images/icons/arrow.svg') }}" alt="arrow-icon"></a> <br>
+                    <a class="contact-part-two-link" href="/download"> Télécharger mon CV <img class="arrow-icon " src="{{ asset('images/icons/arrow.svg') }}" alt="arrow-icon"></a> <br>
         </div>
         </div>
 

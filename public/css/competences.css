@@ -3,6 +3,10 @@
   margin-bottom: 10em;
   margin: 3em 0 2em 1em;
 }
+.skills-title-underline {
+  text-decoration: underline;
+  text-underline-position: under;
+}
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -10,11 +14,6 @@
 @media screen and (min-width: 1440px) {
   .skills-list {
     width: 60%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .skills-list {
-    width: 70%;
   }
 }
 .skills-list-skill {
@@ -58,6 +57,7 @@
 }
 .skills-list-skill-title {
   color: #fff;
+  font-size: 1.7em;
 }
 
 .secondary-skills {
@@ -71,4 +71,7 @@
   .secondary-skills-lists {
     display: block;
   }
+}
+.secondary-skills-lists-list {
+  font-size: 1.3em;
 }

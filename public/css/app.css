@@ -10257,10 +10257,6 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-p, li, a {
-  font-size: 1em;
-}
-
 .navbar-brand {
   color: #fff !important;
 }
@@ -10278,6 +10274,7 @@ h1, .h1, h2, .h2 {
 
 .paragraph {
   color: #fff;
+  font-size: 1.1em;
 }
 
 .presentation-img {

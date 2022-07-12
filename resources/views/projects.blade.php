@@ -1,10 +1,11 @@
 @include('layouts/navbar')
-    <h1 class="text-center "> <span class="the-span "> Projets </span></h1>
-    <div style="height:100px;display:block;"> </div>
-    <h1 class="text-center "> <span class="the-span "> Projet de fin de formation : Concert'O </span></h1>
-        <div class="container zoomIn text-center justify-content-space-between">
+<div class="zoomIn">
+    <h1 class="title text-center "> <span class="title"> Projets </span></h1>
+
+    <h1 class="title text-center "> <span class="title"> Projet de fin de formation : Concert'O </span></h1>
+        <div class="container  text-center justify-content-space-between">
         {{--First row with 12 columns (grid bootstrap)--}}
-            <div class="row align-items-center">
+            <div class="row align-items-center mt-5">
                 <div class="col-lg-6">
                     <div class="embed-responsive embed-responsive-16by9">
                         <video src="{{ asset('videos/concerto.mp4') }}" autoplay controls></video>
@@ -18,13 +19,13 @@
                     </div>
             </div>
         </div>
-    <div class="container zoomIn bolder" >
+    <div class="container" >
          {{--Second row with 12 columns (grid bootstrap)--}}
         <div class="row">
             <div class="technology col-lg-6">
-                <h2 class= "text-decoration-underline">Technologies utilisées côté front : </br> </h2>
-                    <ul class="inline">
-                        <li >
+                <h2 class= "title">Technologies utilisées côté front : </br> </h2>
+                    <ul class=" inline">
+                        <li  >
                             React /
                         </li>
                         <li >
@@ -45,8 +46,8 @@
 
             </div>
                 <div class="technology col-lg-6 ">
-                    <h2 class= "text-decoration-underline">Technologies utilisées côté back : </br> </h2>
-                        <ul class="inline">
+                    <h2 class= "title">Technologies utilisées côté back : </br> </h2>
+                        <ul class=" inline">
                             <li>
                                 Symfony /
                             </li>
@@ -69,20 +70,19 @@
                 </div>
         </div>
     </div>
-    {{--To avoid the repetition of <br> we create an empty div with a defined height.--}}
-  <div style="height:100px;display:block;"> </div>
 
-  <h1 class="text-center text-decoration-underline"> <span class="the-span"> Ce même projet de portfolio 🐾 </span> </h1>
-    <div class="container zoomIn bolder text-center" >
+  <h1 class="text-center title"> <span class="title-underline"> Ce même projet de portfolio 🐾 </span> </h1>
+    <div class="container text-center" >
         <div class="row">
             <div>
 
-                <h2 class= "text-decoration-underline">Technologies utilisées : </h2> </br>
+                <h2 class= "title">Technologies utilisées : </h2> </br>
                     <p class="paragraph">  L'idée était de me familiariser avec <strong>Laravel</strong> que je connaissais peu. J'ai déjà pu travailler avec Symfony lors de notre projet de fin de formation avec mes collègues qui travaillaient sur la partie back-end. Lors de ma formation, nous avons également expérimenté Lumen sur quelques jours mais je souhaitais approfondir cela en partant, cette fois sur Laravel. Ce portfolio est un exemple très simple, mais je continue mon apprentissage à travers un autre projet guidé sur Laracasts, notamment en manipulant une base de données.
                     Pour ce qui est du style, je continue à travailler avec <strong>Sass</strong> et <strong> Bootstrap</strong>.
                     </p>
                         <a class="github-link" href="https://github.com/LaureCHAPERT/Portfolio"> Repo GitHub <img class="arrow-icon " src="{{ asset('images/icons/arrow.svg') }}" alt="arrow-icon"></a>
             </div>
         </div>
+  </div>
   </div>
 @include('layouts/footer')

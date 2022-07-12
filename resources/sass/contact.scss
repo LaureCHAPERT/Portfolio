@@ -6,6 +6,18 @@
     align-items: center;
     &-title{
         margin-bottom: 3em;
+        text-decoration: underline;
+        text-underline-position: under;
+        &-the-span {
+                display: inline-block;
+                padding-bottom: 2px;
+                border-bottom: 1px solid white;
+
+        }
+        &-cat {
+            width: 140px;
+            filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(259deg) brightness(100%) contrast(105%);
+        }
     }
     &-part-one {
 
@@ -46,6 +58,7 @@
             color: white;
             margin: 2em;
             padding: 2em;
+            font-size: 1.3em;
         }
     }
 

@@ -3,16 +3,21 @@
 .skills {
     margin-bottom: 10em;
     margin: 3em 0 2em 1em;
+    &-title {
+        &-underline {
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+    }
 
     &-list {
+
         display: flex;
         flex-wrap: wrap;
         @media screen and (min-width: 1440px) {
           width: 60%;
         }
-        @media screen and (min-width: 1024px) {
-          width: 70%;
-        }
+
         &-skill {
 
         @media screen and (max-width: 320px) {
@@ -58,7 +63,9 @@
           }
           &-title {
               color : $font-color;
-          }
+              font-size: 1.7em;
+         }
+
         }
     }
 
@@ -71,6 +78,9 @@
           }
       display: flex;
       color: $font-color;
+      &-list {
+        font-size: 1.3em;
+      }
     }
   }
 

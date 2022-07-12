@@ -1,8 +1,8 @@
 @include('layouts/navbar')
 <div class="skills zoomIn">
-    <h1 class="skills-title text-center "> <span class="the-span "> Compétences </span></h1>
+    <h1 class="skills-title text-center "> <span class="skills-title-underline"> Compétences </span></h1>
     <div style="height:50px;display:block;"> </div>
-    <h2 class="subtitle text-center"> <span class="the-span "> Les langages, outils et frameworks que j’utilise </span></h2>
+    <h2 class="subtitle text-center"> <span class="skills-title-underline"> Les langages, outils et frameworks que j’utilise </span></h2>
     <div style="height:50px;display:block;"> </div>
 
       <ul class="skills-list text-center m-auto">
@@ -14,10 +14,10 @@
          @endforeach
       </ul>
       <div style="height:50px;display:block;"> </div>
-      <h2 class="subtitle text-center"> <span class="the-span "> Mes soft skills et autres compétences  </span></h2>
+      <h2 class="subtitle text-center"> <span class="skills-title-underline"> Mes soft skills et autres compétences  </span></h2>
       <div style="height:50px;display:block;"> </div>
       <div class="secondary-skills-lists justify-content-around">
-        <ul class="list">
+        <ul class="secondary-skills-lists-list">
           <li>Autonomie</li>
           <li>Sérieux</li>
           <li>Curiosité</li>
@@ -26,7 +26,7 @@
           <li>Réactivité</li>
           <li>Collaboration</li>
         </ul>
-        <ul class="list">
+        <ul class="secondary-skills-lists-list">
           <li>PHP &amp; POO</li>
           <li>MVC</li>
           <li>SGBDR</li>

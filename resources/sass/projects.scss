@@ -1,25 +1,27 @@
 // Variables
 @import 'variables';
-h1 {
-    font-weight: bold;
 
-}
 .technology ul li  {
     color: $font-color;
 }
-.the-span{
-    display: inline-block;
-    padding-bottom: 5px;
-    border-bottom: 1px solid white;
+.title {
+    margin-top: 1.5em;
+
+        text-decoration: underline;
+        text-underline-position: under;
+
 }
+
 .inline li {
     display: inline;
+    font-size: 1.3em;
     }
 .github-link {
     text-decoration: none;
     color: $second-font-color;
     font-weight: bolder;
     text-align: center;
+    font-size: 1.3em;
 }
 .arrow-icon {
     filter: invert(100%);
