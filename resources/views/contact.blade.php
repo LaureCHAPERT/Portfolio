@@ -41,7 +41,7 @@
                     </div>
                     <div class="contact-part-two col-lg-5 col-md-10 col-sm12">
                     <a class="contact-part-two-link" href="mailto:laure.chapert@gmail.com"> M'envoyer un mail <img class="arrow-icon " src="{{ asset('images/icons/arrow.svg') }}" alt="arrow-icon"></a> <br>
-                    <a class="contact-part-two-link" href="/download"> Télécharger mon CV <img class="arrow-icon " src="{{ asset('images/icons/arrow.svg') }}" alt="arrow-icon"></a> <br>
+                    <a class="contact-part-two-link" href="{{ url('/download/CV.pdf')  }}"> Télécharger mon CV <img class="arrow-icon " src="{{ asset('images/icons/arrow.svg') }}" alt="arrow-icon"></a> <br>
         </div>
         </div>
 

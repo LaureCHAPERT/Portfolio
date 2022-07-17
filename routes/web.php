@@ -29,4 +29,4 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/download',[ContactController::class, 'download']);
+Route::get('/download/{CV}',[ContactController::class, 'download']);
