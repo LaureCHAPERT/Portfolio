@@ -5,13 +5,23 @@
     width: 70%;
     &-first {
         display: flex;
-
+        align-items: center;
+        @media screen and (max-width: 768px) {
+            display: block;
+          }
         &-img {
 
             &-shiba{
                 width: 200px;
-            filter: invert(18%) sepia(98%) saturate(2557%) hue-rotate(
-            315deg) brightness(80%) contrast(100%);
+                filter: brightness(0) saturate(100%) invert(71%) sepia(31%) saturate(913%) hue-rotate(353deg) brightness(97%) contrast(97%);
+            }
+            &-dango{
+                width: 200px;
+                filter: brightness(0) saturate(100%) invert(66%) sepia(32%) saturate(5834%) hue-rotate(228deg) brightness(100%) contrast(90%);
+            }
+            &-octopus{
+                width: 200px;
+                filter: brightness(0) saturate(100%) invert(67%) sepia(60%) saturate(387%) hue-rotate(108deg) brightness(99%) contrast(91%);
             }
         }
     }
