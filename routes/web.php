@@ -29,4 +29,8 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/apropos', function () {
+    return view('about');
+});
+
 Route::get('/download/{CV}',[ContactController::class, 'download']);

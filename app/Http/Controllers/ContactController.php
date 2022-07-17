@@ -21,7 +21,7 @@ class ContactController extends Controller
             return Response::download( $file_path, $filename, $headers );
         } else {
             // Error
-            exit( 'Requested file does not exist on our server!' );
+            exit( 'Le fichier demandé n\'existe pas ' );
         }
     }
 }

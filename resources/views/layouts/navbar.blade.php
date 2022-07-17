@@ -18,6 +18,7 @@
         <link href="{{ asset('css/projects.css') }}" rel="stylesheet">
         <link href="{{ asset('css/competences.css') }}" rel="stylesheet">
         <link href="{{ asset('css/contact.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/about.css') }}" rel="stylesheet">
     </head>
     <body class="antialiased">
 

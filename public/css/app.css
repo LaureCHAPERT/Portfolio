@@ -10279,7 +10279,9 @@ h1, .h1, h2, .h2 {
 
 .presentation-img {
   width: 200px;
-  border-radius: 30%;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
 }
 
 .logo-img {
@@ -10292,7 +10294,13 @@ h1, .h1, h2, .h2 {
   margin-left: 1.3em;
 }
 
+.presentation-paragraph {
+  width: 50%;
+  margin: auto;
+}
+
 .zoomIn {
+  margin-top: 8%;
   margin: auto;
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
