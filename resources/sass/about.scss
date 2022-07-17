@@ -1,0 +1,42 @@
+// Variables
+@import 'variables';
+.about {
+    color : $font-color;
+    width: 70%;
+    &-first {
+        margin-bottom: 2em;
+        display: flex;
+        align-items: center;
+        @media screen and (max-width:768px) {
+            display: block;
+
+        }
+        &-responsive {
+            margin-bottom: 2em;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width:768px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        }
+        &-img {
+
+            &-shiba{
+                width: 200px;
+                filter: brightness(0) saturate(100%) invert(71%) sepia(31%) saturate(913%) hue-rotate(353deg) brightness(97%) contrast(97%);
+            }
+            &-dango{
+                width: 200px;
+                filter: brightness(0) saturate(100%) invert(66%) sepia(32%) saturate(5834%) hue-rotate(228deg) brightness(100%) contrast(90%);
+            }
+            &-dog{
+                width: 200px;
+                filter: brightness(0) saturate(100%) invert(63%) sepia(58%) saturate(343%) hue-rotate(110deg) brightness(95%) contrast(88%);
+            }
+        }
+    }
+}
+

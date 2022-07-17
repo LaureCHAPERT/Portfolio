@@ -17,6 +17,7 @@
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(259deg) brightness(100%) contrast(105%);
 }
 .contact-part-one {
+  border: 1px solid rosybrown;
   background-color: #1e1c1f;
   border-radius: 2em;
 }
@@ -45,6 +46,7 @@
   overflow: auto;
 }
 .contact-part-two {
+  border: 1px solid rosybrown;
   padding: 1em;
   background-color: #1e1c1f;
   height: -webkit-fit-content;

@@ -1,1 +1,37 @@
-
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+.about {
+  color: #fff;
+  width: 70%;
+}
+.about-first {
+  margin-bottom: 2em;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .about-first {
+    display: block;
+  }
+}
+.about-first-responsive {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .about-first-responsive {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.about-first-img-shiba {
+  width: 200px;
+  filter: brightness(0) saturate(100%) invert(71%) sepia(31%) saturate(913%) hue-rotate(353deg) brightness(97%) contrast(97%);
+}
+.about-first-img-dango {
+  width: 200px;
+  filter: brightness(0) saturate(100%) invert(66%) sepia(32%) saturate(5834%) hue-rotate(228deg) brightness(100%) contrast(90%);
+}
+.about-first-img-dog {
+  width: 200px;
+  filter: brightness(0) saturate(100%) invert(63%) sepia(58%) saturate(343%) hue-rotate(110deg) brightness(95%) contrast(88%);
+}
