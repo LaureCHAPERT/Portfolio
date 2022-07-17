@@ -10258,7 +10258,6 @@ body {
 }
 
 .navbar-brand {
-  font-size: 3em;
   color: #fff !important;
 }
 
@@ -10269,16 +10268,13 @@ h1, .h1, h2, .h2 {
 .nav-link {
   color: #fff !important;
   text-align: center;
-  font-size: 2.5em;
   margin-top: 0.5em;
-}
-
-p {
-  font-size: 1.7em;
+  font-size: 1.8em;
 }
 
 .paragraph {
   color: #fff;
+  font-size: 1.1em;
 }
 
 .presentation-img {
@@ -10298,7 +10294,6 @@ p {
 
 .zoomIn {
   margin: auto;
-  margin-top: 5%;
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
   -webkit-animation-duration: 1s;

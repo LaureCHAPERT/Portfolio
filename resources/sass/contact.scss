@@ -1,0 +1,82 @@
+// Variables
+@import 'variables';
+.contact {
+
+    display: flex;
+    align-items: center;
+    &-title{
+        text-decoration: underline;
+        text-underline-position: under;
+        &-the-span {
+                display: inline-block;
+                padding-bottom: 2px;
+                border-bottom: 1px solid white;
+
+        }
+        &-cat {
+            width: 140px;
+            filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(259deg) brightness(100%) contrast(105%);
+        }
+    }
+    &-part-one {
+
+        background-color: #1e1c1f;
+        border-radius: 2em;
+    }
+    &-list {
+        list-style-type: none;
+
+        &-item {
+            display: flex;
+            margin-top: 2.5em;
+            font-size: 1.3em;
+            &-image {
+                filter: brightness(0) saturate(100%) invert(91%) sepia(12%) saturate(774%) hue-rotate(255deg) brightness(96%) contrast(94%);;
+                width: 70px;
+            }
+            &-title {
+                margin-left: 1em;
+                color: $font-color;
+                overflow: auto;
+                padding-top: 3%;
+
+                &-linked {
+                    padding-top: 25%;
+                    margin-left: 1em;
+                    color: $font-color;
+                    overflow: auto;
+
+                }
+            }
+        }
+    }
+    &-part-two {
+        padding: 1em;
+        background-color: #1e1c1f;
+        height: fit-content;
+        border-radius: 2em;
+        @media screen and (max-width: 425px) {
+            display: block;
+          }
+        @media screen and (min-width : 1024px) {
+            display: block;
+        }
+        @media screen and (min-width : 1440px) {
+            display: flex;
+        }
+        @media screen and (min-width: 768px) {
+            text-align: center;
+          }
+        &-link{
+            color: white;
+            margin: 2em;
+            padding: 2em;
+            font-size: 1.3em;
+        }
+    }
+
+}
+
+.paragraph-link {
+    text-decoration: none;
+}

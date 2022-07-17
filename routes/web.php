@@ -28,3 +28,5 @@ Route::get('/competences',[SkillsController::class, 'index']);
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/download/{CV}',[ContactController::class, 'download']);

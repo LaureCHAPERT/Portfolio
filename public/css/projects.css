@@ -1,29 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-h1 {
-  font-weight: bold;
-}
-
 .technology ul li {
   color: #fff;
 }
 
-.the-span {
-  display: inline-block;
-  padding-bottom: 5px;
-  border-bottom: 1px solid white;
+.title {
+  margin-top: 1.5em;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 .inline li {
-  font-size: 1.7em;
   display: inline;
+  font-size: 1.3em;
 }
 
-a {
+.github-link {
   text-decoration: none;
   color: rgb(148, 54, 129);
-  font-size: 1.7em;
   font-weight: bolder;
   text-align: center;
+  font-size: 1.3em;
 }
 
 .arrow-icon {
