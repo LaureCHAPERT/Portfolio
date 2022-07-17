@@ -1194,11 +1194,11 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
+/******/ 			"css/about": 0,
 /******/ 			"css/contact": 0,
 /******/ 			"css/competences": 0,
 /******/ 			"css/projects": 0,
-/******/ 			"css/app": 0,
-/******/ 			"css/about": 0
+/******/ 			"css/app": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1248,12 +1248,12 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/contact","css/competences","css/projects","css/app","css/about"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/contact","css/competences","css/projects","css/app","css/about"], () => (__webpack_require__("./resources/sass/app.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/contact","css/competences","css/projects","css/app","css/about"], () => (__webpack_require__("./resources/sass/projects.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/contact","css/competences","css/projects","css/app","css/about"], () => (__webpack_require__("./resources/sass/competences.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/contact","css/competences","css/projects","css/app","css/about"], () => (__webpack_require__("./resources/sass/contact.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/contact","css/competences","css/projects","css/app","css/about"], () => (__webpack_require__("./resources/sass/about.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/about","css/contact","css/competences","css/projects","css/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/about","css/contact","css/competences","css/projects","css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/about","css/contact","css/competences","css/projects","css/app"], () => (__webpack_require__("./resources/sass/projects.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/about","css/contact","css/competences","css/projects","css/app"], () => (__webpack_require__("./resources/sass/competences.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/about","css/contact","css/competences","css/projects","css/app"], () => (__webpack_require__("./resources/sass/contact.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/about","css/contact","css/competences","css/projects","css/app"], () => (__webpack_require__("./resources/sass/about.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

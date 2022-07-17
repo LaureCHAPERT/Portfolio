@@ -1,0 +1,19 @@
+// Variables
+@import 'variables';
+.about {
+    color : $font-color;
+    width: 70%;
+    &-first {
+        display: flex;
+
+        &-img {
+
+            &-shiba{
+                width: 200px;
+            filter: invert(18%) sepia(98%) saturate(2557%) hue-rotate(
+            315deg) brightness(80%) contrast(100%);
+            }
+        }
+    }
+}
+

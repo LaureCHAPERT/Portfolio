@@ -1,12 +1,12 @@
 @include('layouts/navbar')
-{{-- We use Grid rules from Bootstrap to get a responsive design--}}
+
         <div class="container-fluid zoomIn">
 
                 <div class=""><img class="presentation-img " src="{{ asset('images/presentation.jpg') }}" alt="myself"></div>
 
                 <div class="presentation-paragraph">
                     <h1> Bonjour !</h1> <br>
-                    <p class="paragraph">Je m'appelle Laure Chapert. Anciennement technicienne du son et plus récemment conseillère de vente en multimédia, j'ai entamé une reconversion professionnelle dans un domaine qui me passionne depuis toujours : l'informatique. <br> Je suis récemment diplômée du titre de développeur web et web mobile et en pleine recherche d'emploi en full remote idéalement !
+                    <p class="paragraph">Je m'appelle Laure Chapert. <br> Récemment diplômée du titre de développeur web et web mobile, je suis en pleine recherche d'emploi en full remote idéalement !
                     Si vous souhaitez en apprendre un peu plus sur mon parcours, rendez-vous <a href="/apropos">ICI</a> !
 
                     </p>

@@ -1,1 +1,12 @@
-
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+.about {
+  color: #fff;
+  width: 70%;
+}
+.about-first {
+  display: flex;
+}
+.about-first-img-shiba {
+  width: 200px;
+  filter: invert(18%) sepia(98%) saturate(2557%) hue-rotate(315deg) brightness(80%) contrast(100%);
+}
