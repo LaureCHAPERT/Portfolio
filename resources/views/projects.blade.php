@@ -1,8 +1,8 @@
 @include('layouts/navbar')
 <div class="zoomIn">
-    <h1 class="title text-center "> <span class="title"> Projets </span></h1>
+    <h1 class="main-title text-center "> <span class="title"> Projets </span></h1>
 
-    <h1 class="title text-center "> <span class="title"> Projet de fin de formation : Concert'O </span></h1>
+    <h1 class="title text-center "> <span class="title"> 1/ Projet de fin de formation : Concert'O </span></h1>
         <div class="container  text-center justify-content-space-between">
         {{--First row with 12 columns (grid bootstrap)--}}
             <div class="row align-items-center mt-5">
@@ -71,10 +71,10 @@
         </div>
     </div>
 
-  <h1 class="text-center title"> <span class="title-underline"> Ce même projet de portfolio 🐾 </span> </h1>
-    <div class="container text-center" >
+  <h1 class="text-center title"> <span class="title-underline"> 2/ Ce même projet de portfolio 🐾 </span> </h1>
+    <div class="container text-center mb-4" >
         <div class="row">
-            <div>
+            <div class="mb-4">
 
                 <h2 class= "title">Technologies utilisées : </h2> </br>
                     <p class="paragraph">  L'idée était de me familiariser avec <strong>Laravel</strong> que je connaissais peu. J'ai déjà pu travailler avec Symfony lors de notre projet de fin de formation avec mes collègues qui travaillaient sur la partie back-end. Lors de ma formation, nous avons également expérimenté Lumen sur quelques jours mais je souhaitais approfondir cela en partant, cette fois sur Laravel. Ce portfolio est un exemple très simple, mais je continue mon apprentissage à travers un autre projet guidé sur Laracasts, notamment en manipulant une base de données.

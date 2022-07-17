@@ -4,25 +4,37 @@
     <div class="contact container  zoomIn m-auto justify-content-evenly row">
                     <div class="contact-part-one text-center col-lg-6 col-md-6 col-sm-12 mb-4">
                         <ul class="contact-list">
-                            <li class="contact-list-item" key="linkedin"> <a href="">
-                                <img src="{{asset('/images/icons/linkedin.svg')}}" alt="" class="contact-list-item-image" /></a>
-                                <p class="contact-list-item-title">Linkedin</p>
-                            </li>
                             <li class="contact-list-item" key="linkedin">
-                                <img src="{{asset('/images/icons/mail.svg')}}" alt="" class="contact-list-item-image"/>
+                                <a href="https://www.linkedin.com/in/laurechapert/" >
+                                    <img src="{{asset('/images/icons/linkedin.svg')}}" alt="linkedin-logo" class="contact-list-item-image" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/laurechapert/" class="paragraph-link">
+                                    <p class="contact-list-item-title-linked">Linkedin</p>
+                                </a>
+                            </li>
+                            <li class="contact-list-item" key="mail">
+                                <img src="{{asset('/images/icons/mail.svg')}}" alt="mail-logo" class="contact-list-item-image"/>
                                 <p class="contact-list-item-title">laure.chapert@gmail.com</p>
                             </li>
-                            <li class="contact-list-item" key="linkedin">
-                                <img src="{{asset('/images/icons/phone.svg')}}" alt="" class="contact-list-item-image" />
+                            <li class="contact-list-item" key="phone">
+                                <img src="{{asset('/images/icons/phone.svg')}}" alt="phone-logo" class="contact-list-item-image" />
                                 <p class="contact-list-item-title">06.51.72.57.52 </p>
                             </li>
                             <li class="contact-list-item" key="stackovf">
-                                <img src="{{asset('/images/icons/stackovf.svg')}}" alt="" class="contact-list-item-image" />
-                                <p class="contact-list-item-title">StackOverflow</p>
+                                <a href="https://stackoverflow.com/users/18853924/laure-chapert">
+                                    <img src="{{asset('/images/icons/stackovf.svg')}}" alt="stackoverflow-logo" class="contact-list-item-image" />
+                                </a>
+                                <a href="https://stackoverflow.com/users/18853924/laure-chapert" class="paragraph-link">
+                                    <p class="contact-list-item-title-linked">StackOverflow</p>
+                                </a>
                             </li>
-                            <li class="contact-list-item" key="linkedin"> <a href="">
-                                <img src="{{asset('/images/skills/github.svg')}}" alt="" class="contact-list-item-image" /></a>
-                                <p class="contact-list-item-title">GitHub</p>
+                            <li class="contact-list-item" key="github">
+                                <a href="https://github.com/LaureCHAPERT">
+                                    <img src="{{asset('/images/skills/github.svg')}}" alt="github logo" class="contact-list-item-image" />
+                                </a>
+                                <a href="https://github.com/LaureCHAPERT" class="paragraph-link">
+                                    <p class="contact-list-item-title-linked">GitHub</p>
+                                </a>
                             </li>
 
                         </ul>
