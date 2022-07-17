@@ -4,6 +4,7 @@
     color : $font-color;
     width: 70%;
     &-first {
+        margin-bottom: 2em;
         display: flex;
         align-items: center;
         @media screen and (max-width:768px) {
@@ -11,6 +12,7 @@
 
         }
         &-responsive {
+            margin-bottom: 2em;
         display: flex;
         align-items: center;
 
