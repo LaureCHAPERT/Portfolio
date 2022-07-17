@@ -21,10 +21,10 @@
                                 <p class="contact-list-item-title">06.51.72.57.52 </p>
                             </li>
                             <li class="contact-list-item" key="stackovf">
-                                <a href="https://stackoverflow.com/users/18853924/laure-chapert">
+                                <a href="https://stackoverflow.com/users/17316868/laure-chapert">
                                     <img src="{{asset('/images/icons/stackovf.svg')}}" alt="stackoverflow-logo" class="contact-list-item-image" />
                                 </a>
-                                <a href="https://stackoverflow.com/users/18853924/laure-chapert" class="paragraph-link">
+                                <a href="https://stackoverflow.com/users/17316868/laure-chapert" class="paragraph-link">
                                     <p class="contact-list-item-title-linked">StackOverflow</p>
                                 </a>
                             </li>
