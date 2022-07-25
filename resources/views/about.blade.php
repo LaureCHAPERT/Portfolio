@@ -21,7 +21,7 @@
                         </div>
                         <p>
                         Durant le socle de la formation, on apprend les bases avec HTML5, CSS3, JavaScript et PHP. On se familiarise même avec certains outils comme Bootstrap, Lumen ou encore l'outil de gestion Trello.
-                        Ensuite, j'ai dû choisir une spécialisation. Ayant une certaine curiosité pour JavaScript, j'ai orienté mon choix sur la bibliothèque React.
+                        Ensuite, on choisit une spécialisation. Ayant une certaine curiosité pour JavaScript, j'ai orienté mon choix sur la bibliothèque React.
                         Pour finaliser notre formation, nous avons dû créer un projet en équipe de A à Z sur un mois complet. J'ai travaillé sur la partie front avec React et j'ai eu la chance de porter deux casquettes pendant cette période de travail ce qui fût très enrichissant : celle de Lead Dev Front et celle de Product Owner étant l'instigatrice du projet. Lors des phases de travaux en équipe où je rejoignais l'équipe back, j'ai également pu me familiariser avec le framework Symfony. Je poursuis encore mon apprentissage en ce moment en réalisant ce portfolio et un autre projet sur Laravel. Je m'apprête également à passer ma certification Opquast. Pour plus de détails sur mes compétences, rejoignez la page qui y est consacrée : <a href="/competences">juste ICI !</a>
                         </p>
 

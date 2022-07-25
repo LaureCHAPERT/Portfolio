@@ -10,7 +10,7 @@ class SkillsController extends Controller
     public function index()
     {
 
-        return view('competences', [
+        return view('skills', [
             'competences' => Data::getSkills()
         ]);
     }

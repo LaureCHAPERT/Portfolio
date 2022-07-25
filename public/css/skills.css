@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+.skills {
+  margin-bottom: 10em;
+  margin: 0em 0 2em 1em;
+}
+.skills-title-underline {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1440px) {
+  .skills-list {
+    width: 60%;
+  }
+}
+.skills-list-skill {
+  background-color: #282828;
+  margin: 2em 2em 1em 0;
+  min-height: 7em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em;
+  border-radius: 0.5em;
+  font-size: 0.8em;
+  text-align: center;
+  width: 12em;
+  padding: 2em;
+  height: 14em;
+}
+@media screen and (max-width: 320px) {
+  .skills-list-skill {
+    width: 9em;
+  }
+}
+.skills-list-skill:nth-child(odd) img {
+  filter: invert(18%) sepia(98%) saturate(2557%) hue-rotate(315deg) brightness(80%) contrast(100%);
+}
+.skills-list-skill:nth-child(odd):hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px 20px 2px rgba(235, 199, 230, 0.4);
+}
+.skills-list-skill:nth-child(even) img {
+  filter: invert(43%) sepia(96%) saturate(1237%) hue-rotate(50deg) brightness(128%) contrast(119%);
+}
+.skills-list-skill:nth-child(even):hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px 20px 2px rgba(162, 214, 184, 0.4);
+}
+.skills-list-skill-icon {
+  width: 70px;
+  height: 70px;
+  padding-bottom: 10%;
+}
+.skills-list-skill-title {
+  color: #fff;
+  font-size: 1.7em;
+}
+
+.secondary-skills {
+  margin-top: 20em;
+}
+.secondary-skills-lists {
+  display: flex;
+  color: #fff;
+}
+@media screen and (max-width: 320px) {
+  .secondary-skills-lists {
+    display: block;
+  }
+}
+.secondary-skills-lists-list {
+  font-size: 1.3em;
+}

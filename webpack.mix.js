@@ -14,7 +14,7 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .sass('resources/sass/projects.scss', 'public/css')
-    .sass('resources/sass/competences.scss', 'public/css')
+    .sass('resources/sass/skills.scss', 'public/css')
     .sass('resources/sass/contact.scss', 'public/css')
     .sass('resources/sass/about.scss', 'public/css')
     .sourceMaps();
