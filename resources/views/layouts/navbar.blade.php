@@ -43,6 +43,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/contact">Contact</a>
                 </li>
+
+                <select onchange="changeLanguage(this.value)" >
+                    <option {{session()->has('lang_code')?(session()->get('lang_code')=='en'?'selected':''):''}} value="en">English</option>
+                    <option {{session()->has('lang_code')?(session()->get('lang_code')=='fr'?'selected':''):''}} value="fr">French</option>
+                    <option {{session()->has('lang_code')?(session()->get('lang_code')=='es'?'selected':''):''}} value="es">Spanish</option>
+                </select>
                         </ul>
                     </div>
 
