@@ -3,6 +3,8 @@
 use App\Http\Controllers\SkillsController;
 use Illuminate\Support\Facades\Route;
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,8 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('bienvenue');
+Route::group([   'middleware' => 'Language'], function () {
+	Route::get('/home',"\App\Http\Controllers\HomeController@index");
+	Route::get('/change-language/{lang}',"\App\Http\Controllers\HomeController@changeLang");
 });
 
 Route::get('/projets', function () {
