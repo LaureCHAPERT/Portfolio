@@ -8,7 +8,7 @@
                     <h1> Bonjour !</h1> <br>
                     <p class="paragraph">Je m'appelle Laure Chapert. <br> Récemment diplômée du titre de développeur web et web mobile, je suis en pleine recherche d'emploi en full remote idéalement !
                     Si vous souhaitez en apprendre un peu plus sur mon parcours, rendez-vous <a href="/apropos">ICI</a> !
-                    {{-- <h2>{{__("messages.title")}}</h2> --}}
+                    <h2>{{__("messages.title")}}</h2>
                     </p>
 
                 </div>

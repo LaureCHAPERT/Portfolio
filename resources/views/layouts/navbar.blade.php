@@ -45,10 +45,27 @@
                 </li>
 
                 <select onchange="changeLanguage(this.value)" >
-                    <option {{session()->has('lang_code')?(session()->get('lang_code')=='en'?'selected':''):''}} value="en">English</option>
-                    <option {{session()->has('lang_code')?(session()->get('lang_code')=='fr'?'selected':''):''}} value="fr">French</option>
-                    <option {{session()->has('lang_code')?(session()->get('lang_code')=='es'?'selected':''):''}} value="es">Spanish</option>
-                </select>
+     <option {{session()->has('lang_code')?(session()->get('lang_code')=='en'?'selected':''):''}} value="en">
+       <img src="{{ asset('images/flags/english.png') }}" />
+       English
+     </option>
+     <option {{session()->has('lang_code')?(session()->get('lang_code')=='fr'?'selected':''):''}} value="fr">
+       <img src="{{ asset('images/flags/french.png') }}" />
+       French
+     </option>
+</select>
+
+
+                {{--
+                    <img onclick="changeLanguage(this.value)" src="{{ asset('images/flags/english.png') }}" alt="" {{session()->has('lang_code')?(session()->get('lang_code')=='en'?'selected':''):''}}>
+
+
+
+
+                    <img  onclick="changeLanguage(this.value)" src="{{ asset('images/flags/french.png') }}" alt="" {{session()->has('lang_code')?(session()->get('lang_code')=='en'?'selected':''):''}}>--}}
+
+
+
                         </ul>
                     </div>
 
