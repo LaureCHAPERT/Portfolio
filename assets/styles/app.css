@@ -16,13 +16,13 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
-main, .presentation-cards {
+main, .pages {
     background-image: url("../images/Background.png");
     background-attachment: fixed;
     background-size: cover;
 }
 @media screen and (max-width: 768px) {
-    main, .presentation-cards {
+    main, .pages {
         background-image: url("../images/MobileBackground.png");
     }
 }
@@ -76,43 +76,63 @@ main {
         animation-timing-function:ease-in-out
     }
 }
-
-.presentation-cards {
-    height: 100vh;
+.pages {
+    height: 100%;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    row-gap: 5rem;
-    .tab {
-        height: 60px;
-        width: 60px;
-        background-color: var(--main-color);
-        border-radius: 0 10% 10% 0;
+    position: relative;
+    .nav-tabs {
+        z-index: 2;
+        position: sticky;
+        float: left;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        img {
-            width: 2rem;
-            height: 2rem;
-            padding-right: 7px;
-        }
-        span {
-            display: none;
-        }
-        &:hover {
-            width: 10em;
-            transition: width 0.5s ease;
-            background-color: var(--second-color);
-            img {
-                display: none;
-            }
+        row-gap: 2.5rem;
+        .nav-tab {
+            padding: 2em;
+            height: 60px;
+            width: 150px;
+            background-color: var(--main-color);
+            border-radius: 0 8px 8px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Media query for mobile responsiveness */
+            /*@media (max-width: 768px) {*/
+            /*    width: 40px;  !* Adjust size for smaller screens *!*/
+            /*    height: 40px;*/
+            /*}*/
             .text {
-                display: block;
                 color: var(--clear-font-color);
                 font-weight: bold;
                 margin: 5px;
             }
         }
     }
+
+    .page{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        article {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: var(--second-color);
+            opacity: 85%;
+            height: 70%;
+            width: 60%;
+            border-radius: 8px;
+             /*Media query for mobile responsiveness */
+            @media (max-width: 768px) {
+                width: 85%;  /* Adjust size for smaller screens */
+                height: 100%;
+                border-radius: 3px;
+
+            }
+        }
+    }
+
 }
+

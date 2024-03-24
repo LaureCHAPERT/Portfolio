@@ -8,17 +8,15 @@ import './bootstrap.js';
 import './styles/reset.css'
 import './styles/app.css';
 
-const $icon = document.querySelector('.icon')
-const $arrow = document.querySelector('.arrow')
+const arrow = document.querySelector('.arrow');
+arrow.addEventListener('click', () => {
+    const mainContent = document.querySelector('.pages');
+    mainContent.scrollIntoView({ behavior: 'smooth' });
+});
 
-$icon.onclick = () => {
-    $arrow.animate([
-        {left: '0'},
-        {left: '10px'},
-        {left: '0'}
-    ],{
-        duration: 700,
-        iterations: Infinity
-    });
-}
+    const navTabs = document.querySelector('.nav-tabs');
+    navTabs.style.top = `calc(50% - ${navTabs.scrollHeight /2}px)`
+    console.log(navTabs.innerHeight)
+
+
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');

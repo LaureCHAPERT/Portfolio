@@ -14,17 +14,22 @@
         </div>
     </main>
 
-    <div class="presentation-cards">
-        <div class="tab presentation-tab">
-            <img src="{{ asset('icons/About.svg') }}">
-            <span class="dis"></span>
+    <aside class="pages">
+        <div class="nav-tabs">
+            <div class="nav-tab">
+                <span class="text"> A propos </span>
+            </div>
+            <div class="nav-tab">
+                <span class="text"> Réalisations </span>
+            </div>
+            <div class="nav-tab">
+                <span class="text"> Contact </span>
+            </div>
         </div>
-        <div class="tab achievements-tab">
-            <img src="{{ asset('icons/Achievements.svg') }}">
-        </div>
-        <div class="tab contact-tab">
-            <img src="{{ asset('icons/Contact.svg') }}">
-        </div>
-    </div>
+
+            <div class="page" id="about"></div>
+            <div class="page" id="achievements"></div>
+            <div class="page" id="contact"></div>
+    </aside>
 
 {% endblock %}
