@@ -16,7 +16,7 @@
 
     <aside class="pages">
         <div class="nav-tabs">
-            <div class="nav-tab about-tab">
+            <div class="nav-tab about-tab active">
                 <span class="text"> A propos </span>
                 <img class="arrow" src="{{ asset('icons/About.svg') }}">
             </div>
@@ -29,7 +29,9 @@
                 <img class="arrow" src="{{ asset('icons/Contact.svg') }}">
             </div>
         </div>
-
+        <div class="arrowToUpDiv">
+            <img class="arrowToUp" src="{{ asset('icons/ArrowToUp.svg') }}">
+        </div>
         <div class="page" id="about">
             <article>
                 <h1>Bienvenue dans mon univers numérique ! </h1>
@@ -55,9 +57,7 @@
             </article>
         </div>
 
-        <div class="arrowToUpDiv">
-            <img class="arrowToUp" src="{{ asset('icons/ArrowToUp.svg') }}">
-        </div>
+
     </aside>
 
 {% endblock %}

@@ -18,6 +18,12 @@ arrowToDown.addEventListener('click', () => {
 function addTabClickListener(tabClassName, targetId) {
     const tab = document.querySelector(`.${tabClassName}`);
     tab.addEventListener('click', () => {
+        // Supprimer la classe "active" de tous les onglets d'abord
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.classList.remove('active');
+        });
+        // Ajouter la classe "active" à l'onglet cliqué
+        tab.classList.add('active');
         const targetPage = document.querySelector(`#${targetId}`);
         targetPage.scrollIntoView({ behavior: 'smooth' });
     });

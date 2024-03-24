@@ -112,9 +112,7 @@ main {
             width: 15%;
             max-width: 130px;
         }
-        /*.hidden {*/
-        /*    display: none;*/
-        /*}*/
+
         .nav-tab {
             cursor: pointer;
             padding: 2em;
@@ -146,6 +144,9 @@ main {
                     display: none;
                 }
             }
+        }
+        .nav-tab.active {
+            background-color: var(--second-color);
         }
     }
 
