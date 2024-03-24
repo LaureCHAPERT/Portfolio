@@ -1,0 +1,3 @@
+- [x] Responsive
+- [ ] Gérer les classes actives sur les tabs
+- [ ] Main fançy au survol 
