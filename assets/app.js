@@ -27,6 +27,7 @@ function addTabClickListener(tabClassName, targetId) {
 addTabClickListener('about-tab', 'about');
 addTabClickListener('achievements-tab', 'achievements');
 addTabClickListener('contact-tab', 'contact');
+addTabClickListener('arrowToUpDiv', 'main-content')
 
 
 
@@ -50,6 +51,30 @@ function adjustNavTabsPositionY() {
 
 // Call the function on initial load and window resize
 adjustNavTabsPositionY();
+
+// Sélectionnez l'élément arrowToUpDiv
+const arrowToUpDiv = document.querySelector('.arrowToUpDiv');
+// Sélectionnez l'élément main
+const mainContent = document.getElementById('main-content');
+
+// Fonction pour gérer l'affichage de la flèche
+function toggleArrowVisibility() {
+    // Vérifiez la position de défilement
+    if (window.scrollY > mainContent.clientHeight) {
+        // Si la position de défilement est supérieure à la hauteur de l'élément main
+        // alors affichez la flèche
+        arrowToUpDiv.style.display = 'block';
+    } else {
+        // Sinon, masquez la flèche
+        arrowToUpDiv.style.display = 'none';
+    }
+}
+
+// Ajoutez un gestionnaire d'événement pour le chargement de la page
+window.addEventListener('DOMContentLoaded', toggleArrowVisibility);
+
+// Ajoutez un gestionnaire d'événement pour le défilement
+window.addEventListener('scroll', toggleArrowVisibility);
 
 // const navTabs = document.querySelector('.nav-tabs');
 // navTabs.style.top = `calc(50% - ${navTabs.scrollHeight /2}px)`
@@ -87,3 +112,5 @@ adjustNavTabsPositionY();
 //         arrowToUp.style.display = 'none'
 //     }
 // });
+
+
