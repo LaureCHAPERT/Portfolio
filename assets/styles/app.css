@@ -1,5 +1,7 @@
 :root {
-    --main-color: #6D2932;
+    --main-color: #561C24;
+    --second-color: #6D2932;
+    --clear-font-color: #E8D8C4;
     font-size: 16px;
 }
 
@@ -11,14 +13,16 @@
 body {
     height: 100%;
     width: 100vw;
-    background-image: url("../images/Background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: "Quicksand", sans-serif;
 }
 
+main, .presentation-cards {
+    background-image: url("../images/Background.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
 @media screen and (max-width: 768px) {
-    body {
+    main, .presentation-cards {
         background-image: url("../images/MobileBackground.png");
     }
 }
@@ -43,30 +47,72 @@ main {
         position: absolute;
         left: 50%;
         top: 80%;
-        transform: translateX(-50%);
-        /*animation: jumpInfinite 1.5s infinite;*/
+        transform: translate(-50%);
+        &:hover {
+            animation: jumpInfinite 1.5s infinite
+        }
     }
     .arrowLine {
         position: absolute;
         left: 50%;
-        top: 85%;
+        top: 87%;
         transform: translateX(-50%);
     }
+}
 
-    /*@keyframes jumpInfinite {*/
-    /*    0% {*/
-    /*        margin-top: 0;*/
-    /*    }*/
-    /*    50% {*/
-    /*        margin-top: 20px;*/
-    /*    }*/
-    /*    100% {*/
-    /*        margin-top: 0;*/
-    /*    }*/
-    /*}*/
+@keyframes jumpInfinite {
+    0% {
+        transform: translate(-50%, 0px);
+        animation-timing-function:ease-in-out
+    }
+
+    50% {
+        transform: translate(-50%, 12px);
+        animation-timing-function:ease-in-out
+    }
+
+    100% {
+        transform: translate(-50%, 0px);
+        animation-timing-function:ease-in-out
+    }
 }
 
 .presentation-cards {
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5rem;
+    .tab {
+        height: 60px;
+        width: 60px;
+        background-color: var(--main-color);
+        border-radius: 0 10% 10% 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 2rem;
+            height: 2rem;
+            padding-right: 7px;
+        }
+        span {
+            display: none;
+        }
+        &:hover {
+            width: 10em;
+            transition: width 0.5s ease;
+            background-color: var(--second-color);
+            img {
+                display: none;
+            }
+            .text {
+                display: block;
+                color: var(--clear-font-color);
+                font-weight: bold;
+                margin: 5px;
+            }
+        }
+    }
 }
