@@ -14,6 +14,7 @@ body {
     height: 100%;
     width: 100vw;
     font-family: "Quicksand", sans-serif;
+    /*overflow-y: hidden;*/
 }
 
 main, .pages {
@@ -43,20 +44,24 @@ main {
         font-size: 3rem;
     }
 
-    .arrow {
-        position: absolute;
-        left: 50%;
-        top: 80%;
-        transform: translate(-50%);
-        &:hover {
-            animation: jumpInfinite 1.5s infinite
+    .arrowToDownDiv {
+        cursor: pointer;
+        .arrowToDown {
+            cursor: pointer;
+            position: absolute;
+            left: 50%;
+            top: 80%;
+            transform: translate(-50%);
+            &:hover {
+                animation: jumpInfinite 1.5s infinite
+            }
         }
-    }
-    .arrowLine {
-        position: absolute;
-        left: 50%;
-        top: 87%;
-        transform: translateX(-50%);
+        .arrowLine {
+            position: absolute;
+            left: 50%;
+            top: 87%;
+            transform: translateX(-50%);
+        }
     }
 }
 
@@ -82,30 +87,64 @@ main {
     position: relative;
     .nav-tabs {
         z-index: 2;
+        width: 10%;
+        max-width: 150px ;
         position: sticky;
         float: left;
         display: flex;
         flex-direction: column;
         justify-content: center;
         row-gap: 2.5rem;
+         /*Media query for mobile responsiveness */
+        @media (max-width: 768px) {
+            margin-right: 3rem;
+            margin-left: 3rem;
+            float: none;
+            flex-direction: row;
+            justify-content: space-between;
+            position: fixed;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 992px) {
+            width: 12%;
+            max-width: 130px;
+        }
+        @media only screen and (min-width: 992px) and (max-width: 1500px) {
+            width: 15%;
+            max-width: 130px;
+        }
+        /*.hidden {*/
+        /*    display: none;*/
+        /*}*/
         .nav-tab {
+            cursor: pointer;
             padding: 2em;
             height: 60px;
-            width: 150px;
+            width: 100%;
             background-color: var(--main-color);
             border-radius: 0 8px 8px 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            /* Media query for mobile responsiveness */
-            /*@media (max-width: 768px) {*/
-            /*    width: 40px;  !* Adjust size for smaller screens *!*/
-            /*    height: 40px;*/
-            /*}*/
             .text {
                 color: var(--clear-font-color);
                 font-weight: bold;
                 margin: 5px;
+            }
+            img {
+                display: none;
+            }
+            /*Media query for mobile responsiveness */
+            @media (max-width: 768px) {
+                width: 5rem;
+                border-radius: 3px;
+                img {
+                    display: block;
+                    width: 2rem;
+                    height: 2rem;
+                }
+                .text {
+                    display: none;
+                }
             }
         }
     }
@@ -115,6 +154,7 @@ main {
         width: 100%;
         position: relative;
         article {
+            color: var(--clear-font-color);
             position: absolute;
             top: 50%;
             left: 50%;
@@ -122,17 +162,41 @@ main {
             background-color: var(--second-color);
             opacity: 85%;
             height: 70%;
-            width: 60%;
+            width: 80%;
             border-radius: 8px;
+            padding: 5em;
+            line-height: 1.1;
              /*Media query for mobile responsiveness */
             @media (max-width: 768px) {
                 width: 85%;  /* Adjust size for smaller screens */
-                height: 100%;
+                height: 90%;
                 border-radius: 3px;
-
+            }
+            @media only screen and (min-width: 768px) and (max-width: 992px) {
+                height: 85%;
+                width: 70%;
+            }
+            @media only screen and (min-width: 992px) and (max-width: 1500px) {
+                width: 70%;
+                height: 80%;
+            }
+            h1 {
+                font-family: "Sniglet", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 2rem;
+                margin-bottom: 1em;
+            }
+            p {
+                font-size: 1.1em;
+                max-width: 80%;
             }
         }
     }
-
 }
-
+.arrowToUpDiv {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+}

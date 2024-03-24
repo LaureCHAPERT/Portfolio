@@ -8,28 +8,56 @@
             <h1>Laure CHAPERT</h1>
             <p>Développeuse web full-stack</p>
         </div>
-        <div role="icon">
-            <img class="arrow" src="{{ asset('icons/Arrow.svg') }}">
+        <div role="icon" class="arrowToDownDiv">
+            <img class="arrowToDown" src="{{ asset('icons/Arrow.svg') }}">
             <img class="arrowLine" src="{{ asset('icons/ArrowLine.svg') }}">
         </div>
     </main>
 
     <aside class="pages">
         <div class="nav-tabs">
-            <div class="nav-tab">
+            <div class="nav-tab about-tab">
                 <span class="text"> A propos </span>
+                <img class="arrow" src="{{ asset('icons/About.svg') }}">
             </div>
-            <div class="nav-tab">
+            <div class="nav-tab achievements-tab">
                 <span class="text"> Réalisations </span>
+                <img class="arrow" src="{{ asset('icons/Achievements.svg') }}">
             </div>
-            <div class="nav-tab">
+            <div class="nav-tab contact-tab">
                 <span class="text"> Contact </span>
+                <img class="arrow" src="{{ asset('icons/Contact.svg') }}">
             </div>
         </div>
 
-            <div class="page" id="about"></div>
-            <div class="page" id="achievements"></div>
-            <div class="page" id="contact"></div>
+        <div class="page" id="about">
+            <article>
+                <h1>Bienvenue dans mon univers numérique ! </h1>
+                <p>Développeuse web full-stack, je souhaite donner vie à vos projets et transformer vos visions en réalités digitales.
+                Mon objectif est de comprendre vos besoins et ceux des clients afin de développer des solutions web sur mesure et de garantir la satisfaction de tous. Ma sensibilité
+                pour l'accessibilité et l'UX/UI permet de concevoir des interfaces agréables à tous les utilisateurs. Rendre le web accessible à tous est une ambition
+                qui me passionne et me tient particulièrement à coeur ! </p> <br>
+                <p>Musicienne et curieuse, la créativité constitue une part essentielle de ma vie et cette sensibilité artistique se reflète dans mon travail,
+                    où je m'efforce toujours de trouver des solutions esthétiques pour chaque projet dès sa naissance et jusqu'à ses potentielles évolutions.</p> <br>
+                <p>Je suis impatiente de discuter avec vous de vos idées et de travailler ensemble pour les concrétiser. Merci de visiter mon portfolio; j'ai hâte de collaborer avec vous !</p>
+            </article>
+        </div>
+        <div class="page" id="achievements">
+            <article>
+                <h1>Hello</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eveniet incidunt iste labore laudantium, maiores molestias nobis praesentium quo recusandae. Amet aut et ipsum non possimus qui quibusdam reprehenderit, voluptatem.</p>
+            </article>
+        </div>
+        <div class="page" id="contact">
+            <article>
+                <h1>Hello</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam culpa, cupiditate dolore ducimus esse, laborum magnam nam necessitatibus nihil officiis optio possimus quas quia repellendus temporibus ut voluptates? Distinctio, explicabo?</p>
+            </article>
+        </div>
+
+        <div class="arrow-to-up">
+            <img class="arrowToUp" src="{{ asset('icons/ArrowToUp.svg') }}">
+        </div>
     </aside>
 
 {% endblock %}
