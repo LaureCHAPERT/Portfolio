@@ -147,6 +147,7 @@ main {
         }
         .nav-tab.active {
             background-color: var(--second-color);
+            opacity: 90%;
         }
     }
 
