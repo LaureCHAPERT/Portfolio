@@ -3,6 +3,7 @@
 {% block title %}Hello HomePageController!{% endblock %}
 
 {% block body %}
+    <div data-controller="hello"></div>
     <main id="main-content">
         <div class="homepage-title">
             <h1>Laure CHAPERT</h1>
@@ -50,7 +51,7 @@
         <div class="page" id="contact">
             <article>
                 <h1>Contact</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam culpa, cupiditate dolore ducimus esse, laborum magnam nam necessitatibus nihil officiis optio possimus quas quia repellendus temporibus ut voluptates? Distinctio, explicabo?</p>
+                {{ render_esi(url('contact')) }}
             </article>
         </div>
         <div class="arrowToUpDiv">

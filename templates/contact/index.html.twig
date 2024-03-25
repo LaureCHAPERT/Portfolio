@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+    <div class="bg-white p-5 contactForm">
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+        {% endfor %}
+        <div class="form-group">
+            {{ form_start(form, {'action': path('sendEmail'), 'attr': {'id': 'contact-form'}}) }}
+            {{ form_row(form.fullName, {'attr': {'class': 'form-control'}}) }}
+        </div>
+        <div class="form-group">
+            {{ form_row(form.email, {'attr': {'class': 'form-control'}}) }}
+        </div>
+        <div class="form-group">
+            {{ form_row(form.message, {'attr': {'class': 'form-control'}}) }}
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Send" class="btn btn-primary py-3 px-5">
+        </div>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}
