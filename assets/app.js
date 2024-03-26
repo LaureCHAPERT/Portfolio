@@ -7,7 +7,7 @@ import './bootstrap.js';
  */
 import './styles/reset.css'
 import './styles/app.css';
-function init() {
+
     const arrowToDown = document.querySelector('.arrowToDown');
     arrowToDown.addEventListener('click', () => {
         const mainContent = document.querySelector('.pages');
@@ -83,7 +83,6 @@ function init() {
     window.addEventListener('scroll', toggleArrowVisibility);
 
     const form = document.getElementById('contact-form');
-    console.log(form)
     form.addEventListener('submit', (event) => {
         event.preventDefault();
 
@@ -103,10 +102,3 @@ function init() {
                 console.error(error);
             });
     });
-}
-
-document.addEventListener('stimulusLoading', () => {
-    init();
-})
-
-init();

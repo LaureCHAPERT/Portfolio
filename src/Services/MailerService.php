@@ -16,13 +16,11 @@ class MailerService
         $to = 'laure.chapert@gmail.com',
         $subject = 'Nouveau message depuis votre portfolio',
         $content = '',
-        $text = ''
     ): void{
         $email = (new Email())
             ->from('noreply@portfolio.com')
             ->to($to)
             ->subject($subject)
-            ->text($text)
             ->html($content);
         $this->mailer->send($email);
     }
