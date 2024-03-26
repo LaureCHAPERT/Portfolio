@@ -3,6 +3,7 @@
 {% block title %}Hello HomePageController!{% endblock %}
 
 {% block body %}
+    <div data-controller="hello"></div>
     <main id="main-content">
         <div class="homepage-title">
             <h1>Laure CHAPERT</h1>
@@ -29,9 +30,6 @@
                 <img class="arrow" src="{{ asset('icons/Contact.svg') }}">
             </div>
         </div>
-        <div class="arrowToUpDiv">
-            <img class="arrowToUp" src="{{ asset('icons/ArrowToUp.svg') }}">
-        </div>
         <div class="page" id="about">
             <article>
                 <h1>Bienvenue dans mon univers numérique ! </h1>
@@ -51,13 +49,14 @@
             </article>
         </div>
         <div class="page" id="contact">
+            <div class="overlay"></div>
             <article>
-                <h1>Hello</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam culpa, cupiditate dolore ducimus esse, laborum magnam nam necessitatibus nihil officiis optio possimus quas quia repellendus temporibus ut voluptates? Distinctio, explicabo?</p>
+                {{ render_esi(url('contact')) }}
             </article>
         </div>
-
-
+        <div class="arrowToUpDiv">
+            <img class="arrowToUp" src="{{ asset('icons/ArrowToUp.svg') }}">
+        </div>
     </aside>
 
 {% endblock %}

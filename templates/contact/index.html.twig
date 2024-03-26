@@ -1,0 +1,49 @@
+{% block body %}
+    <div class="contact">
+        <div class="contactForm">
+            <h1>Envoyez-moi un message</h1>
+            {{ form_start(form, {'action': path('sendEmail'), 'attr': {'id': 'contact-form'}}) }}
+            <div class="form-group">
+                {{ form_label(form.fullName, 'Nom ou nom de votre entreprise', {'label_attr': {'class': 'controlLabel'}}) }}
+                <br>
+                {{ form_widget(form.fullName, {'attr': {'class': 'form-control transparentInput'}, 'required': true}) }}
+            </div>
+            <div class="form-group">
+                {{ form_label(form.email, 'Votre email', {'label_attr': {'class': 'controlLabel'}}) }}
+                <br>
+                {{ form_widget(form.email, {'attr': {'class': 'form-control transparentInput'}, 'required': true}) }}
+            </div>
+            <div class="form-group">
+                {{ form_label(form.message, 'Votre message', {'label_attr': {'class': 'controlLabel'}}) }}
+                <br>
+                {{ form_widget(form.message, {'attr': {'class': 'form-control transparentInput'}, 'required': true}) }}
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Envoyer" class="btn btnSubmit">
+            </div>
+            {{ form_end(form) }}
+        </div>
+        <div class="linksPart">
+            <h1>ou contactez moi via : </h1>
+            <div class="contactLinks">
+                <div class="contactLink">
+                    <a href="https://www.linkedin.com/in/laurechapert/">
+                        <img class="linkedin" src="{{ asset('icons/Linkedin.svg') }}">
+                        <span>Linkedin</span>
+                    </a>
+                </div>
+                <div class="contactLink">
+                    <a href="mailto:laure.chapert@gmail.com">
+                        <img class="email" src="{{ asset('icons/Email.svg') }}">
+                        <span>Mail</span>
+                    </a>
+                </div>
+                <div class="contactLink">
+                    <img class="phone" src="{{ asset('icons/Contact.svg') }}">
+                    <span>Téléphone : 06 51 72 57 52</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
