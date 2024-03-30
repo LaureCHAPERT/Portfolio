@@ -32,4 +32,11 @@ return [
         'version' => '1.5.5',
         'type' => 'css',
     ],
+    '@splidejs/splide' => [
+        'version' => '4.1.4',
+    ],
+    '@splidejs/splide/dist/css/splide.min.css' => [
+        'version' => '4.1.4',
+        'type' => 'css',
+    ],
 ];

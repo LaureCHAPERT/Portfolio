@@ -1,5 +1,6 @@
 import './bootstrap.js';
 import PerfectScrollbar from "perfect-scrollbar";
+import Splide from "@splidejs/splide";
 
 /*
  * Welcome to your app's main JavaScript file!
@@ -9,6 +10,7 @@ import PerfectScrollbar from "perfect-scrollbar";
  */
 import './styles/reset.css'
 import './styles/app.css';
+import '@splidejs/splide/dist/css/splide.min.css'
 
 const navTabs = document.querySelector('.nav-tabs');
 const arrowToDown = document.querySelector('.arrowToDown');
@@ -33,9 +35,9 @@ function addTabClickListener(tabClassName, targetId) {
 }
 
 // Ajout des écouteurs d'événements pour chaque onglet
-addTabClickListener('about-tab', 'about');
-addTabClickListener('achievements-tab', 'achievements');
-addTabClickListener('contact-tab', 'contact');
+addTabClickListener('about-tab', 'aboutPage');
+addTabClickListener('achievements-tab', 'achievementsPage');
+addTabClickListener('contact-tab', 'contactPage');
 addTabClickListener('arrowToUpDiv', 'main-content');
 
 
@@ -100,17 +102,20 @@ form.addEventListener('submit', (event) => {
 });
 
 //ScrollBar by PerfectScrollBar
-const container =
-    document.querySelector('.contact');
-const ps = new PerfectScrollbar(container, {
+const psopts = {
     wheelSpeed: 2,
     wheelPropagation: true,
-    minScrollbarLength: 20
-});
+    minScrollbarLength: 200,
+    maxScrollbarLength: 400,
+}
 const container2 =
     document.querySelector('article');
-const ps2 = new PerfectScrollbar(container2, {
-    wheelSpeed: 2,
-    wheelPropagation: true,
-    minScrollbarLength: 20
-});
+const ps2 = new PerfectScrollbar(container2, psopts);
+
+//Slide on achievements page
+new Splide('#achievements').mount();
+document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '#achievements' );
+    splide.mount();
+} );
+

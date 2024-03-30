@@ -98,11 +98,8 @@ main {
         @media (max-width: 768px) {
             float: none;
             flex-direction: row;
-            justify-content: space-between;
             position: fixed;
-            left: 50%;
-            transform: translateX(-50%);
-            width: fit-content;
+            width: 100vw;
             margin: 0;
             max-width: unset;
         }
@@ -137,10 +134,14 @@ main {
             @media (max-width: 768px) {
                 width: 5rem;
                 border-radius: 3px;
+                flex: 1 1 0;
+                padding: unset;
+                height: 2.2rem;
                 img {
                     display: block;
                     width: 2rem;
                     height: 2rem;
+                    padding: 5px;
                 }
                 .text {
                     display: none;
@@ -158,6 +159,12 @@ main {
         width: 100%;
         position: relative;
         article {
+            &#achievements {
+                padding: 1rem;
+            }
+            @media (max-width: 768px) {
+               padding: 1em;
+            }
             overflow: hidden;
             color: var(--clear-font-color);
             position: absolute;
@@ -190,17 +197,57 @@ main {
                 font-weight: 400;
                 font-style: normal;
                 font-size: 2rem;
-                margin-bottom: 1em;
+                margin-bottom: 0.5em;
+                @media (max-width: 768px) {
+                    font-size: 1.5rem;
+                }
+            }
+            & .projectTitle {
+                text-align: center;
             }
             p {
                 font-size: 1.1em;
                 max-width: 80%;
+                @media (max-width: 768px) {
+                    max-width: unset;
+                }
+            }
+            .achievementsText {
+                max-width: 100%;
+            }
+            .badges {
+                display: flex;
+                justify-content: center;
+                .badge {
+                    padding: 8px 12px;
+                    color: #ffffff;
+                    border-radius: 20px;
+                    margin: 5px;
+                    font-size: .8rem;
+                }
+                .backBadge {
+                    background-color: #BD93BD;
+                }
+                .frontBadge {
+                    background-color: #F26157;
+                }
+                .environmentBadge {
+                    background-color: #FF6B35;
+                }
+            }
+            .projectImage {
+                width: fit-content;
+                margin: auto;
+                img {
+                    height: 350px;
+                }
             }
             .contact {
                 display: flex;
-                overflow: hidden;
+                /*overflow: hidden;*/
                 position: relative;
-                height: 500px;
+                height: 100%;
+                overflow: auto;
                 /*Media query for mobile responsiveness */
                 @media (max-width: 768px) {
                     display: block;
@@ -231,6 +278,11 @@ main {
                     }
                 }
                 .linksPart {
+                    @media (max-width: 768px) {
+                        margin-top: 30%;
+                        transform: translateY(-30%);
+                        width: 100%;
+                    }
                     width: 50%;
                     .contactLinks {
                         .contactLink {
@@ -278,6 +330,16 @@ main {
     bottom: 2rem;
     right: 2rem;
     cursor: pointer;
-}
+    @media (max-width: 768px) {
+        bottom: 3rem;
+        right: 1rem;
+        img {
+            width: 35px;
+        }
+    }
 
+}
+.ps__rail-y {
+    opacity: 0.6;
+}
 

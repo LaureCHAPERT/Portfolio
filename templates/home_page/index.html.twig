@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomePageController!{% endblock %}
+{% block title %}Bienvenue sur mon portfolio !{% endblock %}
 
 {% block body %}
     <div data-controller="hello"></div>
@@ -30,7 +30,7 @@
                 <img class="arrow" src="{{ asset('icons/Contact.svg') }}">
             </div>
         </div>
-        <div class="page" id="about">
+        <div class="page" id="aboutPage">
             <article>
                 <h1>Bienvenue dans mon univers numérique ! </h1>
                 <p>Développeuse web full-stack, je souhaite donner vie à vos projets et transformer vos visions en réalités digitales.
@@ -42,13 +42,32 @@
                 <p>Je suis impatiente de discuter avec vous de vos idées et de travailler ensemble pour les concrétiser. Merci de visiter mon portfolio; j'ai hâte de collaborer avec vous !</p>
             </article>
         </div>
-        <div class="page" id="achievements">
-            <article>
-                <h1>Hello</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eveniet incidunt iste labore laudantium, maiores molestias nobis praesentium quo recusandae. Amet aut et ipsum non possimus qui quibusdam reprehenderit, voluptatem.</p>
+        <div class="page" id="achievementsPage">
+            <article id="achievements" class="splide" aria-labelledby="QuickMS">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <h1 class="projectTitle">QuickMS</h1>
+                            <div class="badges">
+                                <div class="badge backBadge">Symfony</div>
+                                <div class="badge frontBadge">Vue JS</div>
+                                <div class="badge environmentBadge">Docker</div>
+                                <div class="badge environmentBadge">Linux</div>
+                            </div>
+                            <p class="achievementsText">Qrew est une plateforme logicielle tout-en-un conçue pour faciliter la communication et la gestion des ressources humaines au seins des entreprises. Il offre une solution permettant
+                                de renforcer le lien entre les RH, managers et collaborateurs, permettant de simplifier des processus clés tels que les entretiens, les rendez-vous RH et la gestion des compétences.
+                                Sur Qrew, je fus développeuse web full-stack. </p>
+                            <div class="projectImage">
+                                <img class="qrew" src="{{ asset('images/QrewDashboard.png') }}">
+                            </div>
+                        </li>
+                        <li class="splide__slide">Slide 02</li>
+                        <li class="splide__slide">Slide 03</li>
+                    </ul>
+                </div>
             </article>
         </div>
-        <div class="page" id="contact">
+        <div class="page" id="contactPage">
             <div class="overlay"></div>
             <article>
                 {{ render_esi(url('contact')) }}
