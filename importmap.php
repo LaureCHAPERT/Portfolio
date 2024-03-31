@@ -25,18 +25,11 @@ return [
     '@hotwired/turbo' => [
         'version' => '7.3.0',
     ],
-    'perfect-scrollbar' => [
-        'version' => '1.5.5',
-    ],
-    'perfect-scrollbar/css/perfect-scrollbar.min.css' => [
-        'version' => '1.5.5',
-        'type' => 'css',
-    ],
     '@splidejs/splide' => [
         'version' => '4.1.4',
     ],
     '@splidejs/splide/dist/css/splide.min.css' => [
         'version' => '4.1.4',
         'type' => 'css',
-    ],
+    ]
 ];

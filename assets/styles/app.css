@@ -161,6 +161,13 @@ main {
         article {
             &#achievements {
                 padding: 1rem;
+                .splide__slide {
+                    max-height: 100%;
+                    overflow-y: auto;
+                }
+                ul.splide__pagination {
+                    position: static;
+                }
             }
             @media (max-width: 768px) {
                padding: 1em;
@@ -214,10 +221,12 @@ main {
             }
             .achievementsText {
                 max-width: 100%;
+                padding: 1rem;
             }
             .badges {
                 display: flex;
                 justify-content: center;
+                flex-wrap: wrap;
                 .badge {
                     padding: 8px 12px;
                     color: #ffffff;
@@ -226,7 +235,7 @@ main {
                     font-size: .8rem;
                 }
                 .backBadge {
-                    background-color: #BD93BD;
+                    background-color: #bd93bd;
                 }
                 .frontBadge {
                     background-color: #F26157;
@@ -234,12 +243,38 @@ main {
                 .environmentBadge {
                     background-color: #FF6B35;
                 }
+                a {
+                    text-decoration: none;
+                    .showMore {
+                        margin-top: 0.5rem;
+                        background-color: #FFFFFF;
+                        color: black;
+                        font-weight: 500;
+                    }
+                }
+
             }
             .projectImage {
                 width: fit-content;
                 margin: auto;
-                img {
-                    height: 350px;
+                /* Masquer l'image par défaut pour les appareils mobiles */
+                @media only screen and (max-width: 768px) {
+                    .qrewMobile {
+                        height: 500px;
+                    }
+                    .qrewDesktop {
+                        display: none;
+                    }
+                }
+
+                /* Afficher l'image spécifique pour les appareils mobiles */
+                @media only screen and (min-width: 768px) {
+                    .qrewMobile {
+                        display: none;
+                    }
+                    .qrewDesktop {
+                        height: 350px;
+                    }
                 }
             }
             .contact {
@@ -339,7 +374,3 @@ main {
     }
 
 }
-.ps__rail-y {
-    opacity: 0.6;
-}
-

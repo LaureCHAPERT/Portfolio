@@ -1,5 +1,4 @@
 import './bootstrap.js';
-import PerfectScrollbar from "perfect-scrollbar";
 import Splide from "@splidejs/splide";
 
 /*
@@ -105,17 +104,36 @@ form.addEventListener('submit', (event) => {
 const psopts = {
     wheelSpeed: 2,
     wheelPropagation: true,
-    minScrollbarLength: 200,
-    maxScrollbarLength: 400,
+    minScrollbarLength: 40,
+    maxScrollbarLength: 200,
 }
-const container2 =
-    document.querySelector('article');
-const ps2 = new PerfectScrollbar(container2, psopts);
 
 //Slide on achievements page
-new Splide('#achievements').mount();
-document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '#achievements' );
-    splide.mount();
-} );
+const splide = new Splide('.splide',psopts)
 
+splide.mount()
+document.addEventListener("DOMContentLoaded", function() {
+    adjustSlideHeight();
+
+    // Écoute également le redimensionnement de la fenêtre pour ajuster la hauteur des slides.
+    window.addEventListener("resize", adjustSlideHeight);
+});
+
+function adjustSlideHeight() {
+    // Obtient la hauteur de la fenêtre du navigateur.
+    var windowHeight = window.innerHeight;
+
+    // Définit un pourcentage de réduction de la hauteur par rapport à la hauteur de la fenêtre.
+    var reductionPercentage = 0.85 // Par exemple, réduit de 10 %.
+
+    // Calcule la nouvelle hauteur maximale des slides.
+    var newSlideHeight = windowHeight * reductionPercentage;
+
+    // Sélectionne toutes les slides.
+    var slides = document.querySelectorAll('.splide__slide');
+
+    // Ajuste la hauteur maximale de chaque slide.
+    slides.forEach(function(slide) {
+        slide.style.maxHeight = newSlideHeight + "px";
+    });
+}

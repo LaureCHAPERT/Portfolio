@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@splidejs/splide": "^4.1.4",
-    "perfect-scrollbar": "^1.5.5"
+    "@splidejs/splide": "^4.1.4"
   }
 }

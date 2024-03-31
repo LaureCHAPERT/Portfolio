@@ -43,27 +43,35 @@
             </article>
         </div>
         <div class="page" id="achievementsPage">
-            <article id="achievements" class="splide" aria-labelledby="QuickMS">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <h1 class="projectTitle">QuickMS</h1>
-                            <div class="badges">
-                                <div class="badge backBadge">Symfony</div>
-                                <div class="badge frontBadge">Vue JS</div>
-                                <div class="badge environmentBadge">Docker</div>
-                                <div class="badge environmentBadge">Linux</div>
-                            </div>
-                            <p class="achievementsText">Qrew est une plateforme logicielle tout-en-un conçue pour faciliter la communication et la gestion des ressources humaines au seins des entreprises. Il offre une solution permettant
-                                de renforcer le lien entre les RH, managers et collaborateurs, permettant de simplifier des processus clés tels que les entretiens, les rendez-vous RH et la gestion des compétences.
-                                Sur Qrew, je fus développeuse web full-stack. </p>
-                            <div class="projectImage">
-                                <img class="qrew" src="{{ asset('images/QrewDashboard.png') }}">
-                            </div>
-                        </li>
-                        <li class="splide__slide">Slide 02</li>
-                        <li class="splide__slide">Slide 03</li>
-                    </ul>
+            <article id="achievements" >
+                <div class="splide" aria-labelledby="QuickMS">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide init-hidden">
+                                <h1 class="projectTitle">QuickMS</h1>
+                                <div class="badges">
+                                    <div class="badge backBadge">Symfony</div>
+                                    <div class="badge frontBadge">Vue JS</div>
+                                    <div class="badge environmentBadge">Docker</div>
+                                    <div class="badge environmentBadge">Linux</div>
+                                </div>
+                                <p class="achievementsText">Qrew est une plateforme logicielle tout-en-un conçue pour faciliter la communication et la gestion des ressources humaines au seins des entreprises. Il offre une solution permettant
+                                    de renforcer le lien entre les RH, managers et collaborateurs, permettant de simplifier des processus clés tels que les entretiens, les rendez-vous RH et la gestion des compétences.
+                                    Sur Qrew, je fus développeuse web full-stack. </p>
+                                <div class="projectImage">
+                                    <img class="qrewDesktop" src="{{ asset('images/QrewDesktop.png') }}">
+                                    <img class="qrewMobile" src="{{ asset('images/QrewMobile.PNG') }}">
+                                </div>
+                                <div class="badges">
+                                    <a href="https://evanescent-find-18f.notion.site/QREW-c07579b7afb74416983a5f92b5ab93ed?pvs=74">
+                                        <div class="badge showMore">En savoir plus</div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="splide__slide">Slide 02</li>
+                            <li class="splide__slide">Slide 03</li>
+                        </ul>
+                    </div>
                 </div>
             </article>
         </div>
@@ -79,3 +87,4 @@
     </aside>
 
 {% endblock %}
+
