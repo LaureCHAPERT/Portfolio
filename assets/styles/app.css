@@ -13,7 +13,7 @@ body {
     height: 100%;
     width: 100vw;
     font-family: "Quicksand", sans-serif;
-    /*overflow-y: hidden;*/
+    overflow-y: hidden;
 }
 
 main, .pages {
@@ -87,7 +87,7 @@ main {
     .nav-tabs {
         z-index: 2;
         width: 10%;
-        max-width: 150px ;
+        max-width: 150px;
         position: sticky;
         float: left;
         display: flex;
@@ -96,14 +96,14 @@ main {
         row-gap: 2.5rem;
          /*Media query for mobile responsiveness */
         @media (max-width: 768px) {
-            margin-right: 3rem;
-            margin-left: 3rem;
             float: none;
             flex-direction: row;
-            justify-content: space-between;
             position: fixed;
+            width: 100vw;
+            margin: 0;
+            max-width: unset;
         }
-        @media only screen and (min-width: 768px) and (max-width: 992px) {
+        @media only screen and (min-width: 769px) and (max-width: 992px) {
             width: 12%;
             max-width: 130px;
         }
@@ -134,10 +134,14 @@ main {
             @media (max-width: 768px) {
                 width: 5rem;
                 border-radius: 3px;
+                flex: 1 1 0;
+                padding: unset;
+                height: 2.2rem;
                 img {
                     display: block;
                     width: 2rem;
                     height: 2rem;
+                    padding: 5px;
                 }
                 .text {
                     display: none;
@@ -155,6 +159,25 @@ main {
         width: 100%;
         position: relative;
         article {
+            &#achievements {
+                padding: 1rem;
+                .splide__slide {
+                    max-height: 100%;
+                    overflow-y: auto;
+                }
+                ul.splide__pagination {
+                    position: static;
+                }
+            }
+            &#about {
+                max-height: 100%;
+                overflow-y: auto;
+            }
+            @media (max-width: 768px) {
+               padding: 1em;
+            }
+            padding: 2em;
+            overflow: hidden;
             color: var(--clear-font-color);
             position: absolute;
             top: 50%;
@@ -165,7 +188,6 @@ main {
             height: 70%;
             width: 80%;
             border-radius: 8px;
-            padding: 5em;
             line-height: 1.1;
              /*Media query for mobile responsiveness */
             @media (max-width: 768px) {
@@ -186,14 +208,107 @@ main {
                 font-weight: 400;
                 font-style: normal;
                 font-size: 2rem;
-                margin-bottom: 1em;
+                margin-bottom: 0.5em;
+                @media (max-width: 768px) {
+                    font-size: 1.5rem;
+                }
+                span {
+                    font-size: 1rem;
+                }
+            }
+            & .projectTitle {
+                text-align: center;
             }
             p {
                 font-size: 1.1em;
                 max-width: 80%;
+                @media (max-width: 768px) {
+                    max-width: unset;
+                }
+            }
+            .aiPortrait {
+                float: right;
+                margin-right: 1em;
+                margin-left: 1em;
+                width: 30%;
+            }
+
+            .aiPortrait img {
+                display: block;
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+            }
+            .imageCaption {
+                padding-top: 2em;
+                margin-top: 10px;
+                font-style: italic;
+            }
+            .achievementsText {
+                max-width: 100%;
+                padding: 1rem;
+            }
+            .badges {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                .badge {
+                    padding: 8px 12px;
+                    color: #ffffff;
+                    border-radius: 20px;
+                    margin: 5px;
+                    font-size: .8rem;
+                }
+                .backBadge {
+                    background-color: #bd93bd;
+                }
+                .frontBadge {
+                    background-color: #F26157;
+                }
+                .environmentBadge {
+                    background-color: #FF6B35;
+                }
+                a {
+                    text-decoration: none;
+                    .showMore {
+                        margin-top: 0.5rem;
+                        background-color: #FFFFFF;
+                        color: black;
+                        font-weight: 500;
+                    }
+                }
+
+            }
+            .projectImage {
+                width: fit-content;
+                margin: auto;
+                /* Masquer l'image par défaut pour les appareils mobiles */
+                @media only screen and (max-width: 769px) {
+                    .mobile {
+                        height: 500px;
+                    }
+                    .desktop {
+                        display: none;
+                    }
+                }
+
+                /* Afficher l'image spécifique pour les appareils mobiles */
+                @media only screen and (min-width: 768px) {
+                    .mobile {
+                        display: none;
+                    }
+                    .desktop {
+                        height: 350px;
+                    }
+                }
             }
             .contact {
                 display: flex;
+                /*overflow: hidden;*/
+                position: relative;
+                height: 100%;
+                overflow: auto;
                 /*Media query for mobile responsiveness */
                 @media (max-width: 768px) {
                     display: block;
@@ -224,13 +339,19 @@ main {
                     }
                 }
                 .linksPart {
+                    @media (max-width: 768px) {
+                        margin-top: 30%;
+                        transform: translateY(-30%);
+                        width: 100%;
+                    }
                     width: 50%;
                     .contactLinks {
-                        margin-top: 7rem;
                         .contactLink {
-                            margin-bottom: 3rem;
+                            margin-bottom: 1rem;
                             display: flex;
                             a {
+                                display: flex;
+                                align-items: center;
                                 text-decoration: none;
                                 color: var(--clear-font-color);
                             }
@@ -240,24 +361,26 @@ main {
                                 margin-right: 2rem;
                             }
                             span {
-                                border-bottom: 1px solid var(--clear-font-color);
-                                font-weight: 700;
+                                font-weight: 500;
                                 font-size: larger;
                             }
                         }
                     }
                 }
                 .btnSubmit {
-                    background-color: var(--main-color);
-                    color: var(--clear-font-color);
-                    padding: 1.1rem;
-                    font-family: "Sniglet", sans-serif;
+                    background-color: var(--clear-font-color);
+                    color: var(--main-color);
+                    padding: 1.1rem 3rem;
+                    font-family: "Quicksand", sans-serif;
                     border: none;
                     outline: none;
-                    border-radius: 40px;
+                    border-radius: 5px;
                     text-align: center;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
                     box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
                     cursor: pointer;
+                    font-weight: 600;
                 }
             }
         }
@@ -268,6 +391,12 @@ main {
     bottom: 2rem;
     right: 2rem;
     cursor: pointer;
+    @media (max-width: 768px) {
+        bottom: 3rem;
+        right: 1rem;
+        img {
+            width: 35px;
+        }
+    }
+
 }
-
-
