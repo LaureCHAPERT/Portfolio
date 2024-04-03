@@ -61,10 +61,12 @@ function showNavOptions () {
 }
 
 function adjustNavTabsPositionY() {
+    console.log('hey')
     const isMobile = window.innerWidth <= 768; // Check for mobile based on width
 
     if (isMobile) {
         navTabs.style.bottom = `0%`;
+        navTabs.style.top = 'auto';
     } else {
         /* A la base partis dans le CSS pour faire {top:50%; transform:translateY(-50%)}
          * Le translate faisait sortir de son parent navTabs. L'idée est donc de calculer ce recul
@@ -73,11 +75,13 @@ function adjustNavTabsPositionY() {
          * la taille des sous-éléments sans perdre les proportions
          */
         navTabs.style.top = `calc(50% - ${navTabs.scrollHeight / 2}px)`;
+        navTabs.style.bottom = 'auto';
     }
 }
 
 // Call the function on initial load and window resize
 adjustNavTabsPositionY();
+window.addEventListener('resize', adjustNavTabsPositionY)
 
 const form = document.getElementById('contact-form');
 form.addEventListener('submit', (event) => {
@@ -100,7 +104,6 @@ form.addEventListener('submit', (event) => {
         });
 });
 
-//ScrollBar by PerfectScrollBar
 const psopts = {
     wheelSpeed: 2,
     wheelPropagation: true,

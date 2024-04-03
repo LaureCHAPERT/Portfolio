@@ -103,7 +103,7 @@ main {
             margin: 0;
             max-width: unset;
         }
-        @media only screen and (min-width: 768px) and (max-width: 992px) {
+        @media only screen and (min-width: 769px) and (max-width: 992px) {
             width: 12%;
             max-width: 130px;
         }
@@ -169,9 +169,14 @@ main {
                     position: static;
                 }
             }
+            &#about {
+                max-height: 100%;
+                overflow-y: auto;
+            }
             @media (max-width: 768px) {
                padding: 1em;
             }
+            padding: 2em;
             overflow: hidden;
             color: var(--clear-font-color);
             position: absolute;
@@ -183,7 +188,6 @@ main {
             height: 70%;
             width: 80%;
             border-radius: 8px;
-            padding: 5em;
             line-height: 1.1;
              /*Media query for mobile responsiveness */
             @media (max-width: 768px) {
@@ -208,6 +212,9 @@ main {
                 @media (max-width: 768px) {
                     font-size: 1.5rem;
                 }
+                span {
+                    font-size: 1rem;
+                }
             }
             & .projectTitle {
                 text-align: center;
@@ -218,6 +225,25 @@ main {
                 @media (max-width: 768px) {
                     max-width: unset;
                 }
+            }
+            .aiPortrait {
+                float: right;
+                margin-right: 1em;
+                margin-left: 1em;
+                width: 30%;
+            }
+
+            .aiPortrait img {
+                display: block;
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+            }
+            .imageCaption {
+                padding-top: 2em;
+                margin-top: 10px;
+                font-style: italic;
             }
             .achievementsText {
                 max-width: 100%;
@@ -258,21 +284,21 @@ main {
                 width: fit-content;
                 margin: auto;
                 /* Masquer l'image par défaut pour les appareils mobiles */
-                @media only screen and (max-width: 768px) {
-                    .qrewMobile {
+                @media only screen and (max-width: 769px) {
+                    .mobile {
                         height: 500px;
                     }
-                    .qrewDesktop {
+                    .desktop {
                         display: none;
                     }
                 }
 
                 /* Afficher l'image spécifique pour les appareils mobiles */
                 @media only screen and (min-width: 768px) {
-                    .qrewMobile {
+                    .mobile {
                         display: none;
                     }
-                    .qrewDesktop {
+                    .desktop {
                         height: 350px;
                     }
                 }
