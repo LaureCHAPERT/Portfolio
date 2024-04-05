@@ -1,0 +1,43 @@
+homepage_title: Full-stack web developer
+navigation:
+  about: About
+  achievements: Achievements
+  contact: Contact
+about_page:
+  title: Welcome to my digital world!
+  first_paragraph: Full-stack web developer, I want to bring your projects to life and transform your visions into digital realities. My goal is to understand your needs and those of customers in order to develop tailor-made web solutions and guarantee everyone's satisfaction.
+    My sensitivity to accessibility and UX/UI allows me to design interfaces that are pleasant to all users.
+    Making the web accessible to all is an ambition that fascinates me and is particularly close to my heart!
+  second_paragraph: Musician and curious, creativity constitutes an essential part of my life and this artistic sensitivity is reflected in my work, where I always strive to find aesthetic solutions for each project from its birth to its potential evolutions.
+  third_paragraph: I look forward to discussing your ideas with you and working together to bring them to life. Thank you for visiting my portfolio; I look forward to collaborating with you!
+  fourth_paragraph: Opposite, a sketch version of my face that an AI generated using various photos of me which served as a basis for generating this picture. The use of AI must always be cautious, but it seems essential to me to know how to handle them and learn about them.
+achievements_page:
+  water_closest_description: WaterClosest is a community mobile application currently under development that aims to simplify the search for public and private toilets by providing reliable and comprehensive information. The main idea is to offer a simple and intuitive solution to meet the needs of people of all ages and backgrounds in France. Accessibility will be an essential element of the application. The mock-ups are currently being produced.
+  qrew_description: Qrew is an all-in-one software platform designed to facilitate communication and human resources management within companies. It offers a solution that
+    strengthen the link between HR, managers and employees, simplifying key processes such as interviews, HR appointments and skills management.
+    At Qrew, I was a full-stack web developer.
+  concerto_description: Concert'o is a team project that allows you to filter the events listed on its platform by region and/or musical genre.
+    platform. The front end is built in React and the back end in Symfony. The back office for accessing the CRUD is also managed in Symfony (the 'views' aspect being less complex than the front office).
+    is aimed at regional or private organisations. The idea came about following the end of deconfinement and the increased need to return to a social life
+    easily. Concert'o is a solution proposed in response to this desire. I was both front and back-end developer on this project.
+  first_portfolio_description: Just after I'd got my pro title and finally wanted to shake up the habits I'd had with Symfony,
+    I decided to do my first portfolio with Laravel. This project allowed me to familiarise myself with the basic concepts of the framework, in particular its
+    its tree structure and its 'artisan' tool, which lets you perform tasks similar to those of the Symfony conslole.
+  second_portfolio_description: Developed with Symfony 7, this version represents a significant upgrade from
+    my previous work with Symfony 6.3. Inspired by a carefully chosen colour palette, I've
+    based on mock-ups designed on Figma. For total control and a return to basics,
+    I opted for native CSS, including media queries, and JavaScript.
+    I also took the time to test various libraries, such as SplideJS, to get as close as possible to my mock-ups.
+  personal_project: (Personal project)
+  professional_project: (Professional project)
+  find_out_more: Find out more
+  first_portfolio: First portfolio
+  second_portfolio: This portfolio!
+contact_page:
+  send_me: Send me a message
+  or_contact_me: or contact me at
+  name: Name or company name
+  email: Your email
+  message: Your message
+  send: Send
+  phone: Phone
