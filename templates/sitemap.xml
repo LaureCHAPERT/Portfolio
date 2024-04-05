@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Page d'accueil -->
+    <url>
+        <loc>https://www.laurechapert.fr/#main-content</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Section "À propos" -->
+    <url>
+        <loc>https://www.laurechapert.fr/#aboutPage</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Section "Réalisations" -->
+    <url>
+        <loc>https://www.laurechapert.fr/#achievementsPage</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1</priority>
+    </url>
+
+    <!-- Section "Contact" -->
+    <url>
+        <loc>https://www.laurechapert.fr/#contactPage</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+</urlset>

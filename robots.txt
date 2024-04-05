@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://laure-chapert.fr/sitemap.xml
