@@ -3,7 +3,19 @@
 {% block title %}Bienvenue sur mon portfolio !{% endblock %}
 
 {% block body %}
-    <div data-controller="hello"></div>
+    <ul id="languages">
+        <li>
+            <a href="{{ path(app.request.attributes.get('_route'), {_locale: 'fr'}) }}">
+                <img class="flag" src="{{ asset('icons/fr-flag.svg') }}">
+            </a>
+        </li>
+        <li>
+            <a href="{{ path(app.request.attributes.get('_route'), {_locale: 'en'}) }}">
+                <img class="flag" src="{{ asset('icons/uk-flag.svg') }}">
+            </a>
+        </li>
+    </ul>
+
     <main id="main-content">
         <div class="homepage-title">
             <h1>Laure CHAPERT</h1>
@@ -50,7 +62,7 @@
             </article>
         </div>
         <div class="page" id="achievementsPage">
-            <article id="achievements" >
+            <article id="achievements">
                 <div class="splide" aria-labelledby="QuickMS">
                     <div class="splide__track">
                         <ul class="splide__list">
@@ -158,7 +170,7 @@
                                     <img class="mobile" src="{{ asset('images/PalettesMobile.PNG') }}">
                                 </div>
                                 <div class="badges">
-                                    <a href="https://evanescent-find-18f.notion.site/Concert-o-9e33e38887874db49650591d09c2010c?pvs=25">
+                                    <a href="https://evanescent-find-18f.notion.site/Portfolio-Actuel-d8d871a5ca87461c9f4166354aa9b0ed?pvs=4">
                                         <div class="badge showMore">En savoir plus</div>
                                     </a>
                                 </div>

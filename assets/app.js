@@ -1,4 +1,4 @@
-import './bootstrap.js';
+// import './bootstrap.js';
 import Splide from "@splidejs/splide";
 
 /*
@@ -68,12 +68,6 @@ function adjustNavTabsPositionY() {
         navTabs.style.bottom = `0%`;
         navTabs.style.top = 'auto';
     } else {
-        /* A la base partis dans le CSS pour faire {top:50%; transform:translateY(-50%)}
-         * Le translate faisait sortir de son parent navTabs. L'idée est donc de calculer ce recul
-         * à l'intérieur de top, pour que l'élément ne remonte jamais hors du parent.
-         * On peut calculer dynamiquement cette valeur comme ci-dessous, ce qui permet de modifier
-         * la taille des sous-éléments sans perdre les proportions
-         */
         navTabs.style.top = `calc(50% - ${navTabs.scrollHeight / 2}px)`;
         navTabs.style.bottom = 'auto';
     }

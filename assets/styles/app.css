@@ -16,6 +16,19 @@ body {
     overflow-y: hidden;
 }
 
+#languages {
+    position: fixed;
+    display: flex;
+    column-gap: 8px;
+    right: 2rem;
+    top: 1rem;
+    z-index: 3;
+
+    .flag {
+        max-width: 36px;
+    }
+}
+
 main, .pages {
     background-image: url("../images/Background.png");
     background-attachment: fixed;
@@ -130,6 +143,7 @@ main {
             img {
                 display: none;
             }
+
             /*Media query for mobile responsiveness */
             @media (max-width: 768px) {
                 width: 5rem;
@@ -172,6 +186,20 @@ main {
             &#about {
                 max-height: 100%;
                 overflow-y: auto;
+                .aiPortrait {
+                    float: right;
+                    margin-right: 1em;
+                    margin-left: 1em;
+                    width: 30%;
+                }
+
+                .aiPortrait img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 50%;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+                }
             }
             @media (max-width: 768px) {
                padding: 1em;
@@ -226,20 +254,6 @@ main {
                     max-width: unset;
                 }
             }
-            .aiPortrait {
-                float: right;
-                margin-right: 1em;
-                margin-left: 1em;
-                width: 30%;
-            }
-
-            .aiPortrait img {
-                display: block;
-                width: 100%;
-                height: auto;
-                border-radius: 50%;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-            }
             .imageCaption {
                 padding-top: 2em;
                 margin-top: 10px;
@@ -284,7 +298,7 @@ main {
                 width: fit-content;
                 margin: auto;
                 /* Masquer l'image par défaut pour les appareils mobiles */
-                @media only screen and (max-width: 769px) {
+                @media only screen and (max-width: 768px) {
                     .mobile {
                         height: 500px;
                     }
@@ -294,7 +308,7 @@ main {
                 }
 
                 /* Afficher l'image spécifique pour les appareils mobiles */
-                @media only screen and (min-width: 768px) {
+                @media only screen and (min-width: 769px) {
                     .mobile {
                         display: none;
                     }
@@ -305,7 +319,6 @@ main {
             }
             .contact {
                 display: flex;
-                /*overflow: hidden;*/
                 position: relative;
                 height: 100%;
                 overflow: auto;
