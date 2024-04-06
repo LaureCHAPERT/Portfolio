@@ -22,7 +22,7 @@ achievements_page:
     easily. Concert'o is a solution proposed in response to this desire. I was both front and back-end developer on this project.
   first_portfolio_description: Just after I'd got my pro title and finally wanted to shake up the habits I'd had with Symfony,
     I decided to do my first portfolio with Laravel. This project allowed me to familiarise myself with the basic concepts of the framework, in particular its
-    its tree structure and its 'artisan' tool, which lets you perform tasks similar to those of the Symfony conslole.
+    its tree structure and its 'Artisan' tool, which lets you perform tasks similar to those of the Symfony conslole.
   second_portfolio_description: Developed with Symfony 7, this version represents a significant upgrade from
     my previous work with Symfony 6.3. Inspired by a carefully chosen colour palette, I've
     based on mock-ups designed on Figma. For total control and a return to basics,
