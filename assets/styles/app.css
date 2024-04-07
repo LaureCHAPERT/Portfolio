@@ -172,11 +172,14 @@ main {
         height: 100vh;
         width: 100%;
         position: relative;
+        /*@media (max-width: 768px) {*/
+        /*    height: calc(100% - 2.2rem);*/
+        /*}*/
         article {
             &#achievements {
                 padding: 1rem;
                 .splide__slide {
-                    max-height: 100%;
+                    /* se cumule avec une valeur en px pour fonctionner (fn JS)*/
                     overflow-y: auto;
                 }
                 ul.splide__pagination {
@@ -306,14 +309,21 @@ main {
                         display: none;
                     }
                 }
-
+                @media only screen and (min-width: 769px) and (max-width: 1000px) {
+                    .mobile {
+                        height: 500px;
+                    }
+                    .desktop {
+                        display: none;
+                    }
+                }
                 /* Afficher l'image spécifique pour les appareils mobiles */
-                @media only screen and (min-width: 769px) {
+                @media only screen and (min-width: 1001px) {
                     .mobile {
                         display: none;
                     }
                     .desktop {
-                        height: 350px;
+                        height: 320px;
                     }
                 }
             }
@@ -323,38 +333,56 @@ main {
                 height: 100%;
                 overflow: auto;
                 /*Media query for mobile responsiveness */
-                @media (max-width: 768px) {
-                    display: block;
+                @media (max-width: 920px) {
+                    flex-direction: column;
+                    row-gap: 1.5rem;
                 }
                 .contactForm {
-                    width: 50%;
+                    width: 100%;
+                    flex: 1 1 0;
                     @media (max-width: 768px) {
                         width: 100%;
                     }
-                    .controlLabel {
-                        font-size: medium;
-                    }
-                    .transparentInput {
-                        background-color: transparent;
-                        border: none;
-                        border-bottom: 1px solid black;
-                        padding: 5px;
+                    .form-container {
                         width: 60%;
-                        margin-bottom: 2rem;
-                        margin-top: 1rem;
-                        color: var(--clear-font-color);
-                        font-size: medium;
-                        resize: none;
-                    }
-                    .transparentInput:focus {
-                        color: var(--clear-font-color);
-                        font-size: medium;
+                        #flashbag-container.hidden {
+                            display: none;
+                        }
+                        #flashbag-container {
+                            background-color: var(--clear-font-color);
+                            border-radius: 5px;
+                            width: 100%;
+                            margin-bottom: 1rem;
+                            .flashbag-message {
+                                color: var(--main-color);
+                                font-weight: 600;
+                                padding: 1.1rem 3rem;
+                            }
+                        }
+                        .controlLabel {
+                            font-size: medium;
+                        }
+                        .transparentInput {
+                            background-color: transparent;
+                            border: none;
+                            border-bottom: 1px solid black;
+                            padding: 5px;
+                            width: 100%;
+                            margin-bottom: 2rem;
+                            margin-top: 1rem;
+                            color: var(--clear-font-color);
+                            font-size: medium;
+                            resize: none;
+                        }
+                        .transparentInput:focus {
+                            color: var(--clear-font-color);
+                            font-size: medium;
+                        }
                     }
                 }
                 .linksPart {
+                    flex: 1 1 0;
                     @media (max-width: 768px) {
-                        margin-top: 30%;
-                        transform: translateY(-30%);
                         width: 100%;
                     }
                     width: 50%;
@@ -411,5 +439,5 @@ main {
             width: 35px;
         }
     }
-
 }
+

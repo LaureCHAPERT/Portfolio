@@ -89,9 +89,15 @@ form.addEventListener('submit', (event) => {
     })
         .then(response => response.json())
         .then(data => {
+            if (data.success) {
+                const flashbagDiv = document.createElement('div');
+                flashbagDiv.classList.add('flashbag-message');
+                flashbagDiv.textContent = "Votre message a été envoyé avec succès !";
 
-            console.log(data);
-
+                const flashbagContainer = document.getElementById('flashbag-container');
+                flashbagContainer.appendChild(flashbagDiv);
+                flashbagContainer.classList.remove('hidden');
+            }
         })
         .catch(error => {
             console.error(error);
@@ -121,7 +127,7 @@ function adjustSlideHeight() {
     var windowHeight = window.innerHeight;
 
     // Définit un pourcentage de réduction de la hauteur par rapport à la hauteur de la fenêtre.
-    var reductionPercentage = 0.85 // Par exemple, réduit de 10 %.
+    var reductionPercentage = 0.70 // Par exemple, réduit de 10 %.
 
     // Calcule la nouvelle hauteur maximale des slides.
     var newSlideHeight = windowHeight * reductionPercentage;
@@ -131,6 +137,11 @@ function adjustSlideHeight() {
 
     // Ajuste la hauteur maximale de chaque slide.
     slides.forEach(function(slide) {
-        slide.style.maxHeight = newSlideHeight + "px";
+        // Plutôt que de se baser sur la height de la nouvelle slide, on se cale plutôt sur la height du container (le fond coloré)
+        // Quelle que soit la hauteur de notre slide, on veut que son contenu apparaisse au maximum dans la totalité de la hauteur de ce container.
+        // Le "- 50" permet de rajouter un peu d'espace en fin de scroll pour que le bouton "En savoir plus" ne soit pas mordu par la bordure du bas
+        slide.style.maxHeight = (document.querySelector('#achievements').clientHeight - 50) + 'px'
+        // slide.style.maxHeight = newSlideHeight + "px";
     });
 }
+
