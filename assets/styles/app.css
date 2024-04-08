@@ -211,9 +211,9 @@ main {
             overflow: hidden;
             color: var(--clear-font-color);
             position: absolute;
-            top: 50%;
+            top: 3rem;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translateX(-50%);
             background-color: var(--second-color);
             opacity: 95%;
             height: 70%;
@@ -223,7 +223,7 @@ main {
              /*Media query for mobile responsiveness */
             @media (max-width: 768px) {
                 width: 85%;  /* Adjust size for smaller screens */
-                height: 83%;
+                height: 84%;
                 border-radius: 3px;
             }
             @media only screen and (min-width: 768px) and (max-width: 992px) {
