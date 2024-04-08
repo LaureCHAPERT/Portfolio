@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
     --main-color: #561C24;
     --second-color: #6D2932;
@@ -6,6 +13,7 @@
 }
 
 *, *:before, *:after {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -18,7 +26,11 @@ body {
 
 #languages {
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-column-gap: 8px;
+    -moz-column-gap: 8px;
     column-gap: 8px;
     right: 2rem;
     top: 1rem;
@@ -48,6 +60,8 @@ main {
         position: absolute;
         left: 50%;
         top: 30%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         text-align: center;
         @media screen and (max-width: 768px) {
@@ -63,8 +77,11 @@ main {
             position: absolute;
             left: 50%;
             top: 80%;
+            -webkit-transform: translate(-50%);
+            -ms-transform: translate(-50%);
             transform: translate(-50%);
             &:hover {
+                -webkit-animation: jumpInfinite 1.5s infinite;
                 animation: jumpInfinite 1.5s infinite
             }
         }
@@ -72,24 +89,55 @@ main {
             position: absolute;
             left: 50%;
             top: 87%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
             transform: translateX(-50%);
         }
     }
 }
 
-@keyframes jumpInfinite {
+@-webkit-keyframes jumpInfinite {
     0% {
+        -webkit-transform: translate(-50%, 0px);
         transform: translate(-50%, 0px);
+        -webkit-animation-timing-function:ease-in-out;
         animation-timing-function:ease-in-out
     }
 
     50% {
+        -webkit-transform: translate(-50%, 12px);
         transform: translate(-50%, 12px);
+        -webkit-animation-timing-function:ease-in-out;
         animation-timing-function:ease-in-out
     }
 
     100% {
+        -webkit-transform: translate(-50%, 0px);
         transform: translate(-50%, 0px);
+        -webkit-animation-timing-function:ease-in-out;
+        animation-timing-function:ease-in-out
+    }
+}
+
+@keyframes jumpInfinite {
+    0% {
+        -webkit-transform: translate(-50%, 0px);
+        transform: translate(-50%, 0px);
+        -webkit-animation-timing-function:ease-in-out;
+        animation-timing-function:ease-in-out
+    }
+
+    50% {
+        -webkit-transform: translate(-50%, 12px);
+        transform: translate(-50%, 12px);
+        -webkit-animation-timing-function:ease-in-out;
+        animation-timing-function:ease-in-out
+    }
+
+    100% {
+        -webkit-transform: translate(-50%, 0px);
+        transform: translate(-50%, 0px);
+        -webkit-animation-timing-function:ease-in-out;
         animation-timing-function:ease-in-out
     }
 }
@@ -103,13 +151,23 @@ main {
         max-width: 150px;
         position: sticky;
         float: left;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         row-gap: 2.5rem;
-         /*Media query for mobile responsiveness */
+        /*Media query for mobile responsiveness */
         @media (max-width: 768px) {
             float: none;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
             flex-direction: row;
             position: fixed;
             width: 100vw;
@@ -132,8 +190,14 @@ main {
             width: 100%;
             background-color: var(--main-color);
             border-radius: 0 8px 8px 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             .text {
                 color: var(--clear-font-color);
@@ -148,6 +212,8 @@ main {
             @media (max-width: 768px) {
                 width: 5rem;
                 border-radius: 3px;
+                -webkit-box-flex: 1;
+                -ms-flex: 1 1 0px;
                 flex: 1 1 0;
                 padding: unset;
                 height: 2.2rem;
@@ -201,11 +267,12 @@ main {
                     width: 100%;
                     height: auto;
                     border-radius: 50%;
+                    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
                 }
             }
             @media (max-width: 768px) {
-               padding: 1em;
+                padding: 1em;
             }
             padding: 2em;
             overflow: hidden;
@@ -213,6 +280,8 @@ main {
             position: absolute;
             top: 50%;
             left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             background-color: var(--second-color);
             opacity: 95%;
@@ -220,9 +289,11 @@ main {
             width: 80%;
             border-radius: 8px;
             line-height: 1.1;
-             /*Media query for mobile responsiveness */
+            /*Media query for mobile responsiveness */
             @media (max-width: 768px) {
                 top: 3rem;
+                -webkit-transform: translate(-50%, 0);
+                -ms-transform: translate(-50%, 0);
                 transform: translate(-50%, 0);
                 width: 85%;  /* Adjust size for smaller screens */
                 height: 78%;
@@ -269,8 +340,13 @@ main {
                 padding: 1rem;
             }
             .badges {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
                 justify-content: center;
+                -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
                 .badge {
                     padding: 8px 12px;
@@ -300,6 +376,8 @@ main {
 
             }
             .projectImage {
+                width: -webkit-fit-content;
+                width: -moz-fit-content;
                 width: fit-content;
                 margin: auto;
                 /* Masquer l'image par défaut pour les appareils mobiles */
@@ -330,17 +408,24 @@ main {
                 }
             }
             .contact {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
                 position: relative;
                 height: 100%;
                 overflow: auto;
                 /*Media query for mobile responsiveness */
                 @media (max-width: 920px) {
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
                     flex-direction: column;
                     row-gap: 1.5rem;
                 }
                 .contactForm {
                     width: 100%;
+                    -webkit-box-flex: 1;
+                    -ms-flex: 1 1 0px;
                     flex: 1 1 0;
                     @media (max-width: 768px) {
                         width: 100%;
@@ -383,6 +468,8 @@ main {
                     }
                 }
                 .linksPart {
+                    -webkit-box-flex: 1;
+                    -ms-flex: 1 1 0px;
                     flex: 1 1 0;
                     @media (max-width: 768px) {
                         width: 100%;
@@ -391,9 +478,15 @@ main {
                     .contactLinks {
                         .contactLink {
                             margin-bottom: 1rem;
+                            display: -webkit-box;
+                            display: -ms-flexbox;
                             display: flex;
                             a {
+                                display: -webkit-box;
+                                display: -ms-flexbox;
                                 display: flex;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
                                 align-items: center;
                                 text-decoration: none;
                                 color: var(--clear-font-color);
@@ -421,6 +514,7 @@ main {
                     text-align: center;
                     text-transform: uppercase;
                     letter-spacing: 2px;
+                    -webkit-box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
                     box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
                     cursor: pointer;
                     font-weight: 600;
@@ -442,4 +536,3 @@ main {
         }
     }
 }
-
