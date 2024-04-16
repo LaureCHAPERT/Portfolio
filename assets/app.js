@@ -45,23 +45,30 @@ addTabClickListener('arrowToUpDiv', 'main-content');
     document.addEventListener(e, showNavOptions);
 })
 
-function showNavOptions () {
-    // Retourne si notre scroll est plus bas que la hauteur totale de l'écran.
-    // Le cas échéant, on a totalement quitté le block #main-content
-    const isMainPageVisible = window.scrollY < window.innerHeight
-    const arrowToUp = document.querySelector('.arrowToUpDiv')
+function showNavOptions() {
+    // Vérifie si la position de défilement est supérieure à une certaine limite
+    const scrollThreshold = 200; // Ajustez cette valeur selon votre besoin
+    const isBeyondThreshold = window.scrollY > scrollThreshold;
 
-    if (isMainPageVisible) {
-        navTabs.style.display = 'none'
-        arrowToUp.style.display = 'none'
+    const navTabs = document.querySelector('.nav-tabs');
+    const arrowToUp = document.querySelector('.arrowToUpDiv');
+
+    // Affiche ou masque les éléments en fonction du dépassement de la limite de défilement
+    if (isBeyondThreshold) {
+        navTabs.style.display = 'flex';
+        arrowToUp.style.display = 'block';
     } else {
-        navTabs.style.display = 'flex'
-        arrowToUp.style.display = 'block'
+        navTabs.style.display = 'none';
+        arrowToUp.style.display = 'none';
     }
 }
 
+// Exécute la fonction showNavOptions() lors du chargement initial de la page et lors du défilement.
+['DOMContentLoaded', 'scroll'].forEach(e => {
+    document.addEventListener(e, showNavOptions);
+});
+
 function adjustNavTabsPositionY() {
-    console.log('hey')
     const isMobile = window.innerWidth <= 768; // Check for mobile based on width
 
     if (isMobile) {
