@@ -42,13 +42,13 @@ body {
 }
 
 main, .pages {
-    background-image: url("../images/Background.png");
+    background-image: url("../images/Background.webp");
     background-attachment: fixed;
     background-size: cover;
 }
 @media screen and (max-width: 768px) {
     main, .pages {
-        background-image: url("../images/MobileBackground.png");
+        background-image: url("../images/MobileBackground.webp");
     }
 }
 
