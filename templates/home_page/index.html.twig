@@ -5,13 +5,13 @@
 {% block body %}
     <ul id="languages">
         <li>
-            <a href="{{ path(app.request.attributes.get('_route'), {_locale: 'fr'}) }}">
-                <img class="flag" src="{{ asset('icons/fr-flag.svg') }}">
+            <a href="{{ path(app.request.attributes.get('_route'), {_locale: 'fr'}) }}" hreflang="fr" lang="fr" aria-label="Version française">
+                <img class="flag" src="{{ asset('icons/fr-flag.svg') }}" alt="">
             </a>
         </li>
         <li>
-            <a href="{{ path(app.request.attributes.get('_route'), {_locale: 'en'}) }}">
-                <img class="flag" src="{{ asset('icons/uk-flag.svg') }}">
+            <a href="{{ path(app.request.attributes.get('_route'), {_locale: 'en'}) }}" hreflang="en" lang="en" aria-label="English version">
+                <img class="flag" src="{{ asset('icons/uk-flag.svg') }}" alt="">
             </a>
         </li>
     </ul>
@@ -21,32 +21,32 @@
             <h1>Laure CHAPERT</h1>
             <p>{{ 'homepage_title'|trans }}</p>
         </div>
-        <div role="icon" class="arrowToDownDiv">
-            <img class="arrowToDown" src="{{ asset('icons/Arrow.svg') }}">
-            <img class="arrowLine" src="{{ asset('icons/ArrowLine.svg') }}">
+        <div class="arrowToDownDiv" role="button" tabindex="0" aria-label="{{ 'a11y.scroll_down'|trans }}">
+            <img class="arrowToDown" src="{{ asset('icons/Arrow.svg') }}" alt="">
+            <img class="arrowLine" src="{{ asset('icons/ArrowLine.svg') }}" alt="">
         </div>
     </main>
 
     <aside class="pages">
-        <div class="nav-tabs">
-            <div class="nav-tab about-tab active">
+        <nav class="nav-tabs" aria-label="{{ 'a11y.main_navigation'|trans }}">
+            <div class="nav-tab about-tab active" role="button" tabindex="0">
                 <span class="text"> {{ 'navigation.about'|trans }} </span>
-                <img class="arrow" src="{{ asset('icons/About.svg') }}">
+                <img class="arrow" src="{{ asset('icons/About.svg') }}" alt="">
             </div>
-            <div class="nav-tab achievements-tab">
+            <div class="nav-tab achievements-tab" role="button" tabindex="0">
                 <span class="text"> {{ 'navigation.achievements'|trans }} </span>
-                <img class="arrow" src="{{ asset('icons/Achievements.svg') }}">
+                <img class="arrow" src="{{ asset('icons/Achievements.svg') }}" alt="">
             </div>
-            <div class="nav-tab contact-tab">
+            <div class="nav-tab contact-tab" role="button" tabindex="0">
                 <span class="text"> {{ 'navigation.contact'|trans }} </span>
-                <img class="arrow" src="{{ asset('icons/Contact.svg') }}">
+                <img class="arrow" src="{{ asset('icons/Contact.svg') }}" alt="">
             </div>
-        </div>
+        </nav>
         <div class="page" id="aboutPage">
             <article id="about">
                 <h1>{{ 'about_page.title'|trans }}</h1>
                 <div class="aiPortrait">
-                    <img class="desktop" src="{{ asset('images/AIPortraitSketch.jpg') }}" alt="Portrait de l'IA">
+                    <img class="desktop" src="{{ asset('images/AIPortraitSketch.jpg') }}" alt="{{ 'a11y.ai_portrait'|trans }}">
                 </div>
                 <div class="presentationText">
                     <p>{{ 'about_page.first_paragraph'|trans }}</p> <br>
@@ -202,8 +202,8 @@
                 {{ render_esi(url('contact')) }}
             </article>
         </div>
-        <div class="arrowToUpDiv">
-            <img class="arrowToUp" src="{{ asset('icons/ArrowToUp.svg') }}">
+        <div class="arrowToUpDiv" role="button" tabindex="0" aria-label="{{ 'a11y.back_to_top'|trans }}">
+            <img class="arrowToUp" src="{{ asset('icons/ArrowToUp.svg') }}" alt="">
         </div>
     </aside>
 

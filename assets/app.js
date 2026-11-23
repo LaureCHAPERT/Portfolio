@@ -12,15 +12,25 @@ import './styles/app.css';
 import '@splidejs/splide/dist/css/splide.min.css'
 
 const navTabs = document.querySelector('.nav-tabs');
-const arrowToDown = document.querySelector('.arrowToDown');
-arrowToDown.addEventListener('click', () => {
-    const mainContent = document.querySelector('.pages');
-    mainContent.scrollIntoView({ behavior: 'smooth' });
-});
+const arrowToDown = document.querySelector('.arrowToDownDiv');
+const scrollToPages = () => document.querySelector('.pages').scrollIntoView({ behavior: 'smooth' });
+arrowToDown.addEventListener('click', scrollToPages);
+onKeyboardActivate(arrowToDown, scrollToPages);
+
+// Rend activables au clavier (Entrée / Espace) les éléments role="button" qui ne sont pas des <button>
+function onKeyboardActivate(element, callback) {
+    element.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            callback();
+        }
+    });
+}
 
 // Fonction générique pour ajouter un écouteur d'événement à un onglet
 function addTabClickListener(tabClassName, targetId) {
     const tab = document.querySelector(`.${tabClassName}`);
+    onKeyboardActivate(tab, () => tab.click());
     tab.addEventListener('click', () => {
         // Supprimer la classe "active" de tous les onglets d'abord
         document.querySelectorAll('.nav-tab').forEach(tab => {

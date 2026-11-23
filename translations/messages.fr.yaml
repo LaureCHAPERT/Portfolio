@@ -57,3 +57,8 @@ contact_page:
   phone: Téléphone
   success: "Votre message a été envoyé avec succès !"
   error: "Une erreur est survenue, votre message n'a pas pu être envoyé. Vous pouvez m'écrire directement par email."
+a11y:
+  scroll_down: "Descendre vers le contenu"
+  main_navigation: "Navigation principale"
+  back_to_top: "Revenir en haut de la page"
+  ai_portrait: "Portrait de Laure Chapert dessiné au crayon, généré par une IA"
