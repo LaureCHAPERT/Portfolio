@@ -1,18 +1,27 @@
 homepage_title: Full-stack web developer
+meta_description: "Laure Chapert, full-stack Symfony / React / TypeScript developer. Experience, case studies and projects."
 navigation:
   about: About
-  achievements: Achievements
+  experience: Experience
+  projects: Projects
   contact: Contact
+hero:
+  stack: "Symfony · React · TypeScript"
+  pitch: "I build polished, accessible interfaces, and the back end that powers them."
+  cta_experience: See my experience
+  cta_contact: Contact me
 about_page:
-  title: Welcome to my digital world!
-  first_paragraph: Full-stack web developer, I want to bring your projects to life and transform your visions into digital realities. My goal is to understand your needs and those of customers in order to develop tailor-made web solutions and guarantee everyone's satisfaction.
-    My sensitivity to accessibility and UX/UI allows me to design interfaces that are pleasant to all users.
-    Making the web accessible to all is an ambition that fascinates me and is particularly close to my heart!
-  second_paragraph: Musician and curious, creativity constitutes an essential part of my life and this artistic sensitivity is reflected in my work, where I always strive to find aesthetic solutions for each project from its birth to its potential evolutions.
-  third_paragraph: I look forward to discussing your ideas with you and working together to bring them to life. Thank you for visiting my portfolio; I look forward to collaborating with you!
-  fourth_paragraph: Opposite, a sketch version of my face that an AI generated using various photos of me which served as a basis for generating this picture. The use of AI must always be cautious, but it seems essential to me to know how to handle them and learn about them.
+  title: About
+  first_paragraph: "Full-stack developer, I spent over two years at Zei on an ESG management SaaS platform, after a first experience at QuickMS on the HR software Qrew."
+  second_paragraph: "I enjoy work where front end and back end meet: design systems, tested and documented components, typed contracts between Symfony and TypeScript, access control. I work with shared architecture rules, systematic code review and close ties with design and product."
+  third_paragraph: "Opquast certified, I make accessibility and web quality a habit. As a musician, I also pay particular attention to the visual craft of interfaces."
+experience_page:
+  title: Experience
+projects_page:
+  title: Personal projects
 achievements_page:
   zei_period: "July 2024 – October 2026 · 2 years 3 months"
+  zei_role: "Full-stack developer"
   zei_description: "B2B SaaS platform for ESG / CSR management: non-financial indicators, carbon footprint and sustainability reports. Full-stack developer in a team of 7, mostly front end (React / TypeScript, design system) with a real share of Symfony back end."
   zei_image_alt: "Wireframe of the sustainability report editor: KPI blocks, chart and table, branding settings panel and PDF export"
   zei_image_caption: "The block-based report editor with PDF export (wireframe recreated without real data)"
@@ -21,38 +30,37 @@ achievements_page:
     report_editor: "The sustainability report editor: designing for paper"
     design_system: "Design system migration: 340 files without blocking the team"
     permissions: "Permissions, roles and external audit: a button that depended on seven rules"
-  qrew_description: Qrew is an all-in-one software platform designed to facilitate communication and human resources management within companies. It offers a solution that
-    strengthen the link between HR, managers and employees, simplifying key processes such as interviews, HR appointments and skills management.
-    At Qrew, I was a full-stack web developer.
-  concerto_description: Concert'o is a team project that allows you to filter the events listed on its platform by region and/or musical genre.
-    platform. The front end is built in React and the back end in Symfony. The back office for accessing the CRUD is also managed in Symfony (the 'views' aspect being less complex than the front office).
-    is aimed at regional or private organisations. The idea came about following the end of deconfinement and the increased need to return to a social life
-    easily. Concert'o is a solution proposed in response to this desire. I was both front and back-end developer on this project.
-  first_portfolio_description: Just after I'd got my pro title and finally wanted to shake up the habits I'd had with Symfony,
-    I decided to do my first portfolio with Laravel. This project allowed me to familiarise myself with the basic concepts of the framework, in particular its
-    its tree structure and its 'Artisan' tool, which lets you perform tasks similar to those of the Symfony conslole.
-  second_portfolio_description: Developed with Symfony 7, this version represents a significant upgrade from
-    my previous work with Symfony 6.3. Inspired by a carefully chosen colour palette, I've
-    based on mock-ups designed on Figma. For total control and a return to basics,
-    I opted for native CSS, including media queries, and JavaScript.
-    I also took the time to test various libraries, such as SplideJS, to get as close as possible to my mock-ups.
-  personal_project: (Personal project)
-  professional_project: (Professional project)
+  qrew_company: "QuickMS"
+  qrew_role: "Full-stack developer"
+  qrew_description: "All-in-one HR software: annual and professional reviews, objectives, skills, HR appointments. Features and fixes in Symfony, Vue.js and JavaScript, in an agile team with code review, including the redesign of the HR, manager and employee dashboards."
+  qrew_image_alt: "Qrew HR dashboard: ongoing campaigns, review breakdown and status"
+  concerto_description: "Team project: a platform to find concerts by region and music genre. React front end, Symfony API and back office. I worked on both front end and back end."
+  concerto_image_alt: "Concert'O home page with the concert list and filters"
+  portfolios_title: "My portfolios"
+  portfolios_description: "Two successive versions of my portfolio: the first in Laravel to learn the framework, the second (this one) in Symfony 7, native CSS and JavaScript, built from Figma mock-ups."
+  portfolios_image_alt: "Colour palette and mock-up of this portfolio"
+  first_portfolio: "Laravel version"
+  second_portfolio: "Symfony version"
+  personal_project: Personal project
+  professional_project: Professional experience
   find_out_more: Find out more
-  first_portfolio: First portfolio
-  second_portfolio: This portfolio!
 contact_page:
+  title: Contact
+  intro: "A role, a project or a question? Write to me, I reply quickly."
   send_me: Send me a message
   or_contact_me: or contact me at
   name: Name or company name
   email: Your email
   message: Your message
   send: Send
-  phone: Phone
   success: "Your message has been sent successfully!"
   error: "Something went wrong and your message could not be sent. Feel free to email me directly."
+footer:
+  rights: "Laure Chapert"
 a11y:
-  scroll_down: "Scroll down to the content"
+  skip_to_content: "Skip to content"
   main_navigation: "Main navigation"
+  language: "Language"
   back_to_top: "Back to top"
   ai_portrait: "Pencil sketch portrait of Laure Chapert, generated by an AI"
+  new_tab: "(opens in a new tab)"

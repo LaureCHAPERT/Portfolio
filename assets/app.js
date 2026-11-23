@@ -1,94 +1,28 @@
-// import './bootstrap.js';
-import Splide from "@splidejs/splide";
-
-/*
- * Welcome to your app's main JavaScript file!
- *
- * This file will be included onto the page via the importmap() Twig function,
- * which should already be in your base.html.twig.
- */
-import './styles/reset.css'
+import './styles/reset.css';
 import './styles/app.css';
-import '@splidejs/splide/dist/css/splide.min.css'
 
-const navTabs = document.querySelector('.nav-tabs');
-const arrowToDown = document.querySelector('.arrowToDownDiv');
-const scrollToPages = () => document.querySelector('.pages').scrollIntoView({ behavior: 'smooth' });
-arrowToDown.addEventListener('click', scrollToPages);
-onKeyboardActivate(arrowToDown, scrollToPages);
+// Surligne dans la navigation la section actuellement visible
+const navLinks = document.querySelectorAll('.main-nav a[href^="#"]');
+const sections = [...navLinks].map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
 
-// Rend activables au clavier (Entrée / Espace) les éléments role="button" qui ne sont pas des <button>
-function onKeyboardActivate(element, callback) {
-    element.addEventListener('keydown', (event) => {
-        if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault();
-            callback();
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
         }
-    });
-}
-
-// Fonction générique pour ajouter un écouteur d'événement à un onglet
-function addTabClickListener(tabClassName, targetId) {
-    const tab = document.querySelector(`.${tabClassName}`);
-    onKeyboardActivate(tab, () => tab.click());
-    tab.addEventListener('click', () => {
-        // Supprimer la classe "active" de tous les onglets d'abord
-        document.querySelectorAll('.nav-tab').forEach(tab => {
-            tab.classList.remove('active');
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === `#${entry.target.id}`) {
+                link.setAttribute('aria-current', 'true');
+            } else {
+                link.removeAttribute('aria-current');
+            }
         });
-        // Ajouter la classe "active" à l'onglet cliqué
-        tab.classList.add('active');
-        const targetPage = document.querySelector(`#${targetId}`);
-        targetPage.scrollIntoView({ behavior: 'smooth' });
     });
-}
+}, { rootMargin: '-45% 0px -50% 0px' });
 
-// Ajout des écouteurs d'événements pour chaque onglet
-addTabClickListener('about-tab', 'aboutPage');
-addTabClickListener('achievements-tab', 'achievementsPage');
-addTabClickListener('contact-tab', 'contactPage');
-addTabClickListener('arrowToUpDiv', 'main-content');
+sections.forEach(section => observer.observe(section));
 
-
-function showNavOptions() {
-    // Vérifie si la position de défilement est supérieure à une certaine limite
-    const scrollThreshold = 200; // Ajustez cette valeur selon votre besoin
-    const isBeyondThreshold = window.scrollY > scrollThreshold;
-
-    const navTabs = document.querySelector('.nav-tabs');
-    const arrowToUp = document.querySelector('.arrowToUpDiv');
-
-    // Affiche ou masque les éléments en fonction du dépassement de la limite de défilement
-    if (isBeyondThreshold) {
-        navTabs.style.display = 'flex';
-        arrowToUp.style.display = 'block';
-    } else {
-        navTabs.style.display = 'none';
-        arrowToUp.style.display = 'none';
-    }
-}
-
-// Exécute la fonction showNavOptions() lors du chargement initial de la page et lors du défilement.
-['DOMContentLoaded', 'scroll'].forEach(e => {
-    document.addEventListener(e, showNavOptions);
-});
-
-function adjustNavTabsPositionY() {
-    const isMobile = window.innerWidth <= 768; // Check for mobile based on width
-
-    if (isMobile) {
-        navTabs.style.bottom = `0%`;
-        navTabs.style.top = 'auto';
-    } else {
-        navTabs.style.top = `calc(50% - ${navTabs.scrollHeight / 2}px)`;
-        navTabs.style.bottom = 'auto';
-    }
-}
-
-// Call the function on initial load and window resize
-adjustNavTabsPositionY();
-window.addEventListener('resize', adjustNavTabsPositionY)
-
+// Formulaire de contact
 const form = document.getElementById('contact-form');
 const flashbagContainer = document.getElementById('flashbag-container');
 
@@ -103,7 +37,7 @@ function showFlashMessage(message, isError = false) {
     flashbagContainer.classList.remove('hidden');
 }
 
-form.addEventListener('submit', (event) => {
+form?.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const submitButton = form.querySelector('[type="submit"]');
@@ -129,45 +63,3 @@ form.addEventListener('submit', (event) => {
             submitButton.disabled = false;
         });
 });
-
-const psopts = {
-    wheelSpeed: 2,
-    wheelPropagation: true,
-    minScrollbarLength: 40,
-    maxScrollbarLength: 200,
-}
-
-//Slide on achievements page
-const splide = new Splide('.splide',psopts)
-
-splide.mount()
-document.addEventListener("DOMContentLoaded", function() {
-    adjustSlideHeight();
-
-    // Écoute également le redimensionnement de la fenêtre pour ajuster la hauteur des slides.
-    window.addEventListener("resize", adjustSlideHeight);
-});
-
-function adjustSlideHeight() {
-    // Obtient la hauteur de la fenêtre du navigateur.
-    var windowHeight = window.innerHeight;
-
-    // Définit un pourcentage de réduction de la hauteur par rapport à la hauteur de la fenêtre.
-    var reductionPercentage = 0.70 // Par exemple, réduit de 10 %.
-
-    // Calcule la nouvelle hauteur maximale des slides.
-    var newSlideHeight = windowHeight * reductionPercentage;
-
-    // Sélectionne toutes les slides.
-    var slides = document.querySelectorAll('.splide__slide');
-
-    // Ajuste la hauteur maximale de chaque slide.
-    slides.forEach(function(slide) {
-        // Plutôt que de se baser sur la height de la nouvelle slide, on se cale plutôt sur la height du container (le fond coloré)
-        // Quelle que soit la hauteur de notre slide, on veut que son contenu apparaisse au maximum dans la totalité de la hauteur de ce container.
-        // Le "- 50" permet de rajouter un peu d'espace en fin de scroll pour que le bouton "En savoir plus" ne soit pas mordu par la bordure du bas
-        slide.style.maxHeight = (document.querySelector('#achievements').clientHeight - 50) + 'px'
-        // slide.style.maxHeight = newSlideHeight + "px";
-    });
-}
-

@@ -25,11 +25,4 @@ return [
     '@hotwired/turbo' => [
         'version' => '7.3.0',
     ],
-    '@splidejs/splide' => [
-        'version' => '4.1.4',
-    ],
-    '@splidejs/splide/dist/css/splide.min.css' => [
-        'version' => '4.1.4',
-        'type' => 'css',
-    ]
 ];
