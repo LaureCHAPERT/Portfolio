@@ -46,4 +46,8 @@ contact_page:
   message: Votre message
   send: Envoyer
   phone: Téléphone
-
+a11y:
+  scroll_down: "Descendre vers le contenu"
+  main_navigation: "Navigation principale"
+  back_to_top: "Revenir en haut de la page"
+  ai_portrait: "Portrait de Laure Chapert dessiné au crayon, généré par une IA"
