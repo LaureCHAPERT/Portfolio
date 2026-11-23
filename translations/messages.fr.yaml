@@ -14,6 +14,15 @@ about_page:
   fourth_paragraph: Ci-contre, une version sketch de mon visage qu'une IA a généré grâce à diverses photos de moi qui lui ont servi de base pour générer cette
     image. L'usage des IA doit toujours être précautionneux mais il me paraît essentiel de savoir les manipuler et s'informer à leur sujet.
 achievements_page:
+  zei_period: "Juillet 2024 – octobre 2026 · 2 ans et 3 mois"
+  zei_description: "Plateforme SaaS B2B de pilotage ESG / RSE : collecte d'indicateurs extra-financiers, bilan carbone et rapports de durabilité. Développeuse full-stack dans une équipe de 7, majoritairement côté front (React / TypeScript, design system) avec une vraie part de back Symfony."
+  zei_image_alt: "Wireframe de l'éditeur de rapports de durabilité : blocs KPI, graphique et tableau, panneau de configuration de la charte et export PDF"
+  zei_image_caption: "L'éditeur de rapports par blocs avec export PDF (wireframe recréé sans données réelles)"
+  case_studies: "Études de cas"
+  zei_case_studies:
+    report_editor: "L'éditeur de rapports extra-financiers : concevoir pour le papier"
+    design_system: "Migration du design system : 340 fichiers sans bloquer l'équipe"
+    permissions: "Droits, rôles et audit externe : un bouton qui dépendait de sept règles"
   water_closest_description: WaterClosest est une application communautaire mobile en cours de conception qui vise à simplifier
     la recherche de toilettes publiques et privées en fournissant des informations fiables et complètes.
     L'idée principale est d'offrir une solution simple et intuitive pour répondre aux besoins de personnes

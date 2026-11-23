@@ -61,6 +61,43 @@
                 <div class="splide" aria-labelledby="QuickMS">
                     <div class="splide__track">
                         <ul class="splide__list">
+                            {% set notion_site = 'https://evanescent-find-18f.notion.site/' %}
+                            <li class="splide__slide">
+                                <h1 class="projectTitle">Zei <span>{{ 'achievements_page.professional_project'|trans }}</span></h1>
+                                <p class="projectPeriod">{{ 'achievements_page.zei_period'|trans }}</p>
+                                <div class="badges">
+                                    <div class="badge backBadge">Symfony 7</div>
+                                    <div class="badge backBadge">API Platform</div>
+                                    <div class="badge frontBadge">React</div>
+                                    <div class="badge frontBadge">TypeScript</div>
+                                    <div class="badge frontBadge">Tailwind CSS</div>
+                                    <div class="badge environmentBadge">Storybook</div>
+                                    <div class="badge environmentBadge">Docker</div>
+                                </div>
+                                <p class="achievementsText">{{ 'achievements_page.zei_description'|trans }}</p>
+                                <figure class="zeiImage">
+                                    <img class="desktop" loading="lazy" src="{{ asset('images/ZeiReportEditorDesktop.webp') }}" alt="{{ 'achievements_page.zei_image_alt'|trans }}">
+                                    <img class="mobile" loading="lazy" src="{{ asset('images/ZeiReportEditorMobile.webp') }}" alt="{{ 'achievements_page.zei_image_alt'|trans }}">
+                                    <figcaption>{{ 'achievements_page.zei_image_caption'|trans }}</figcaption>
+                                </figure>
+                                <div class="caseStudies">
+                                    <h2>{{ 'achievements_page.case_studies'|trans }}</h2>
+                                    <ul>
+                                        {% for key, notion_id in {
+                                            report_editor: '41e3fa0c953a8191ba2cc7aaf2054ba1',
+                                            design_system: '41e3fa0c953a813ab821c50ae4ea27ff',
+                                            permissions: '41e3fa0c953a81188309d67dd12f0bc3',
+                                        } %}
+                                            <li><a href="{{ notion_site ~ notion_id }}" target="_blank" rel="noopener">{{ ('achievements_page.zei_case_studies.' ~ key)|trans }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <div class="badges">
+                                    <a href="{{ notion_site }}ZEI-41e3fa0c953a81879ca9ed319bec897e" target="_blank" rel="noopener">
+                                        <div class="badge showMore">{{ 'achievements_page.find_out_more'|trans }}</div>
+                                    </a>
+                                </div>
+                            </li>
                             <li class="splide__slide">
                                 <h1 class="projectTitle">Water Closest <span>{{ 'achievements_page.personal_project'|trans }}</span> </h1>
                                 <div class="badges">

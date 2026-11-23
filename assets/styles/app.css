@@ -339,6 +339,63 @@ main {
                 max-width: 100%;
                 padding: 1rem;
             }
+            .projectPeriod {
+                text-align: center;
+                max-width: 100%;
+                font-style: italic;
+                opacity: 0.85;
+                margin-bottom: 0.5rem;
+            }
+            .zeiImage {
+                margin: 0 auto 1.5rem;
+                max-width: 900px;
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 8px;
+                    box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
+                }
+                figcaption {
+                    margin-top: 0.5rem;
+                    font-size: 0.85rem;
+                    font-style: italic;
+                    text-align: center;
+                    opacity: 0.85;
+                }
+                .mobile {
+                    display: none;
+                }
+                @media only screen and (max-width: 768px) {
+                    .desktop {
+                        display: none;
+                    }
+                    .mobile {
+                        display: block;
+                    }
+                }
+            }
+            .caseStudies {
+                padding: 0 1rem;
+                text-align: center;
+                h2 {
+                    font-family: "Sniglet", sans-serif;
+                    font-size: 1.3rem;
+                    margin-bottom: 0.5rem;
+                }
+                li {
+                    margin-bottom: 0.4rem;
+                }
+                a {
+                    color: var(--clear-font-color);
+                    text-decoration: underline;
+                    text-decoration-color: rgba(232, 216, 196, 0.4);
+                    text-underline-offset: 3px;
+                    &:hover, &:focus-visible {
+                        text-decoration-color: var(--clear-font-color);
+                    }
+                }
+            }
             .badges {
                 display: -webkit-box;
                 display: -ms-flexbox;
