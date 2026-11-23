@@ -1,20 +1,21 @@
 homepage_title: Full-stack web developer
-meta_description: "Laure Chapert, full-stack Symfony / React / TypeScript developer. Experience, case studies and projects."
+meta_description: "Laure Chapert, full-stack developer: PHP / Symfony, React / TypeScript and Python. Experience, case studies and projects."
 navigation:
   about: About
   experience: Experience
   projects: Projects
   contact: Contact
 hero:
-  stack: "Symfony · React · TypeScript"
+  stack: "PHP · Symfony · React · TypeScript · Python"
   pitch: "I build polished, accessible interfaces, and the back end that powers them."
   cta_experience: See my experience
   cta_contact: Contact me
 about_page:
   title: About
-  first_paragraph: "Full-stack developer, I spent over two years at Zei on an ESG management SaaS platform, after a first experience at QuickMS on the HR software Qrew."
-  second_paragraph: "I enjoy work where front end and back end meet: design systems, tested and documented components, typed contracts between Symfony and TypeScript, access control. I work with shared architecture rules, systematic code review and close ties with design and product."
-  third_paragraph: "Opquast certified, I make accessibility and web quality a habit. As a musician, I also pay particular attention to the visual craft of interfaces."
+  first_paragraph: "Full-stack developer, I spent over two years at Zei on an ESG management SaaS platform, after a first experience at QuickMS on the HR software Qrew. I mostly work with PHP / Symfony, React / TypeScript and Python, without limiting myself to them: technology is a means, not an end. What matters is the problem to solve and the quality of what we ship."
+  second_paragraph: "Since my time at Zei, AI has been part of my daily work: LLM-based coding assistants such as Claude Code, connected to our tools through MCP servers, with reusable procedures and written project context (architecture, conventions, domain vocabulary). I use them to explore a codebase, run a first review pass, write assisted code, tests or documentation."
+  third_paragraph: "Yet I stay mindful that our role remains essential: I read and understand every line before keeping it, sensitive actions are still validated by hand, and design, human review and team discussions remain at the heart of the job. AI saves me time on repetitive work so I can spend more of it thinking."
+  fourth_paragraph: "Opquast certified, I make accessibility and web quality a habit. As a musician, I also pay particular attention to the visual craft of interfaces."
 experience_page:
   title: Experience
 projects_page:
@@ -32,7 +33,11 @@ achievements_page:
     permissions: "Permissions, roles and external audit: a button that depended on seven rules"
   qrew_company: "QuickMS"
   qrew_role: "Full-stack developer"
-  qrew_description: "All-in-one HR software: annual and professional reviews, objectives, skills, HR appointments. Features and fixes in Symfony, Vue.js and JavaScript, in an agile team with code review, including the redesign of the HR, manager and employee dashboards."
+  qrew_description: "All-in-one HR software: annual and professional reviews, objectives, skills, HR appointments. Features and fixes in Symfony, Vue.js and JavaScript, in an agile team with code review."
+  qrew_case_studies:
+    dashboards: "Redesign of the HR, manager and employee dashboards with asynchronous filters"
+    datatables: "DataTables Editor and nested forms"
+    upgrade: "Upgrading PHP and Symfony"
   qrew_image_alt: "Qrew HR dashboard: ongoing campaigns, review breakdown and status"
   concerto_description: "Team project: a platform to find concerts by region and music genre. React front end, Symfony API and back office. I worked on both front end and back end."
   concerto_image_alt: "Concert'O home page with the concert list and filters"

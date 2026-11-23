@@ -1,20 +1,21 @@
 homepage_title: Développeuse web full-stack
-meta_description: "Laure Chapert, développeuse full-stack Symfony / React / TypeScript. Expérience, études de cas et projets."
+meta_description: "Laure Chapert, développeuse full-stack PHP / Symfony, React / TypeScript et Python. Expérience, études de cas et projets."
 navigation:
   about: À propos
   experience: Expérience
   projects: Projets
   contact: Contact
 hero:
-  stack: "Symfony · React · TypeScript"
+  stack: "PHP · Symfony · React · TypeScript · Python"
   pitch: "Je conçois des interfaces soignées et accessibles, et le back qui va avec."
   cta_experience: Voir mon parcours
   cta_contact: Me contacter
 about_page:
   title: À propos
-  first_paragraph: "Développeuse full-stack, j'ai passé plus de deux ans chez Zei sur une plateforme SaaS de pilotage ESG, après une première expérience chez QuickMS sur le logiciel RH Qrew."
-  second_paragraph: "J'aime les sujets où le front et le back se rencontrent : design system, composants testés et documentés, contrats typés entre Symfony et TypeScript, droits d'accès. Je travaille avec des règles d'architecture partagées, de la revue de code systématique et un lien étroit avec le design et le produit."
-  third_paragraph: "Certifiée Opquast, je fais de l'accessibilité et de la qualité web une habitude. Musicienne, j'apporte aussi un soin particulier au rendu visuel des interfaces."
+  first_paragraph: "Développeuse full-stack, j'ai passé plus de deux ans chez Zei sur une plateforme SaaS de pilotage ESG, après une première expérience chez QuickMS sur le logiciel RH Qrew. Je travaille surtout avec PHP / Symfony, React / TypeScript et Python, sans m'y limiter : la techno est un moyen, pas une finalité. Ce qui compte, c'est le problème à résoudre et la qualité de ce qu'on livre."
+  second_paragraph: "Depuis mon expérience chez Zei, l'IA fait partie de mon quotidien : assistants de code basés sur des LLM comme Claude Code, reliés à nos outils par des serveurs MCP, avec des procédures réutilisables et un contexte projet écrit (architecture, conventions, vocabulaire métier). Je m'en sers pour explorer une codebase, faire une première passe de relecture, écrire du code assisté, des tests ou de la documentation."
+  third_paragraph: "Je reste pourtant vigilante sur notre rôle, qui demeure essentiel : je relis et je comprends chaque ligne avant de la garder, les actions sensibles restent validées à la main, et la conception, la revue humaine et les échanges avec l'équipe restent au cœur du métier. L'IA me fait gagner du temps sur le répétitif pour en garder davantage pour la réflexion."
+  fourth_paragraph: "Certifiée Opquast, je fais de l'accessibilité et de la qualité web une habitude. Musicienne, j'apporte aussi un soin particulier au rendu visuel des interfaces."
 experience_page:
   title: Expérience
 projects_page:
@@ -32,7 +33,11 @@ achievements_page:
     permissions: "Droits, rôles et audit externe : un bouton qui dépendait de sept règles"
   qrew_company: "QuickMS"
   qrew_role: "Développeuse full-stack"
-  qrew_description: "Logiciel RH tout-en-un : entretiens annuels et professionnels, objectifs, compétences, rendez-vous RH. Évolutions et corrections en Symfony, Vue.js et JavaScript, en méthode agile avec revue de code, dont la refonte des tableaux de bord RH, manager et collaborateur."
+  qrew_description: "Logiciel RH tout-en-un : entretiens annuels et professionnels, objectifs, compétences, rendez-vous RH. Évolutions et corrections en Symfony, Vue.js et JavaScript, en méthode agile avec revue de code."
+  qrew_case_studies:
+    dashboards: "Refonte des tableaux de bord RH, manager et collaborateur avec filtres asynchrones"
+    datatables: "DataTables Editor et formulaires imbriqués"
+    upgrade: "Montée de version de PHP et Symfony"
   qrew_image_alt: "Tableau de bord RH de Qrew : campagnes en cours, répartition et état des entretiens"
   concerto_description: "Projet d'équipe : une plateforme pour trouver des concerts par région et par genre musical. Front en React, API et back-office en Symfony. J'ai travaillé côté front et côté back."
   concerto_image_alt: "Page d'accueil de Concert'O avec la liste des concerts et les filtres"

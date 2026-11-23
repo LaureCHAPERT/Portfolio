@@ -405,7 +405,7 @@ p {
     height: 240px;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 0 0 6px var(--cream-50), 0 0 0 7px var(--gold);
+    box-shadow: 0 0 0 6px var(--cream-100), 0 0 0 7px var(--gold);
     @media (max-width: 720px) {
         width: 160px;
         height: 160px;
@@ -460,7 +460,7 @@ p {
         height: 12px;
         border-radius: 50%;
         background-color: var(--gold);
-        box-shadow: 0 0 0 4px var(--cream-100);
+        box-shadow: 0 0 0 4px var(--cream-50);
         @media (max-width: 720px) {
             left: calc(-1.25rem - 7px);
         }

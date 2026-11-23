@@ -58,7 +58,7 @@
         </section>
 
         {# ---------- À propos ---------- #}
-        <section class="section" id="about" aria-labelledby="about-title">
+        <section class="section section-alt" id="about" aria-labelledby="about-title">
             <div class="container about">
                 <img class="portrait" src="{{ asset('images/AIPortraitSketch.jpg') }}" alt="{{ 'a11y.ai_portrait'|trans }}" width="240" height="240" loading="lazy">
                 <div>
@@ -66,12 +66,13 @@
                     <p>{{ 'about_page.first_paragraph'|trans }}</p>
                     <p>{{ 'about_page.second_paragraph'|trans }}</p>
                     <p>{{ 'about_page.third_paragraph'|trans }}</p>
+                    <p>{{ 'about_page.fourth_paragraph'|trans }}</p>
                 </div>
             </div>
         </section>
 
         {# ---------- Expérience ---------- #}
-        <section class="section section-alt" id="experience" aria-labelledby="experience-title">
+        <section class="section" id="experience" aria-labelledby="experience-title">
             <div class="container">
                 <h2 class="section-title" id="experience-title">{{ 'experience_page.title'|trans }}</h2>
 
@@ -137,6 +138,20 @@
                                     <img src="{{ asset('images/QrewDesktop.png') }}" alt="{{ 'achievements_page.qrew_image_alt'|trans }}" loading="lazy" width="1803" height="940">
                                 </picture>
                             </figure>
+                            <h4>{{ 'achievements_page.case_studies'|trans }}</h4>
+                            <ul class="case-studies">
+                                {% for key, notion_id in {
+                                    dashboards: '0df5903e23e64c5db918cdbc9b2fcbba',
+                                    datatables: '9e8d625a5c454b90ac49c68cf4f9a984',
+                                    upgrade: 'facd0f062a4942c49f4c5d9bc56ceadf',
+                                } %}
+                                    <li>
+                                        <a href="{{ notion_site ~ notion_id }}" target="_blank" rel="noopener">
+                                            {{ ('achievements_page.qrew_case_studies.' ~ key)|trans }}{{ ui.icon('arrow') }}<span class="visually-hidden"> {{ 'a11y.new_tab'|trans }}</span>
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
                             <a class="btn btn-secondary btn-small" href="{{ notion_site }}QREW-c07579b7afb74416983a5f92b5ab93ed" target="_blank" rel="noopener">
                                 {{ 'achievements_page.find_out_more'|trans }}<span class="visually-hidden"> – Qrew {{ 'a11y.new_tab'|trans }}</span>
                             </a>
@@ -147,7 +162,7 @@
         </section>
 
         {# ---------- Projets ---------- #}
-        <section class="section" id="projects" aria-labelledby="projects-title">
+        <section class="section section-alt" id="projects" aria-labelledby="projects-title">
             <div class="container">
                 <h2 class="section-title" id="projects-title">{{ 'projects_page.title'|trans }}</h2>
                 <div class="project-grid">
