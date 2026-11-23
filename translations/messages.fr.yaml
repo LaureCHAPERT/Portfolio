@@ -46,4 +46,5 @@ contact_page:
   message: Votre message
   send: Envoyer
   phone: Téléphone
-
+  success: "Votre message a été envoyé avec succès !"
+  error: "Une erreur est survenue, votre message n'a pas pu être envoyé. Vous pouvez m'écrire directement par email."

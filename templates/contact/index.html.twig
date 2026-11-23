@@ -4,7 +4,7 @@
             <h1>{{'contact_page.send_me'|trans}}</h1>
             <div class="form-container">
                 <div id="flashbag-container" class="hidden"></div>
-                {{ form_start(form, {'action': path('sendEmail'), 'attr': {'id': 'contact-form'}}) }}
+                {{ form_start(form, {'action': path('sendEmail'), 'attr': {'id': 'contact-form', 'data-success-message': 'contact_page.success'|trans, 'data-error-message': 'contact_page.error'|trans}}) }}
                 <div class="form-group">
                     {{ form_label(form.fullName, 'contact_page.name'|trans, {'label_attr': {'class': 'controlLabel'}}) }}
                     <br>
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="linksPart">
-            <h1>{{'contact_page.name'|trans}} :</h1>
+            <h1>{{'contact_page.or_contact_me'|trans}} :</h1>
             <div class="contactLinks">
                 <div class="contactLink">
                     <a href="https://www.linkedin.com/in/laurechapert/">

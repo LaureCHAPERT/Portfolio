@@ -41,3 +41,5 @@ contact_page:
   message: Your message
   send: Send
   phone: Phone
+  success: "Your message has been sent successfully!"
+  error: "Something went wrong and your message could not be sent. Feel free to email me directly."

@@ -6,15 +6,21 @@ use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints as Assert;
 class ContactType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('fullName',TextType::class)
-            ->add('email',EmailType::class)
+            ->add('fullName', TextType::class, [
+                'constraints' => [new Assert\NotBlank(), new Assert\Length(max: 100)],
+            ])
+            ->add('email', EmailType::class, [
+                'constraints' => [new Assert\NotBlank(), new Assert\Email()],
+            ])
             ->add('message', TextareaType::class, [
                 'attr' => ['rows' => 4],
+                'constraints' => [new Assert\NotBlank(), new Assert\Length(max: 5000)],
             ])
         ;
     }

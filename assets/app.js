@@ -40,11 +40,6 @@ addTabClickListener('contact-tab', 'contactPage');
 addTabClickListener('arrowToUpDiv', 'main-content');
 
 
-// Exécute la vérification au chargement initial de la page
-['DOMContentLoaded', 'scroll'].forEach(e => {
-    document.addEventListener(e, showNavOptions);
-})
-
 function showNavOptions() {
     // Vérifie si la position de défilement est supérieure à une certaine limite
     const scrollThreshold = 200; // Ajustez cette valeur selon votre besoin
@@ -85,29 +80,43 @@ adjustNavTabsPositionY();
 window.addEventListener('resize', adjustNavTabsPositionY)
 
 const form = document.getElementById('contact-form');
+const flashbagContainer = document.getElementById('flashbag-container');
+
+function showFlashMessage(message, isError = false) {
+    flashbagContainer.replaceChildren();
+    const flashbagDiv = document.createElement('div');
+    flashbagDiv.classList.add('flashbag-message');
+    flashbagDiv.classList.toggle('error', isError);
+    flashbagDiv.setAttribute('role', isError ? 'alert' : 'status');
+    flashbagDiv.textContent = message;
+    flashbagContainer.appendChild(flashbagDiv);
+    flashbagContainer.classList.remove('hidden');
+}
+
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    const formData = new FormData(form);
+    const submitButton = form.querySelector('[type="submit"]');
+    submitButton.disabled = true;
 
     fetch(form.action, {
         method: 'POST',
-        body: formData,
+        body: new FormData(form),
     })
         .then(response => response.json())
         .then(data => {
-            if (data.success) {
-                const flashbagDiv = document.createElement('div');
-                flashbagDiv.classList.add('flashbag-message');
-                flashbagDiv.textContent = "Votre message a été envoyé avec succès !";
-
-                const flashbagContainer = document.getElementById('flashbag-container');
-                flashbagContainer.appendChild(flashbagDiv);
-                flashbagContainer.classList.remove('hidden');
+            if (!data.success) {
+                throw new Error(data.message);
             }
+            showFlashMessage(form.dataset.successMessage);
+            form.reset();
         })
         .catch(error => {
             console.error(error);
+            showFlashMessage(form.dataset.errorMessage, true);
+        })
+        .finally(() => {
+            submitButton.disabled = false;
         });
 });
 
