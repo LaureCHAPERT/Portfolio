@@ -23,10 +23,6 @@ achievements_page:
     report_editor: "L'éditeur de rapports extra-financiers : concevoir pour le papier"
     design_system: "Migration du design system : 340 fichiers sans bloquer l'équipe"
     permissions: "Droits, rôles et audit externe : un bouton qui dépendait de sept règles"
-  water_closest_description: WaterClosest est une application communautaire mobile en cours de conception qui vise à simplifier
-    la recherche de toilettes publiques et privées en fournissant des informations fiables et complètes.
-    L'idée principale est d'offrir une solution simple et intuitive pour répondre aux besoins de personnes
-    de tous âges et de tous milieux, en France. L'accessibilité sera un pan essentiel de l'application. Les maquettes sont en cours.
   qrew_description: Qrew est une plateforme logicielle tout-en-un conçue pour faciliter la communication et la gestion des ressources humaines au seins des entreprises. Il offre une solution permettant
     de renforcer le lien entre les RH, managers et collaborateurs, permettant de simplifier des processus clés tels que les entretiens, les rendez-vous RH et la gestion des compétences.
     Sur Qrew, je fus développeuse web full-stack.
