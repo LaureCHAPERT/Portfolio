@@ -14,6 +14,31 @@ about_page:
   fourth_paragraph: Ci-contre, une version sketch de mon visage qu'une IA a généré grâce à diverses photos de moi qui lui ont servi de base pour générer cette
     image. L'usage des IA doit toujours être précautionneux mais il me paraît essentiel de savoir les manipuler et s'informer à leur sujet.
 achievements_page:
+  zei_period: Juillet 2024 – Octobre 2026
+  zei_description: Zei édite une plateforme SaaS B2B de pilotage ESG / RSE qui aide les organisations à collecter leurs indicateurs extra-financiers,
+    calculer leur bilan carbone et produire leurs rapports de durabilité, et permet aux têtes de réseau (fédérations, fonds, financeurs) de consolider les données de leurs membres.
+    Au sein d'une équipe de 7 développeurs, j'ai travaillé majoritairement côté front (React / TypeScript, design system, Storybook, tests) avec une vraie part de back Symfony
+    (slices complètes, migrations, droits d'accès), dans un contexte réglementaire mouvant (CSRD, Omnibus, VSME).
+  zei_stats:
+    months: mois
+    commits: commits
+    merge_requests: merge requests
+    reviews: relectures approuvées
+  case_studies: Études de cas
+  zei_case_studies:
+    front: Front avancé et produit
+    architecture: Architecture et full-stack
+    quality: Sécurité, qualité et adaptabilité
+    report_editor: "L'éditeur de rapports extra-financiers : concevoir pour le papier"
+    design_system: "Migration du design system : 340 fichiers sans bloquer l'équipe"
+    carbon_dashboard: "Tableau de bord carbone : du prototype à la production"
+    permissions: "Droits, rôles et audit externe : un bouton qui dépendait de sept règles"
+    carbon_calculator: Découpler le calculateur carbone de son code historique
+    formulas: "Indicateurs calculés par formule : le cœur métier algorithmique"
+    comments: "Fil de commentaires sur les indicateurs : trancher le modèle avant le code"
+    security_audit: Corriger les points d'un audit de sécurité
+    transverse_role: "Rôle transverse : relecture, mises en production et dette technique"
+    unknown_stack: "Une semaine sur une stack inconnue : axes analytiques BI"
   water_closest_description: WaterClosest est une application communautaire mobile en cours de conception qui vise à simplifier
     la recherche de toilettes publiques et privées en fournissant des informations fiables et complètes.
     L'idée principale est d'offrir une solution simple et intuitive pour répondre aux besoins de personnes

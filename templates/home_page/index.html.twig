@@ -61,6 +61,71 @@
                 <div class="splide" aria-labelledby="QuickMS">
                     <div class="splide__track">
                         <ul class="splide__list">
+                            {% set notion_site = 'https://evanescent-find-18f.notion.site/' %}
+                            <li class="splide__slide">
+                                <h1 class="projectTitle">Zei <span>{{ 'achievements_page.professional_project'|trans }}</span></h1>
+                                <p class="projectPeriod">{{ 'achievements_page.zei_period'|trans }}</p>
+                                <div class="badges">
+                                    <div class="badge backBadge">Symfony 7</div>
+                                    <div class="badge backBadge">API Platform</div>
+                                    <div class="badge backBadge">Doctrine</div>
+                                    <div class="badge frontBadge">React 19</div>
+                                    <div class="badge frontBadge">TypeScript</div>
+                                    <div class="badge frontBadge">Tailwind CSS</div>
+                                    <div class="badge frontBadge">TanStack Query</div>
+                                    <div class="badge frontBadge">Storybook / Chromatic</div>
+                                    <div class="badge environmentBadge">Vitest</div>
+                                    <div class="badge environmentBadge">Docker</div>
+                                    <div class="badge environmentBadge">GitLab CI</div>
+                                </div>
+                                <p class="achievementsText">{{ 'achievements_page.zei_description'|trans }}</p>
+                                <ul class="keyFigures">
+                                    <li><strong>27</strong><span>{{ 'achievements_page.zei_stats.months'|trans }}</span></li>
+                                    <li><strong>~1 360</strong><span>{{ 'achievements_page.zei_stats.commits'|trans }}</span></li>
+                                    <li><strong>285</strong><span>{{ 'achievements_page.zei_stats.merge_requests'|trans }}</span></li>
+                                    <li><strong>~590</strong><span>{{ 'achievements_page.zei_stats.reviews'|trans }}</span></li>
+                                </ul>
+                                <h2 class="caseStudiesTitle">{{ 'achievements_page.case_studies'|trans }}</h2>
+                                {% set zei_case_studies = {
+                                    front: {
+                                        report_editor: '41e3fa0c953a8191ba2cc7aaf2054ba1',
+                                        design_system: '41e3fa0c953a813ab821c50ae4ea27ff',
+                                        carbon_dashboard: '41e3fa0c953a81348940eb9e9f6fa6a0',
+                                    },
+                                    architecture: {
+                                        permissions: '41e3fa0c953a81188309d67dd12f0bc3',
+                                        carbon_calculator: '41e3fa0c953a8106b25dcae4baa9a495',
+                                        formulas: '41e3fa0c953a81f8a411e389c8cb2ccb',
+                                        comments: '41e3fa0c953a81d5a1eee1b8530d1093',
+                                    },
+                                    quality: {
+                                        security_audit: '41e3fa0c953a81f3bb75f070d5ef183b',
+                                        transverse_role: '41e3fa0c953a81288ed8d0a0b4e9223c',
+                                        unknown_stack: '41e3fa0c953a815c84bbd6a7b80d7d8f',
+                                    },
+                                } %}
+                                <div class="caseStudies">
+                                    {% for category, studies in zei_case_studies %}
+                                        <section class="caseStudyGroup">
+                                            <h3>{{ ('achievements_page.zei_case_studies.' ~ category)|trans }}</h3>
+                                            <ul>
+                                                {% for key, notion_id in studies %}
+                                                    <li>
+                                                        <a href="{{ notion_site ~ notion_id }}" target="_blank" rel="noopener">
+                                                            {{ ('achievements_page.zei_case_studies.' ~ key)|trans }}
+                                                        </a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </section>
+                                    {% endfor %}
+                                </div>
+                                <div class="badges">
+                                    <a href="{{ notion_site }}ZEI-41e3fa0c953a81879ca9ed319bec897e" target="_blank" rel="noopener">
+                                        <div class="badge showMore">{{ 'achievements_page.find_out_more'|trans }}</div>
+                                    </a>
+                                </div>
+                            </li>
                             <li class="splide__slide">
                                 <h1 class="projectTitle">Water Closest <span>{{ 'achievements_page.personal_project'|trans }}</span> </h1>
                                 <div class="badges">
