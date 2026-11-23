@@ -319,6 +319,29 @@ p {
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
+.availability {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0.5rem 1.25rem 0;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    background-color: var(--bordeaux-700);
+    color: var(--white);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+        background-color: var(--bordeaux-900);
+    }
+}
+.availability-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #7BD88F;
+    box-shadow: 0 0 0 3px rgba(123, 216, 143, 0.3);
+}
 .eyebrow {
     display: inline-block;
     margin-bottom: 1.25rem;
@@ -386,29 +409,64 @@ p {
 }
 
 /* À propos */
-.about {
-    display: grid;
-    grid-template-columns: 240px 1fr;
-    gap: 4rem;
+.about p {
+    font-size: 1.05rem;
+}
+.about-intro {
+    display: flex;
     align-items: center;
-    p {
-        max-width: 42rem;
-        font-size: 1.05rem;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    .section-title {
+        margin-bottom: 1.5rem;
     }
     @media (max-width: 720px) {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
     }
 }
+.about .about-lead {
+    font-size: 1.15rem;
+    margin: 0;
+}
+.about-body {
+    max-width: 64rem;
+}
 .portrait {
-    width: 240px;
-    height: 240px;
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 0 0 6px var(--cream-100), 0 0 0 7px var(--gold);
     @media (max-width: 720px) {
-        width: 160px;
-        height: 160px;
+        width: 140px;
+        height: 140px;
+    }
+}
+.remote-callout {
+    display: flex;
+    gap: 1.25rem;
+    max-width: 64rem;
+    margin-top: 2rem;
+    padding: 1.5rem 1.75rem;
+    background-color: var(--white);
+    border-left: 4px solid var(--gold);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    box-shadow: var(--shadow);
+    > .icon {
+        width: 28px;
+        height: 28px;
+        color: var(--gold-dark);
+        margin-top: 0.15rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    p {
+        margin: 0;
     }
 }
 

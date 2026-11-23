@@ -44,6 +44,7 @@
         {# ---------- Accueil ---------- #}
         <section class="hero" id="top">
             <div class="container hero-inner">
+                <a class="availability" href="#remote-title"><span class="availability-dot" aria-hidden="true"></span>{{ 'hero.availability'|trans }}</a>
                 <p class="eyebrow">{{ 'hero.stack'|trans }}</p>
                 <h1>Laure Chapert</h1>
                 <p class="hero-title">{{ 'homepage_title'|trans }}</p>
@@ -60,14 +61,26 @@
         {# ---------- À propos ---------- #}
         <section class="section section-alt" id="about" aria-labelledby="about-title">
             <div class="container about">
-                <img class="portrait" src="{{ asset('images/AIPortraitSketch.jpg') }}" alt="{{ 'a11y.ai_portrait'|trans }}" width="240" height="240" loading="lazy">
-                <div>
-                    <h2 class="section-title" id="about-title">{{ 'about_page.title'|trans }}</h2>
-                    <p>{{ 'about_page.first_paragraph'|trans }}</p>
+                <div class="about-intro">
+                    <img class="portrait" src="{{ asset('images/LaureChapert.webp') }}" alt="{{ 'a11y.portrait'|trans }}" width="180" height="180" loading="lazy">
+                    <div>
+                        <h2 class="section-title" id="about-title">{{ 'about_page.title'|trans }}</h2>
+                        <p class="about-lead">{{ 'about_page.first_paragraph'|trans }}</p>
+                    </div>
+                </div>
+                <div class="about-body">
                     <p>{{ 'about_page.second_paragraph'|trans }}</p>
                     <p>{{ 'about_page.third_paragraph'|trans }}</p>
                     <p>{{ 'about_page.fourth_paragraph'|trans }}</p>
+                    <p>{{ 'about_page.fifth_paragraph'|trans }}</p>
                 </div>
+                <aside class="remote-callout" aria-labelledby="remote-title">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>
+                    <div>
+                        <h3 id="remote-title">{{ 'about_page.remote_title'|trans }}</h3>
+                        <p>{{ 'about_page.remote_text'|trans }}</p>
+                    </div>
+                </aside>
             </div>
         </section>
 
@@ -125,6 +138,7 @@
                                     <h3>Qrew <span class="job-company">· {{ 'achievements_page.qrew_company'|trans }}</span></h3>
                                     <p class="job-role">{{ 'achievements_page.qrew_role'|trans }}</p>
                                 </div>
+                                <p class="job-period">{{ 'achievements_page.qrew_period'|trans }}</p>
                             </header>
                             <p>{{ 'achievements_page.qrew_description'|trans }}</p>
                             <ul class="tags">
