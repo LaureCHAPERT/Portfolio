@@ -180,6 +180,26 @@
             <div class="container">
                 <h2 class="section-title" id="projects-title">{{ 'projects_page.title'|trans }}</h2>
                 <div class="project-grid">
+                    <article class="card project project-featured">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="{{ asset('images/LesPtitsLoupsMobile.webp') }}">
+                            <img src="{{ asset('images/LesPtitsLoupsDesktop.webp') }}" alt="{{ 'achievements_page.loups_image_alt'|trans }}" loading="lazy" width="1400" height="1103">
+                        </picture>
+                        <div class="project-body">
+                            <p class="project-status">{{ 'achievements_page.in_progress'|trans }}</p>
+                            <h3>Les P'tits Loups</h3>
+                            <p>{{ 'achievements_page.loups_description'|trans }}</p>
+                            <p>{{ 'achievements_page.loups_method'|trans }}</p>
+                            <ul class="tags">
+                                {% for tag in ['SvelteKit', 'TypeScript', 'Tailwind CSS', 'Prisma', 'PostgreSQL', 'Storybook', 'Playwright', 'Docker'] %}
+                                    <li>{{ tag }}</li>
+                                {% endfor %}
+                            </ul>
+                            <a class="text-link" href="https://github.com/LaureCHAPERT/Les-Ptits-Loups" target="_blank" rel="noopener">
+                                {{ 'achievements_page.see_code'|trans }}{{ ui.icon('arrow') }}<span class="visually-hidden"> – Les P'tits Loups {{ 'a11y.new_tab'|trans }}</span>
+                            </a>
+                        </div>
+                    </article>
                     <article class="card project">
                         <img src="{{ asset('images/ConcertoDesktop.webp') }}" alt="{{ 'achievements_page.concerto_image_alt'|trans }}" loading="lazy" width="1899" height="888">
                         <div class="project-body">
