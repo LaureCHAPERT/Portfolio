@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ app.request.locale }}">
     <head>
         <meta charset="UTF-8">
+        <title>{% block title %}Laure Chapert{% endblock %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Laure Chapert" />
         <meta name="copyright" content="Laure Chapert" />
-        <meta property="og:language" content="fr" />
-        <meta property="og:type" content="siteweb" />
+        <meta property="og:locale" content="{{ app.request.locale == 'en' ? 'en_GB' : 'fr_FR' }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Laure Chapert – {{ 'homepage_title'|trans }}" />
         <meta name="description" content="Laure Chapert, développeuse full stack Symfony/React, vous invite à découvrir ses réalisations présentées sur son portfolio. Contactez-la pour discuter de vos projets et donner vie à vos projets numériques !" />
         <meta name="keywords" content="Symfony, React, web, PHP, Javascript, developer, fullstack, back-end, front-end, Qrew, QuickMS, GitHub" />
         <meta name="robots" content="index,follow">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Quicksand:wght@300..700&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
         <link rel="icon" type="image/svg+xml" href="{{ asset('icons/favicon.svg')}}">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-1JSY77B3DK"></script>
