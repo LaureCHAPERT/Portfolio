@@ -26,15 +26,17 @@ class ContactController extends AbstractController
     #[Route('/sendEmail', name: 'sendEmail', methods: ['POST'])]
     public function sendEmail(Request $request, MailerService $mailer): JsonResponse
     {
-        $response = $request->request->all();
-        $fullName = $response['contact']['fullName'];
-        $email = $response['contact']['email'];
-        $message = $response['contact']['message'];
-        $subject = 'Demande de contact sur votre site de ' . $email;
-        $content = $fullName . ' vous a envoyé le message suivant: ' . $message;
+        $form = $this->createForm(ContactType::class);
+        $form->handleRequest($request);
+
+        if (!$form->isSubmitted() || !$form->isValid()) {
+            return new JsonResponse(['success' => false, 'message' => 'Invalid form'], Response::HTTP_BAD_REQUEST);
+        }
+
+        $data = $form->getData();
 
         try {
-            $mailer->sendEmail($email, $subject, $content);
+            $mailer->sendContactMessage($data['fullName'], $data['email'], $data['message']);
             return new JsonResponse(['success' => true]);
         } catch (\Exception $e) {
             return new JsonResponse(['success' => false, 'message' => $e->getMessage()], Response::HTTP_INTERNAL_SERVER_ERROR);

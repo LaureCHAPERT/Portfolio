@@ -1,49 +1,76 @@
 homepage_title: Développeuse web full-stack
+meta_description: "Laure Chapert, développeuse full-stack PHP / Symfony, React / TypeScript et Python. Expérience, études de cas et projets."
 navigation:
-  about: A propos
-  achievements: Réalisations
+  about: À propos
+  experience: Expérience
+  projects: Projets
   contact: Contact
+hero:
+  availability: "Recherche un poste en full remote"
+  stack: "PHP · Symfony · React · TypeScript · Python"
+  pitch: "Je conçois des interfaces soignées et accessibles, et le back qui va avec."
+  cta_experience: Voir mon parcours
+  cta_contact: Me contacter
 about_page:
-  title: Bienvenue dans mon univers numérique !
-  first_paragraph: Développeuse web full-stack, je souhaite donner vie à vos projets et transformer vos visions en réalités digitales. Mon objectif est de comprendre vos besoins et ceux des clients afin de développer des solutions web sur mesure et de garantir la satisfaction de tous.
-    Ma sensibilité pour l'accessibilité et l'UX/UI permet de concevoir des interfaces agréables à tous les utilisateurs.
-    Rendre le web accessible à tous est une ambition qui me passionne et me tient particulièrement à coeur !
-  second_paragraph: Musicienne et curieuse, la créativité constitue une part essentielle de ma vie et cette sensibilité artistique se reflète dans mon travail,
-    où je m'efforce toujours de trouver des solutions esthétiques pour chaque projet dès sa naissance et jusqu'à ses potentielles évolutions.
-  third_paragraph: Je suis impatiente de discuter avec vous de vos idées et de travailler ensemble pour les concrétiser. Merci de visiter mon portfolio; j'ai hâte de collaborer avec vous !
-  fourth_paragraph: Ci-contre, une version sketch de mon visage qu'une IA a généré grâce à diverses photos de moi qui lui ont servi de base pour générer cette
-    image. L'usage des IA doit toujours être précautionneux mais il me paraît essentiel de savoir les manipuler et s'informer à leur sujet.
+  title: À propos
+  first_paragraph: "Développeuse full-stack, j'ai passé plus de deux ans chez Zei sur une plateforme SaaS de pilotage ESG, après une première expérience chez QuickMS sur le logiciel RH Qrew. Ma priorité, c'est le besoin client : je pars de là, et non d'une techno qui limiterait les solutions. Je travaille surtout avec PHP / Symfony, React / TypeScript et Python, et je m'adapte à ce que le projet demande : la techno est un moyen, pas une finalité."
+  second_paragraph: "Depuis mon expérience chez Zei, l'IA fait partie de mon quotidien : assistants de code basés sur des LLM comme Claude Code, reliés à nos outils par des serveurs MCP, avec des procédures réutilisables et un contexte projet écrit (architecture, conventions, vocabulaire métier). Je m'en sers pour explorer une codebase, faire une première passe de relecture, écrire du code assisté, des tests ou de la documentation."
+  third_paragraph: "Je reste pourtant vigilante sur notre rôle, qui demeure essentiel : je relis et je comprends chaque ligne avant de la garder, les actions sensibles restent validées à la main, et la conception, la revue humaine et les échanges avec l'équipe restent au cœur du métier. L'IA me fait gagner du temps sur le répétitif pour en garder davantage pour la réflexion."
+  fourth_paragraph: "Certifiée Opquast, je fais de l'accessibilité et de la qualité web une habitude."
+  fifth_paragraph: "Musicienne, je retrouve dans le développement la même sensibilité et le même sens du détail : soigner un rendu, un parcours ou une interaction jusqu'à ce que tout sonne juste."
+  remote_title: "Je recherche un poste en full remote"
+  remote_text: "J'habite à la campagne et le travail à distance est mon quotidien : autonomie, communication écrite claire, outils asynchrones et points réguliers avec l'équipe. Retrouver mes collègues lors de séminaires ou de journées d'équipe restera toujours un plaisir."
+experience_page:
+  title: Expérience
+projects_page:
+  title: Projets personnels
 achievements_page:
-  qrew_description: Qrew est une plateforme logicielle tout-en-un conçue pour faciliter la communication et la gestion des ressources humaines au seins des entreprises. Il offre une solution permettant
-    de renforcer le lien entre les RH, managers et collaborateurs, permettant de simplifier des processus clés tels que les entretiens, les rendez-vous RH et la gestion des compétences.
-    Sur Qrew, je fus développeuse web full-stack.
-  concerto_description: Concert'o est un projet d'équipe qui permet de filtrer par régions et/ou genres musicaux des évènements répertoriés sur
-    sa plateforme. Le front est réalisé en React et le back en Symfony. La partie back-office permettant d'accéder au CRUD est également gérée en Symfony (l'aspect "vues" étant moins complexe que le front-office)
-    est destiné aux organismes régionaux ou privés. Cette idée a germé suite à la sortie du déconfinement et du besoin accru de retrouver une vie sociale
-    facilement. Concert'o est une solution proposée en réponse à ce désir. Je fus aussi bien développeuse front que back sur ce projet.
-  first_portfolio_description: Juste après l'obtention de mon titre pro et enfin de bousculer les habitudes que j'avais avec Symfony,
-    j'ai souhaité faire mon premier portfolio avec Laravel. Ce projet m'a permis de me familiariser avec les concepts de base du framework notamment avec
-    son arborescence ou son outil "Artisan" qui permet d'effectuer des tâches similaires à celles de la conslole Symfony.
-  second_portfolio_description: Réalisé avec Symfony 7, cette version représente une mise à jour significative depuis
-    mon travail antérieur en Symfony 6.3. Inspiré par une palette de couleurs soigneusement choisie, je l'ai
-    façonné à partir des maquettes conçues sur Figma. Pour un contrôle total et un retour aux bases,
-    j'ai opté pour du CSS natif, y compris la gestion des media queries, et du JavaScript.
-    J'ai également pris le temps de tester diverses bibliothèques afin de telles que SplideJS, coller au plus proche des mes maquettes.
-  personal_project: (Projet personnel)
-  professional_project: (Projet professionnel)
+  zei_period: "Juillet 2024 – octobre 2026 · 2 ans et 3 mois"
+  zei_role: "Développeuse full-stack"
+  zei_description: "Plateforme SaaS B2B de pilotage ESG / RSE : collecte d'indicateurs extra-financiers, bilan carbone et rapports de durabilité. Développeuse full-stack dans une équipe de 7, majoritairement côté front (React / TypeScript, design system) avec une vraie part de back Symfony."
+  zei_image_alt: "Wireframe de l'éditeur de rapports de durabilité : blocs KPI, graphique et tableau, panneau de configuration de la charte et export PDF"
+  zei_image_caption: "L'éditeur de rapports par blocs avec export PDF (wireframe recréé sans données réelles)"
+  case_studies: "Études de cas"
+  zei_case_studies:
+    report_editor: "L'éditeur de rapports extra-financiers : concevoir pour le papier"
+    design_system: "Migration du design system : 340 fichiers sans bloquer l'équipe"
+    permissions: "Droits, rôles et audit externe : un bouton qui dépendait de sept règles"
+  qrew_company: "QuickMS"
+  qrew_period: "Août 2022 – mars 2024 · 1 an et 7 mois"
+  qrew_role: "Développeuse full-stack"
+  qrew_description: "Logiciel RH tout-en-un : entretiens annuels et professionnels, objectifs, compétences, rendez-vous RH. Évolutions et corrections en Symfony, Vue.js et JavaScript, en méthode agile avec revue de code."
+  qrew_case_studies:
+    dashboards: "Refonte des tableaux de bord RH, manager et collaborateur avec filtres asynchrones"
+    datatables: "DataTables Editor et formulaires imbriqués"
+    upgrade: "Montée de version de PHP et Symfony"
+  qrew_image_alt: "Tableau de bord RH de Qrew : campagnes en cours, répartition et état des entretiens"
+  concerto_description: "Projet d'équipe : une plateforme pour trouver des concerts par région et par genre musical. Front en React, API et back-office en Symfony. J'ai travaillé côté front et côté back."
+  concerto_image_alt: "Page d'accueil de Concert'O avec la liste des concerts et les filtres"
+  portfolios_title: "Mes portfolios"
+  portfolios_description: "Deux versions successives de mon portfolio : la première en Laravel pour découvrir le framework, la seconde (celle-ci) en Symfony 7, CSS natif et JavaScript, à partir de maquettes Figma."
+  portfolios_image_alt: "Palette de couleurs et maquette de ce portfolio"
+  first_portfolio: "Version Laravel"
+  second_portfolio: "Version Symfony"
+  personal_project: Projet personnel
+  professional_project: Expérience professionnelle
   find_out_more: En savoir plus
-  first_portfolio: Premier portfolio
-  second_portfolio: Ce même portfolio !
 contact_page:
+  title: Contact
+  intro: "Un poste en full remote, une mission ou une question ? Écrivez-moi, je réponds rapidement."
   send_me: Envoyez-moi un message
   or_contact_me: ou contactez-moi via
   name: Nom ou nom de votre entreprise
   email: Votre email
   message: Votre message
   send: Envoyer
-  phone: Téléphone
+  success: "Votre message a été envoyé avec succès !"
+  error: "Une erreur est survenue, votre message n'a pas pu être envoyé. Vous pouvez m'écrire directement par email."
+footer:
+  rights: "Laure Chapert"
 a11y:
-  scroll_down: "Descendre vers le contenu"
+  skip_to_content: "Aller au contenu"
   main_navigation: "Navigation principale"
+  language: "Langue"
   back_to_top: "Revenir en haut de la page"
-  ai_portrait: "Portrait de Laure Chapert dessiné au crayon, généré par une IA"
+  portrait: "Photo de Laure Chapert"
+  new_tab: "(nouvel onglet)"
